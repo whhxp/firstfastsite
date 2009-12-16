@@ -8,6 +8,6 @@
 	# JUNIT
 
 = 要使用的API =
-	#JPA
-	#Struts2 Spring Hiberate
-	#freemarker 类似模板
+# JPA
+# Struts2 Spring Hiberate
+# freemarker 类似模板
