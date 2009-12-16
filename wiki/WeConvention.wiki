@@ -3,8 +3,8 @@
 =文档编码=
  * 全部使用UTF-8编码
  * 对于不支持编码自描述的文件使用类CSS语法,使用注释的方式增加UTF-8支持.
-   *如Java文件的第一行中使用 {{{  //@charset "UTF-8";  }}}
-   *CSS中使用 {{{  //@charset "UTF-8";  }}}
+   * 如Java文件的第一行中使用 {{{  //@charset "UTF-8";  }}}
+   * CSS中使用 {{{  //@charset "UTF-8";  }}}
 
 
 Add your content here.
