@@ -1,18 +1,6 @@
 #summary 长期规划
 
-= Introduction =
-
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
-
-= RoadMap ==
+= 规划 =
  #2009-12-16 项目启动
  #2009-12-29 0.5.0版本 基本可用,没有GAE支持
  #2010.1.12 1.0.0beta版发布,有GAE支持
