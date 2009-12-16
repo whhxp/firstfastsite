@@ -1,0 +1,9 @@
+#summary 所有的模块
+
+=速建站准备开发模块==
+ #commons 通用模块  开发过程中可以通用的模块部分。
+ #message.  站内信息模块（FSMSG）
+ #bbs  论坛        （FSBBS）
+ #cms   信息发布   （FSCMS）
+ #blog  博客发布   （FSBLOG）
+ #chatroom 聊天室  （FSCHAT）
