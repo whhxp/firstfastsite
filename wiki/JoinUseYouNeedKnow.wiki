@@ -1,0 +1,13 @@
+#summary 使用的工具
+= 使用的工具 =
+	#Eclipse3.5 galileo
+	#SVN 客户端
+	#gmail邮箱列表等
+	#GAE  google app engine
+	#google code
+	#JUNIT
+
+= 要使用的API =
+	#JPA
+	#Struts2 Spring Hiberate
+	#freemarker 类似模板
