@@ -19,6 +19,7 @@ public class NodeTest extends TestCase {
 		
 		sjz.addChild(new Node("Þ»³Ç"));
 		sjz.addChild(new Node("ÐÁ¼¯"));
+		sjz.addChild(new Node("Â¹Èª"));
 		handan.addChild(new Node("ºªµ¦ÏØ"));
 		
 		System.out.println(hebei);
