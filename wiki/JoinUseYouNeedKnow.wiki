@@ -1,4 +1,4 @@
-#summary 使用的工具
+#summary 加入我们你必须要知道的一下内容
 = 使用的工具 =
  # Eclipse3.5 galileo
  # SVN 客户端
