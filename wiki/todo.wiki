@@ -1,13 +1,2 @@
 #summary 需要完成的工作
 = 快速建站相关工作 =
-
-
-#起一个好的项目名称FirstSite，简称fs，包名org.apachechina.firstsite.core.  核心模块
-原因：isite已经被人注册了商标。
-=速建站准备开发模块==
- #.commons 通用模块  开发过程中可以通用的模块部分。
- #.message.  站内信息模块（FSMSG）
- #.bbs  论坛        （FSBBS）
- #.cms   信息发布   （FSCMS）
- #.blog  博客发布   （FSBLOG）
- #.chatroom 聊天室  （FSCHAT）
