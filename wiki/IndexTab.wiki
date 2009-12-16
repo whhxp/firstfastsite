@@ -7,6 +7,5 @@
  * [Modules 模块]
  * [JoinUseYouNeedKnow 你应当先知道的内容]
  * [Reference 参考] 
- * 主页维护
-  * [Index 主页]
-  * [IndexTab 左边的树]
+ * [Index 主页]
+ * [IndexTab 左边的树]
