@@ -1,14 +1,14 @@
 #summary 加入我们你必须要知道的一下内容
 = 使用的工具 =
  # Eclipse3.5 galileo
- # SVN 客户端
+ # subEclipse  site-1.6.5.zip
  # gmail、google group、google code
- # ANT
-
+ # ANT 1.7.0
+ # GAE Eclipse http://dl.google.com/eclipse/plugin/3.5
 
 = 要使用的API =
  # JPA
- # Struts2 Spring Hiberate
- # freemarker 类似模板
+ # Struts2.1.8 Spring3.0rc Hiberate3.3.8
  # GAE  google app engine 
  # JUNIT
+ # ...
