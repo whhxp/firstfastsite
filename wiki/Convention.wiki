@@ -1,5 +1,9 @@
 #summary 我们的项目的约定
 
+= 包名=
+ * org.apachechina.firstsite.core
+  *
+
 =文档编码=
  * 全部使用UTF-8编码
   * 对于不支持编码自描述的文件如Java,sql文件使用类CSS语法,使用注释的方式增加UTF-8支持.
