@@ -6,6 +6,6 @@
  * [Convention 项目约定]
  * [Modules 模块]
  * [JoinUseYouNeedKnow 你应当先知道的内容] 
-* [主页维护]
+* 主页维护
  * [Index 主页]
  * [IndexTab 左边的树]
