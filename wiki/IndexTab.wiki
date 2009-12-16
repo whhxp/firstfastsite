@@ -1,10 +1,12 @@
 #summary 左边栏
 
-* [Convention 项目约定]
+*  
  * [SandBox 沙盒测试]
  * [todo 需要完成的工作]
  * [RoadMap 长期规划]
- * [JoinUseYouNeedKnow] 
+ * [Convention 项目约定]
+ * [Modules 模块]
+ * [JoinUseYouNeedKnow 你应当先知道的内容] 
 * 主页维护
  * [Index 主页]
  * [IndexTab 左边的树]
