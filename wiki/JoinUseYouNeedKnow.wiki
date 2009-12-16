@@ -12,3 +12,7 @@
  # GAE  google app engine 
  # JUNIT
  # ...
+==项目基于SSH,一般选择最新版本
+ # Hibnate3.3.2ga  [https://www.hibernate.org/]
+ # Spring3.0.0.RC3   [http://www.springsource.org/]
+ # Struts2.1.8.1   [http://struts.apache.org]
