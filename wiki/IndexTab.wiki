@@ -4,63 +4,6 @@
  * [todo 需要完成的工作]
  * [RoadMap 长期规划]
  * [JoinUseYouNeedKnow] 
-= 网站基础设置 =
-
 *主页维护
  * [Index 主页]
  * [IndexTab 左边的树]
- 
-
-{{{
-
-[{TableOfContents }]
-!!!isite是什么
-!简介:一个基于Java的建站工具,基于[APL]协议。
-!和其他项目的关系(Why)
-
-!isite.todo
-!下载相关内容
-*SSH
-*Eclipse  Galileo 3.5
-*subEclipse  site-1.6.5.zip
-*ANT  1.7.0
-*[GAE] Eclipse http://dl.google.com/eclipse/plugin/3.5
-
-!项目基于SSH,一般选择最新版本
-# Hibnate3.3.2ga  [https://www.hibernate.org/]
-# Spring3.0.0.RC3   [http://www.springsource.org/]
-# Struts2.1.8.1   [http://struts.apache.org]
-
-!RoadMap
-#2009-12-16 项目启动
-#2009-12-29 0.5.0版本 基本可用,没有GAE支持
-#2010.1.12 1.0.0beta版发布,有GAE支持
-#2010.3.1 1.0.0 ga版发布
-
-!相关工具
-#SVN
-#邮件列表 google group
-#项目托管 google code  本地SVN
-#ANT 项目自动部署
-#Eclipse
-#JUNIT
-#wiki  本wiki为主,另外使用google code 的内容
-
-!成员和责任
-#[倪森] 项目Leader
-#[吴科学] 文档管理员 保证能让普通用户(王姐)可以安装一个网站
-#[任卓卫] 网站管理员  保证能让系统保持7*24小时运行。
-#[王龙飞] 负责项目成员其他人对工具的熟悉程度
-#高鑫,靳磊,范乐
-#以上人员都是开发组成员
-
-
-!网站示例
-#http://hbniit.com.cn  从asp迁移到isite的维护
-#内网的一个运行时,代码库和CVS每天晚上的版本一致。
-
-!相关内容
-#[OSUser]
-#[用户权限系统]
-
-}}}
