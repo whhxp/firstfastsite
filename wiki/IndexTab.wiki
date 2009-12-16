@@ -1,4 +1,4 @@
-#summary 左边的树列表
+= 如何参与工作 =
  * [SandBox 沙盒测试]
  * [todo 需要完成的工作]
  * [RoadMap 长期规划]
