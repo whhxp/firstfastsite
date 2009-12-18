@@ -3,11 +3,16 @@
 import junit.framework.Test;
 import junit.framework.TestSuite;
 
+/**
+ * 
+ * @author nisen.cn@gmail.com
+ * $Id$
+ */
 public class AllTests {
 
 	public static Test suite() {
 		TestSuite suite = new TestSuite(
-				"ËùÓĞµÄ²âÊÔ");
+				"æ‰€æœ‰çš„æµ‹è¯•");
 		//$JUnit-BEGIN$
 		
 		suite.addTestSuite(org.apachechina.firstsite.begin.jinlei.MyMessageFormatTest.class);
