@@ -1,7 +1,7 @@
 #summary 所有的模块
 
 = 准备开发的模块== 
- # environment(Env) 执行本webapp的环境(包括数据库、web容器)
+ # environment(Env) 执行本webapp的环境(包括数据库[derby]、web容器[jetty])
 
  # core  核心模块
  # commons 通用模块  开发过程中可以通用的模块部分。
