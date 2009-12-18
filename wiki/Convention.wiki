@@ -1,16 +1,19 @@
 #summary 我们的项目的约定
 
 = 包名=
- * org.apachechina.firstsite.core
+ * org.apachechina.fs模块名
+ * 数据库表名 fsCore_User
 
 
 =文档编码=
  * 全部使用UTF-8编码
   * 对于不支持编码自描述的文件如Java,sql文件使用类CSS语法,使用注释的方式增加UTF-8支持.
-    * 如Java文件的第一行中使用 {{{  //@charset "UTF-8";  }}}
+    * Java        第一行     {{{  //@charset "UTF-8";  }}}
+    * SQL         第一行    {{{ /*@charset "UTF-8";*/ }}}
   * 对于支持编码自描述的文件使用原来提供的
-   * XML、HTML、XML配置等,全部使用UTF-8编码   _  <?xml version="1.0" encoding="UTF-8"?>  _
-   * CSS中使用 {{{  @charset "UTF-8";  }}}
+   * XML      {{{  <?xml version="1.0" encoding="UTF-8"?>    }}}
+   * HTML/XTHML     {{{   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" > }}}
+   * CSS  {{{  @charset "UTF-8";  }}}
 
 = 依赖 =
  * jar管理 如果需要加入jar包需要Owner确认和讨论自己不能随便加入jar包
