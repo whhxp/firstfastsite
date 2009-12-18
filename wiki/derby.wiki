@@ -1,0 +1,10 @@
+#summary 一个嵌入式的数据库
+
+= 简介 =
+
+ # 纯Java实现的数据库,大小2M,工业级.
+ # 以前由IBM开发,现在贡献给了Apache基金会,开源的.
+
+
+= 参考 =
+ # [http://derby.apache.org]
