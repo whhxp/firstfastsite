@@ -2,7 +2,7 @@
 
 = 包名=
  * org.apachechina.firstsite.core
-  *
+
 
 =文档编码=
  * 全部使用UTF-8编码
