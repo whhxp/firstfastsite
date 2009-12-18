@@ -9,10 +9,11 @@ public class AllTests {
 		TestSuite suite = new TestSuite(
 				"ËùÓĞµÄ²âÊÔ");
 		//$JUnit-BEGIN$
+		
 		suite.addTestSuite(org.apachechina.firstsite.begin.jinlei.MyMessageFormatTest.class);
 		suite.addTest(org.apachechina.firstsite.begin.fanle.AllTests.suite());
 		suite.addTest(org.apachechina.firstsite.begin.renzhuowei.AllTests.suite());
-		//$JUnit-END$
+		//$JUnit-END$   
 		return suite;
 	}
 
