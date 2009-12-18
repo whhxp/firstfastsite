@@ -3,10 +3,10 @@
 import junit.framework.Test;
 import junit.framework.TestSuite;
 
+
 /**
- * 
  * @author nisen.cn@gmail.com
- * $Id$
+ *
  */
 public class AllTests {
 
