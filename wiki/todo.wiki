@@ -1,13 +1,10 @@
 #summary 需要完成的工作
-= nisen.todo =
+= [nisen_todo] =
 
- # Spring ,Struts  构建一个框架.
- # 写一个简单的留言板的例子
- # 
 
 = 其他人员=
  # 熟悉使用的工具 wiki Issues 等
- #
+ # 
 
 = 项目组成员更详细的 =
 
