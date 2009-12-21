@@ -1,3 +1,4 @@
+//@charset "UTF-8";
 package org.apachechina.firstsite.begin.xiaofei;
 
 import java.text.MessageFormat;
@@ -7,8 +8,8 @@ import junit.framework.TestCase;
 public class MyMessageFormatAndOtherTest extends TestCase{
 	public void testMessageFormat_format_base()
 	{
-		String execept=MyMessageFormat.format("ÎÒÊÇ{0},ÄêÁä{1}", new Object[]{"ÍõÁú·É",21});
-		String real=org.apachechina.firstsite.begin.xiaofei.MyMessageFormat.format("ÎÒÊÇ{0},ÄêÁä{1}", new Object[]{"ÍõÁú·É",21});
+		String execept=MyMessageFormat.format("æˆ‘æ˜¯{0},å¹´é¾„{1}", new Object[]{"ç‹é¾™é£",21});
+		String real=org.apachechina.firstsite.begin.xiaofei.MyMessageFormat.format("æˆ‘æ˜¯{0},å¹´é¾„{1}", new Object[]{"ç‹é¾™é£",21});
 		
 		
 		assertEquals(execept, real);

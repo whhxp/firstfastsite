@@ -1,21 +1,19 @@
+//@charset "UTF-8";
 package org.apachechina.firstsite.begin.xiaofei;
 
 import junit.framework.TestCase;
 
-public class MyMessageFormatTest extends TestCase{
-	public void testMessageFormat_format_base()
-	{
-		String real=MyMessageFormat.format("ÎÒÊÇ{0},ÄêÁä{1}", new Object[]{"ÍõÁú·É",21});
-		assertEquals("ÎÒÊÇÍõÁú·É,ÄêÁä21", real);
+public class MyMessageFormatTest extends TestCase {
+	public void testMessageFormat_format_base() {
+		String real = MyMessageFormat.format("æˆ‘æ˜¯{0},å¹´é¾„{1}", new Object[] {
+				"ç‹é¾™é£", 21 });
+		assertEquals("æˆ‘æ˜¯ç‹é¾™é£,å¹´é¾„21", real);
 	}
 
-	
-	public void testMessageFormat_format_other()
-	{
-		String real=MyMessageFormat.format("ÎÒÊÇ{0},ÄêÁä{1}", new Object[]{" ÍõÁú·É",21});
-		assertEquals("ÎÒÊÇ ÍõÁú·É,ÄêÁä21", real);
+	public void testMessageFormat_format_other() {
+		String real = MyMessageFormat.format("æˆ‘æ˜¯{0},å¹´é¾„{1}", new Object[] {
+				" ç‹é¾™é£", 21 });
+		assertEquals("æˆ‘æ˜¯ ç‹é¾™é£,å¹´é¾„21", real);
 	}
-	
-	
-	
+
 }

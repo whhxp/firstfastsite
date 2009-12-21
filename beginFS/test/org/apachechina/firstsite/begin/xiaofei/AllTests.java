@@ -1,3 +1,4 @@
+//@charset "UTF-8";
 package org.apachechina.firstsite.begin.xiaofei;
 
 import junit.framework.Test;
@@ -7,7 +8,7 @@ public class AllTests {
 
 	public static Test suite() {
 		TestSuite suite = new TestSuite(
-				"ÍõÁú·ÉµÄ²âÊÔ");
+				"ç‹é¾™é£çš„æµ‹è¯•");
 		//$JUnit-BEGIN$
 		suite.addTestSuite(MyMessageFormatTest.class);
 		suite.addTestSuite(MyMessageFormatTest.class);

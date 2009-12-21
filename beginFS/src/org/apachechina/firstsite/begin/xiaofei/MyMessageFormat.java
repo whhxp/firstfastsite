@@ -1,13 +1,14 @@
+//@charset "UTF-8";
 package org.apachechina.firstsite.begin.xiaofei;
 
 public class MyMessageFormat {
 	public static String format(String pattern, Object[] args) {
 
-		int x = 0;// ÓÃÀ´²âÊÔÊÇ·ñÓĞÁ¬ĞøµÄ£û0£ı»òÕß£û1£ı
-		int dou = 0;// ´ÓpatternµÃµ½¶ººÅµÄ×Ö·û´®INT
-		String begin = "";// ´ÓpatternµÃµ½¶ººÅÇ°µÄĞÎÈİ´Ê
-		String end = "";// ´ÓpatternµÃµ½¶ººÅºÍ¶ººÅºóµÄĞÎÈİ´Ê
-		for (int i = 0; i < pattern.length(); i++)// µÃµ½beginµÄÖµ
+		int x = 0;// ç”¨æ¥æµ‹è¯•æ˜¯å¦æœ‰è¿ç»­çš„ï½›0ï½æˆ–è€…ï½›1ï½
+		int dou = 0;// ä»patternå¾—åˆ°é€—å·çš„å­—ç¬¦ä¸²INT
+		String begin = "";// ä»patternå¾—åˆ°é€—å·å‰çš„å½¢å®¹è¯
+		String end = "";// ä»patternå¾—åˆ°é€—å·å’Œé€—å·åçš„å½¢å®¹è¯
+		for (int i = 0; i < pattern.length(); i++)// å¾—åˆ°beginçš„å€¼
 		{
 			char ch = pattern.charAt(i);
 			String str = "" + ch;
@@ -24,7 +25,7 @@ public class MyMessageFormat {
 				x = 0;
 			}
 		}
-		for (int i = 0; i < pattern.length(); i++)// µÃµ½endµÄÖµ
+		for (int i = 0; i < pattern.length(); i++)// å¾—åˆ°endçš„å€¼
 		{
 			char ch = pattern.charAt(i);
 			String str = "" + ch;
@@ -44,14 +45,13 @@ public class MyMessageFormat {
 				x = 0;
 			}
 		}
-		return begin + args[0] + end + args[1];// µÃµ½×îºóµÄ½á¹û
+		return begin + args[0] + end + args[1];// å¾—åˆ°æœ€åçš„ç»“æœ
 
 	}
 
 	public static void main(String[] args) {
 
-		System.out.println(MyMessageFormat.format("ÎÒÊÇ{0},ÄêÁä{1}", new Object[] {
-				"ÍõÁú·É", 21 }));
+		System.out.println(MyMessageFormat.format("æˆ‘æ˜¯{0},å¹´é¾„{1}", new Object[] {
+				"ç‹é¾™é£", 21 }));
 	}
 }
-
