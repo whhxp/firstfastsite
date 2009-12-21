@@ -13,7 +13,10 @@
   * 对于支持编码自描述的文件使用原来提供的
    * XML      {{{  <?xml version="1.0" encoding="UTF-8"?>    }}}
    * HTML/XTHML     {{{   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" > }}}
-   * CSS  {{{  @charset "UTF-8";  }}}
+   * CSS  {{{  @charset "UTF-8";  }}
+
+= SVN 提交=
+ # 必须有注释
 
 = 依赖 =
  * jar管理 如果需要加入jar包需要Owner确认和讨论自己不能随便加入jar包
