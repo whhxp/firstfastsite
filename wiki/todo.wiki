@@ -8,7 +8,7 @@
  # beginFS 更多的测试,测试需要重构
  # Spring3.0 Struts2
  # Hibernate ? JPA
-
+ # [GAE]
 = 项目组成员更详细的 =
 
  * [wanglongfei_todo]
