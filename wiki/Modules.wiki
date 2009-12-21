@@ -12,4 +12,4 @@
  # note  日记   （FSBLOG）
  # photo 相册  
  # chatroom 聊天室  （FSCHAT）  高鑫做！
- # 
+ # msgboard 留言板  nisen 作为一个示例
