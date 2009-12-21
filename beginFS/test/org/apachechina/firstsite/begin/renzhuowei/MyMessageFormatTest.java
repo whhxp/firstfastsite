@@ -7,17 +7,18 @@ import junit.framework.TestCase;
 public class MyMessageFormatTest extends TestCase{
 	public void testMessageFormat_format_base()
 	{
-		String real=MyMessageFormat.format("ÎÒÊÇ{0},ÄêÁä{1}", new Object[]{"ÈÎ×¿ÎÀ",21});
-		assertEquals("ÎÒÊÇÈÎ×¿ÎÀ,ÄêÁä21", real);
+		String real=MyMessageFormat.format("æˆ‘æ˜¯{0},å¹´é¾„{1}", new Object[]{"ä»»å“å«",21});
+		assertEquals("æˆ‘æ˜¯ä»»å“å«,å¹´é¾„21", real);
 	}
 
 	
 	public void testMessageFormat_format_other()
 	{
-		String real=MyMessageFormat.format("ÎÒÊÇ{0},ÄêÁä{1}", new Object[]{"ÈÎ×¿ÎÀ",21});
-		assertEquals("ÎÒÊÇÈÎ×¿ÎÀ,ÄêÁä21", real);
+		String real=MyMessageFormat.format("æˆ‘æ˜¯{0},å¹´é¾„{1}", new Object[]{"ä»»å“å«",21});
+		assertEquals("æˆ‘æ˜¯ä»»å“å«,å¹´é¾„21", real);
 	}
 	
 	
 	
 }
+

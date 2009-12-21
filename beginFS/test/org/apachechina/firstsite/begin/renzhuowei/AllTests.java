@@ -7,7 +7,7 @@ public class AllTests {
 
 	public static Test suite() {
 		TestSuite suite = new TestSuite(
-				"ÈÎ×¿ÎÀµÄ²âÊÔ");
+				"ä»»å“å«çš„æµ‹è¯•");
 		//$JUnit-BEGIN$
 		suite.addTestSuite(MyMessageFormatAndOtherTest.class);
 		suite.addTestSuite(MyMessageFormatTest.class);
