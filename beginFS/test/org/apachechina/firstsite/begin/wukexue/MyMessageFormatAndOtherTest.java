@@ -1,4 +1,4 @@
-package org.apachechina.firstsite.begin.wukexue.copy;
+package org.apachechina.firstsite.begin.wukexue;
 
 import java.text.MessageFormat;
 
