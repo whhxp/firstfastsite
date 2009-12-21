@@ -1,3 +1,4 @@
+//@charset "UTF-8";
 package org.apachechina.firstsite.begin.fanle;
 
 import java.text.MessageFormat;
