@@ -1,7 +1,5 @@
+//@charset "UTF-8";
 package org.apachechina.firstsite.begin.renzhuowei;
-
-import java.text.MessageFormat;
-
 import junit.framework.TestCase;
 
 public class MyMessageFormatTest extends TestCase{
