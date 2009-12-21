@@ -4,8 +4,8 @@
 
 = 其他人员=
  # 熟悉使用的工具 wiki Issues Eclipse SVN等
- # [beginFS] 全部使用UTF-8编码.
- # beginFS 更多的测试,测试需要重构
+ # [beginFS] 全部使用UTF-8编码.  紧急&重要
+ # beginFS 更多的测试,测试需要重构. 紧急&重要
  # Spring3.0 Struts2
  # Hibernate  [GAE] ? JPA 
  # 找一个这样的例子,来部署一下.
