@@ -6,8 +6,7 @@ import junit.framework.TestSuite;
 public class AllTests {
 
 	public static Test suite() {
-		TestSuite suite = new TestSuite(
-				"ï¿½ï¿½×¿ï¿½5Ä²ï¿½ï¿½ï¿½");
+		TestSuite suite = new TestSuite("¸ßöÎµÄ²âÊÔ");
 		//$JUnit-BEGIN$
 		suite.addTestSuite(MyMessageFormatTest.class);
 		//$JUnit-END$
