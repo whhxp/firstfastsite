@@ -1,3 +1,4 @@
+//@charset "UTF-8"; 
 package testjdkapi;
 
 import java.text.MessageFormat;
@@ -7,14 +8,21 @@ import junit.framework.TestCase;
 public class MessageFormatTest extends TestCase{
 	public void testMessageFormat_format()
 	{
-		String real=MessageFormat.format("我是{0},年龄{1}", new Object[]{"倪森",24});
-		assertEquals("我是倪森,年龄24", real);
+		String real=MessageFormat.format("鎴戞槸{0},骞撮緞{1}", new Object[]{"鍊．",24});
+		assertEquals("鎴戞槸鍊．,骞撮緞24", real);
 	}
+	
+	public void testMessageFormat_formatTwoPara()
+	{
+		String real=MessageFormat.format("鎴戞槸{0},骞撮緞{1}, sign by {0}", new Object[]{"鍊．",24});
+		assertEquals("鎴戞槸鍊．,骞撮緞24, sign by 鍊．", real);
+	}
+	
 	
 	public void testString_format()
 	{
-		String real=String.format("我是%s,年龄%s","倪森",24);
-		assertEquals("我是倪森,年龄24", real);
+		String real=String.format("鎴戞槸%s,骞撮緞%s","鍊．",24);
+		assertEquals("鎴戞槸鍊．,骞撮緞24", real);
 	}
 	
 	

@@ -1,3 +1,4 @@
+//@charset "UTF-8";
 package org.apachechina.firstsite.begin.jinlei;
 
 import java.text.MessageFormat;
@@ -7,15 +8,15 @@ import junit.framework.TestCase;
 public class MyMessageFormatTest extends TestCase{
 	public void testMessageFormat_format_base()
 	{
-		String real=MyMessageFormat.format("我是{0},年龄{1}", new Object[]{"倪森",24});
-		assertEquals("我是倪森,年龄24", real);
+		String real=MyMessageFormat.format("鎴戞槸{0},骞撮緞{1}", new Object[]{"鍊．",24});
+		assertEquals("鎴戞槸鍊．,骞撮緞24", real);
 	}
 
 	
 	public void testMessageFormat_format_other()
 	{
-		String real=MyMessageFormat.format("我是{0},年龄{1}", new Object[]{"jinlei",25});
-		assertEquals("我是jinlei,年龄25", real);
+		String real=MyMessageFormat.format("鎴戞槸{0},骞撮緞{1}", new Object[]{"jinlei",25});
+		assertEquals("鎴戞槸jinlei,骞撮緞25", real);
 	}
 	
 	
