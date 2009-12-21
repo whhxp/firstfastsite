@@ -15,10 +15,12 @@ public class AllTests {
 				"所有的测试");
 		//$JUnit-BEGIN$
 		
-		suite.addTestSuite(org.apachechina.firstsite.begin.jinlei.MyMessageFormatTest.class);
+		suite.addTest(org.apachechina.firstsite.begin.jinlei.AllTests.suite());
 		suite.addTest(org.apachechina.firstsite.begin.fanle.AllTests.suite());
 		suite.addTest(org.apachechina.firstsite.begin.renzhuowei.AllTests.suite());
 		suite.addTest(org.apachechina.firstsite.begin.xiaofei.AllTests.suite());
+		suite.addTest(org.apachechina.firstsite.begin.wukexue.AllTests.suite());
+		suite.addTest(org.apachechina.firstsite.begin.gaoxin.AllTests.suite());
 		//$JUnit-END$   
 		return suite;
 	}
