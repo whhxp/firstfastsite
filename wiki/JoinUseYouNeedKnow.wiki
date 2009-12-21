@@ -1,6 +1,6 @@
 #summary 加入我们你必须要知道的一下内容
 = 使用的工具 =
- # Eclipse3.5 galileo
+ # Eclipse3.5 galileo  
  # subEclipse  site-1.6.5.zip
  # gmail、google group、google code
  # ANT 1.7.0
