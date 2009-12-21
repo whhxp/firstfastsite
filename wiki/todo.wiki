@@ -1,7 +1,9 @@
 #summary 需要完成的工作
 = nisen.todo =
 
-#Spring ,Struts 
+ # Spring ,Struts  构建一个框架.
+ # 写一个简单的留言板的例子
+ # 
 
 = 项目组成员 =
 
