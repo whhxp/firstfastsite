@@ -4,7 +4,7 @@ public class MyMessageFormat {
 	public static String format(String pattern,Object[] args)
 	{
 		
-		return "ÎÒÊÇ"+args[0]+",ÄêÁä"+args[1];
+		return "æˆ‘æ˜¯"+args[0]+",å¹´é¾„"+args[1];
 		
 	}
 }
