@@ -1,4 +1,3 @@
-//@charset "UTF-8";
 package org.apachechina.firstsite.begin.wukexue;
 
 import org.apachechina.firstsite.begin.jinlei.MyMessageFormatTest;
@@ -10,7 +9,7 @@ public class AllTests {
 
 	public static Test suite() {
 		TestSuite suite = new TestSuite(
-				"吴科学");
+				"吴科学的测试");
 		//$JUnit-BEGIN$
 		suite.addTestSuite(MyMessageFormatAndOtherTest.class);
 		suite.addTestSuite(MyMessageFormatTest.class);
