@@ -10,13 +10,13 @@
 	</welcome-file-list>
 
 
-	<!-- Spring支持 -->
+	<!-- Spring支持
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/applicationContext-*.xml,classpath*:applicationContext-*.xml,classpath*:applicationContext.xml</param-value>
+		<param-value>/WEB-INF/applicationContext*.xml,classpath*:applicationContext.xml</param-value>
 	</context-param>
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-
+ 	-->
 </web-app>
