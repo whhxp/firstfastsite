@@ -1,2 +1,3 @@
 = 参考=
  * nutz的文档,这个项目的文档写的相当棒，我很喜欢 [http://code.google.com/p/nutz/wiki/preface?tm=6]
+ * GAE的入门教程[http://xuming.net/gae-tutorial]非java语言参考
