@@ -1,0 +1,10 @@
+#summary One-sentence summary of this page.
+
+= 介绍 =
+
+ * 一个基于WebWork的框架
+ * 和Strust1完全不同
+
+
+= 参考 =
+ * 和Spring集成 [http://struts.apache.org/2.x/docs/spring-plugin.html]
