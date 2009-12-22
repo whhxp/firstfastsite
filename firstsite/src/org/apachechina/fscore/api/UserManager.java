@@ -12,7 +12,7 @@ public class UserManager {
 	
 	
 	
-
+	
 	/**
 	 * 得到当前用户
 	 * @return
