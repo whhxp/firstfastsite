@@ -1,0 +1,11 @@
+#summary 所有目录的说明
+
+= Introduction =
+
+ * 主要SVN  https://firstfastsite.googlecode.com/svn 
+ 
+
+= 相关目录 =
+ * trunk/firstsite 实际目录
+ * beginFS 开始加入
+ * example/struts2  strust的目录
