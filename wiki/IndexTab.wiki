@@ -12,4 +12,5 @@
  * [HowWeWork 我们如何工作]
  * [Index 主页]
  * [IndexTab 左边的树]
+ * [Dir 目录说明]
  * [http://code.google.com/p/firstfastsite/w/list 页面列表]
