@@ -8,7 +8,7 @@ public class MyMessageFormatAndOtherTest extends TestCase{
 		String real=org.apachechina.firstsite.begin.jinlei.MyMessageFormat.format("我是{0},年龄{1}", new Object[]{"天啊",24});
 		
 		
-		assertEquals(execept, real);
+		assertEquals(execept, real); 
 	}
 
 	

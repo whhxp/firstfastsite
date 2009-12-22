@@ -13,7 +13,7 @@ public class AllTests {
 		suite.addTestSuite(MyMessageFormatAndOtherTest.class);
 		suite.addTestSuite(MyMessageFormatTest.class);
 		//$JUnit-END$
-		return suite;
+		return suite; 
 	}
 
 }
