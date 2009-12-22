@@ -5,6 +5,10 @@ import java.util.List;
 
 import org.apachechina.fsboard.domain.Board;
 
+/**
+ * 
+ * @author nisen.cn@gmail.com
+ */
 public class BoardManager {
 
 	
