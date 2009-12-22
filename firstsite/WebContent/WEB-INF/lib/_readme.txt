@@ -4,7 +4,12 @@
 
 ==Spring3.0.0.RC3==
  # org.springframework.core-3.0.0.RC3.jar
+ # org.springframework.beans-3.0.0.RC3.jar 处理beans 内容
+ # org.springframework.web-3.0.0.RC3.jar   web支持
  
 ==增加JSTL的支持 ==
  # jstl.jar
  # standard.jar 
+ 
+= 通用的=
+ # commons-logging-1.0.4.jar  日志支持
