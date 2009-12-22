@@ -1,6 +1,6 @@
 package org.apachechina.fsboard.domain;
 
-public class Message {
+public class Board {
 	String id;
 	String title;
 	String context;
@@ -8,6 +8,12 @@ public class Message {
 	
 	
 	
+	public Board(String id, String title, String context, String author) {
+		this.id = id;
+		this.title = title;
+		this.context = context;
+		this.author = author;
+	}
 	public String getId() {
 		return id;
 	}
@@ -31,8 +37,14 @@ public class Message {
 	}
 	public void setAuthor(String author) {
 		this.author = author;
-	} 
+	}
 	
+	@Override
+	public String toString() {
+		return "Board [id=" + id + ", title=" + title + ", author=" + author
+				+ ", context=" + context + "]";
+	} 
+
 	
 	
 	
