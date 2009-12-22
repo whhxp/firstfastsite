@@ -8,7 +8,13 @@
   
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
 <% 
-	request.setAttribute("list",BoardManager.getInstance().getAllList());
+	
+	BeanFactory factory = WebApplicationContextUtils
+	.getRequiredWebApplicationContext(request.getSession()
+			.getServletContext());
+	BoardManager boardManager=(BoardManager)factory.getBean("boardManager");
+	
+	request.setAttribute("list",boardManager.getAllList());
 %>   
  
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

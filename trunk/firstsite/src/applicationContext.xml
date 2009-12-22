@@ -7,7 +7,10 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
 
 	<!-- 通用的配置 -->
-	<bean id="userManager" class="org.apachechina.fscore.UserManager" > </bean>
+	<bean id="userManager" class="org.apachechina.fscore.api.UserManager" > </bean>
 
+	
+	<!--将要被移动到 /board/config目录下的applicationContext.xml文件中 -->
+	<bean id="boardManager" class="org.apachechina.fsboard.manager.BoardManager" > </bean>
 	
 </beans>
