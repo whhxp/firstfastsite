@@ -1,0 +1,31 @@
+package org.apachechina.fsboard.manager;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apachechina.fsboard.domain.Board;
+
+public class BoardManager {
+
+	
+	//单例
+	private static BoardManager instance = null;
+
+	public static synchronized BoardManager getInstance() {
+		if (instance == null)
+			instance = new BoardManager();
+		return instance;
+	}
+
+	public List<Board> getAllList() {
+
+		List<Board> list = new ArrayList<Board>();
+
+		list.add(new Board("1", "澳门回归,举国欢庆", "距报道", "nisen"));
+		list.add(new Board("2", "澳门回归,举国欢庆", "距报道", "nisen"));
+
+		return list;
+
+	}
+
+}
