@@ -5,15 +5,19 @@
 <%@ page import="org.springframework.web.context.support.WebApplicationContextUtils" %>
 <%@ page import="org.springframework.beans.factory.*" %>
 <%@ page import="org.apachechina.fsboard.manager.*" %>
-  
+<%@ page import="org.apachechina.fscore.api.UserManager" %>
+   
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
 <% 
-	
+	/*Spring支持*/
 	BeanFactory factory = WebApplicationContextUtils
 	.getRequiredWebApplicationContext(request.getSession()
 			.getServletContext());
 	BoardManager boardManager=(BoardManager)factory.getBean("boardManager");
-	
+	UserManager userManger=(UserManager)factory.getBean("userManager");
+	 
+	//
+	request.setAttribute("currentUser",userManger.getCurrentUser());
 	request.setAttribute("list",boardManager.getAllList());
 %>   
  
@@ -24,7 +28,7 @@
 <title>模板</title>
 </head>
 <body>
- 
+   <div>${currentUser} </div>
  	<table>
 		<tr><th>序号</th><th>密码</th><th>昵称</th><tr>
 		<c:forEach items="${list}" var="item" varStatus="myIndex">
@@ -37,6 +41,7 @@
 		<tr>
 		</c:forEach>	
 	</table>
+	<input type="button" value="增加"/>
 
 </body>
 </html>
