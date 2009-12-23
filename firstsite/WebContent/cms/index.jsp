@@ -12,7 +12,7 @@
 <title>内容发布系统</title>
 </head>
 <body>
-   <div> </div>
+   <div>目前的版本中先设定单个文件 </div>
 
 </body>
 </html>
