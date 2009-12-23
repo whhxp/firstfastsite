@@ -7,7 +7,7 @@
  # [beginFS] 全部使用UTF-8编码.  紧急&重要 必须完成
  # beginFS 更多的测试,测试需要重构. 紧急&重要,必须完成
  # Spring3.0 [Struts2]
- # Hibernate  [GAE] ? [JPA] 
+ # 熟悉 [GAE] , [JPA] 
  # 找一个这样的例子,来部署一下.
 
 == 需要完成的例子 ==
