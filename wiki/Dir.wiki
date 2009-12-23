@@ -6,6 +6,6 @@
  
 
 = 相关目录 =
- * trunk/firstsite 实际目录
+ * trunk/firstsite webapp
  * beginFS 开始加入
  * example/struts2  strust的目录
