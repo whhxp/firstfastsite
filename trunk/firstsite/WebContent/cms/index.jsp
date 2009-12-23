@@ -12,7 +12,26 @@
 <title>内容发布系统</title>
 </head>
 <body>
-   <div>目前的版本中先设定单个文件 </div>
+   <div>栏目1 </div>
+   
+   
+   
+ 
+		
+	<frameset rows="80,*" frameborder="0"  framespacing="0" scrolling="yes">
+			  <frame src="top.jsp" name="topFrame"   />
+			  <frame src="info.jsp" name="mainFrame" scrolling="yes" />
+	</frameset>
+	<noframes>
+	<body>
+		你的浏览器不支持框架
+    </body>	  
+	</noframes>
+
+   
+   
+   
+   
 
 </body>
 </html>
