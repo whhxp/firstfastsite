@@ -8,9 +8,9 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 
 	<!-- 通用的配置 -->
 	<bean id="userManager" class="org.apachechina.fscore.api.UserManager" > </bean>
-
+	
 	
 	<!--将要被移动到 /board/config目录下的applicationContext.xml文件中 -->
 	<bean id="boardManager" class="org.apachechina.fsboard.manager.BoardManager" > </bean>
-	
+	<bean id="messageManager" class="org.apachechina.fsmessage.manager.MessageManager" > </bean>
 </beans>
