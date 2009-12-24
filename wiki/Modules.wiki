@@ -13,3 +13,13 @@
  # [photo] 相册     王龙飞
  # chatroom 聊天室  （FSCHAT）  高鑫做！
  # msgboard 留言板  nisen 作为一个示例
+
+= 其他模块 =
+ # 全文检索
+ # 投票
+ # wiki
+ # 在线视频  Portal 上传附件.
+ # wap rss支持 抓取数据 
+ # URL映射
+ # CMS静态化
+ # 模板技术
