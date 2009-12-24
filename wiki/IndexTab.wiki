@@ -16,3 +16,4 @@
  * [http://code.google.com/p/firstfastsite/w/list 页面列表]
  * [Source]  
  * [GAE]
+ * [Ajax]
