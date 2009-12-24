@@ -1,5 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.util.*" %>    
+<%@ page import="org.springframework.web.context.support.WebApplicationContextUtils" %>
+<%@ page import="org.springframework.beans.factory.*" %>
+<%@ page import="org.apachechina.fsmessage.manager.*" %>
+<%@ page import="org.apachechina.fscore.api.UserManager" %>
+   
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
+<% 
+	/*Spring支持*/
+	BeanFactory factory = WebApplicationContextUtils
+	.getRequiredWebApplicationContext(request.getSession()
+			.getServletContext());
+	MessageManager messageManager=(MessageManager)factory.getBean("messageManager");
+	UserManager userManger=(UserManager)factory.getBean("userManager");
+	 
+	//
+	request.setAttribute("currentUser",userManger.getCurrentUser());
+	request.setAttribute("list",messageManager.getAllList());
+%>   
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
