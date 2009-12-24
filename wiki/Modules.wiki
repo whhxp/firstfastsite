@@ -1,7 +1,6 @@
 #summary 所有的模块
 
 = 准备开发的模块== 
- # environment(Env) 执行本webapp的环境(包括数据库[derby]、web容器[jetty]) --不作为第一阶段.
 
  # core  核心模块,包含权限管理、用户、用户组的管理.所有的内容都依赖本模块.
  # commons 通用模块  开发过程中可以通用的模块部分。
@@ -14,7 +13,8 @@
  # chatroom 聊天室  （FSCHAT）  高鑫做！
  # msgboard 留言板  nisen 作为一个示例
 
-= 其他模块 =
+= 推后的其他模块 =
+ # 数据字典
  # 全文检索
  # 投票
  # wiki
@@ -23,3 +23,4 @@
  # URL映射
  # CMS静态化
  # 模板技术
+ # environment(Env) 执行本webapp的环境(包括数据库[derby]、web容器[jetty]) --不作为第一阶段.
