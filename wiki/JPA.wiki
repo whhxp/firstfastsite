@@ -8,3 +8,4 @@ Add your content here.
 = 参考 =
  * Sun官方 [http://java.sun.com/javaee/technologies/persistence.jsp]
  * 维基 [http://en.wikipedia.org/wiki/Java_Persistence_API]
+ * gae的jpa [http://code.google.com/intl/zh-CN/appengine/docs/java/datastore/usingjpa.html]
