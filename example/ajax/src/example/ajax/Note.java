@@ -4,24 +4,24 @@ package example.ajax;
 import java.util.Random;
 
 public class Note {
-	String title; //ÌáÃû
-	int upNum; //¶¥
-	int downNum; //²È
+	String title; //æå
+	int upNum; //é¡¶
+	int downNum; //è¸©
 	
-	//µ¥Àı
+	//å•ä¾‹
 	private static Note instance = null;
 
 	public static synchronized Note getInstance() {
 		if (instance == null)
 		{
 			instance = new Note();
-			instance.setTitle("Äã×ÔÁµÃ´");
+			instance.setTitle("ä½ è‡ªæ‹ä¹ˆ");
 		}
 		return instance;
 	}
 	
 	/**
-	 * ¶¥
+	 * é¡¶
 	 * @return 
 	 */
 	public void up()
@@ -65,7 +65,7 @@ public class Note {
 	}
 
 	/**
-	 * Ëæ»úÉú³É²»ÉÙÓÚ20¸öBr
+	 * éšæœºç”Ÿæˆä¸å°‘äº20ä¸ªBr
 	 * @return
 	 */
 	public static String randomBr() {
