@@ -14,7 +14,7 @@
 	
 	* 跨平台支持      ie/firefox ...
 	* 网络中断、请求页发生错误、没有权限
-	* 传递的是字符串.需要自己解析
+	* 传递的是字符串.需要自己解析, XML的原因
 	* 异步调用问题.
 	* 调试JavaScript问题.
 	* 友好的用户界面问题.如点击了
@@ -26,10 +26,14 @@
 	
 	
 	= 解决方案(JavaScript 类库)=
+	= 工具类 =
 	* z系列          http://www.nczonline.net/downloads/
 	* Prototype 推荐使用
-	* DWR
-	* JQuery
+	* JQuery  
+	= 远程调用=
+	* DWR 
+	= 界面 =
+	* GWT
 	* ZK
 	* .....这是现在最火的地方,大家可以关注
 	* JavaScript库的复杂程度可以非常的复杂,有的比Swing还复杂.
