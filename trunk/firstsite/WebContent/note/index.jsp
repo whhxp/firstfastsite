@@ -10,5 +10,28 @@
 <title>日志管理</title>
 </head>
 <body>
-标题:      <input style="height: 19px"/><br />   
-<textarea style="width: 490px; height: 213px"></textarea></body></html>
+
+
+<div class=banner>
+<div class=logo><a title="绝想日记网" href="http://www.juexiang.com/"></a></div>
+<div class=lanbg01>
+<img height="145" alt="绝想日记网 记录心情 分享文章" src="images/logo.jpg" width="235" border="0" /><div class=test>留住已经逝去的峥嵘岁月<br/>记住曾绽现的万种风情<br/>在记忆即将淡漠的时候<br/>来把这些重新回味<br/></div>
+</div>
+<div class=lanbg02></div>
+</div>
+
+<div class=nav>
+<div class=nav01></div>
+<div class=nav02>
+<a href="">首 &nbsp;页</a>
+<a href="">写日记</a>
+<a href="">日记本</a>
+<a href="">浏览</a>
+<a href="">搜索</a>
+<div class=clear></div>
+</div>
+<div class=nav03></div>
+</div>
+
+</body>
+</html>
