@@ -35,7 +35,7 @@ function upFun()
 			//alert(oUp.innerHTML);
 		}
 	}
-	oXmlHttp.send(null);
+	oXmlHttp.send(null); //发送
 
 
 }
