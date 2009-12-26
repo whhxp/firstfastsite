@@ -2,17 +2,14 @@
 = 使用的工具 =
  # Eclipse3.5 galileo  
  # subEclipse  site-1.6.5.zip
- # gmail、google group、google code
+ # gmail、google group、google code的使用.
  # ANT 1.7.0
  # GAE Eclipse http://dl.google.com/eclipse/plugin/3.5
 
-= 要使用的API =
- # JPA
- # Struts2.1.8 Spring3.0rc Hiberate3.3.8
- # GAE  google app engine 
- # JUNIT
- # ...
 = 项目基于SSH,一般选择最新版本 =
- # Hibnate3.3.2ga  [https://www.hibernate.org/]
- # Spring3.0.0.RC3   [http://www.springsource.org/]
- # Struts2.1.8.1   [http://struts.apache.org]
+ # [Hibernate]3.3.2ga  [https://www.hibernate.org/]
+ # [Spring3].0.0.RC3   [http://www.springsource.org/]
+ # [Struts]2.1.8.1   [http://struts.apache.org]
+
+= 其他 =
+ # [GAE] , [JPA] 
