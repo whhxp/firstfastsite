@@ -8,6 +8,10 @@
 <title>相册</title>
 </head>
 <body>
-	<h1>我的相册</h1>	
+<form name="upload_form" method="post" enctype="multipart/form-data"
+	action="Upload.jsp"><input type="file" name="upload" /> <input
+	type="submit" name="upload_button" value="上传" /></form>
+
+
 </body>
 </html>
