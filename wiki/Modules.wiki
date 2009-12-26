@@ -7,7 +7,7 @@
 
  # message  站内信息模块（FSMSG）靳磊做！
  # bbs  论坛        （FSBBS）范乐做！
- # cms   信息发布   （FSCMS）吴科学做!
+ # [cms]   信息发布   （FSCMS）吴科学做!
  # note  日记   （FSBLOG）任卓卫做！
  # [photo] 相册     王龙飞
  # chatroom 聊天室  （FSCHAT）  高鑫做！
