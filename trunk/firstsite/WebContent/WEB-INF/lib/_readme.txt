@@ -27,7 +27,7 @@
  # jstl.jar
  # standard.jar 
  
-= Struts2的支持=
+= Struts2.1.8.1的支持=
  #未添加...
  
 = 通用的=
