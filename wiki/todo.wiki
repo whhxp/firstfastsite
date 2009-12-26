@@ -1,14 +1,9 @@
 #summary 需要完成的工作
-=  =
-
-
-
 
 == 需要完成的例子 ==
- * Struts2的例子
- * Spring3的例子
- * GAE的例子
- * Struts2+Spring3+GAE的例子
+ * 增加[Hibernate]支持
+ * 增加[Struts2] 支持
+ * 增加ANT脚本自动部署
  
 = 项目组成员更详细的 =
 
