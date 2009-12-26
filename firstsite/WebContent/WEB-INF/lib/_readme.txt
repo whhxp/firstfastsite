@@ -2,6 +2,20 @@
 
 == 使用到的Jar==
 
+
+= Mysql=
+ # mysql-connector-java-5.0.4-bin.java
+
+= HIbernate=
+ #antlr-2.7.6.jar
+ #asm-attrs.jar
+ #asm.jar
+ #cglib-2.1.3.jar
+ #commons-collections-2.1.1.jar
+ #dom4j-1.6.1.jar
+ #ehcache-1.2.3.jar
+ #hibernate3.jar
+ #jta.jar
 ==Spring3.0.0.RC3==
  # org.springframework.core-3.0.0.RC3.jar
  # org.springframework.beans-3.0.0.RC3.jar 处理beans 内容
