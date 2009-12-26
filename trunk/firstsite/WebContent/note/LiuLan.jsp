@@ -24,7 +24,8 @@
 <a href="">首 &nbsp;页</a>
 <a href="whiteNote.jsp">写日记</a>
 <a href="NoteBook.jsp">日记本</a>
-<a href="LiuLan.jsp">浏览</a>
+<a href="">浏览</a>
+<a href="">搜索</a>
 </div>
 </div>
 
