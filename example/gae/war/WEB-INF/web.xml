@@ -6,7 +6,7 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	<servlet>
 		<servlet-name>Gae</servlet-name>
-		<servlet-class>org.apachechina.fsexample.gae.GaeServlet</servlet-class>
+		<servlet-class>example.gae.GaeServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Gae</servlet-name>
