@@ -1,8 +1,8 @@
-#summary Hibernate
+#summary 3.3.2ga
 
 = 介绍 =
 
-Add your content here.
+目前项目使用的是 3.3.2ga
 
 
 = Details =
