@@ -9,6 +9,7 @@ Add your content here.
  #  一个基于Java/SWT和VFS客户端 [http://commons-vfs-ui.sourceforge.net/]
  #  主页 [http://commons.apache.org/vfs/index.html]
  #  idea: commons-vfs-webui 一个web的客户端。
+ #  使用gae的上传 [http://code.google.com/p/gaevfs/]
 
 = 文章=
  * 将 GridFTP 与 Jakarta Commons Virtual File System 集成在一起 [http://www.ibm.com/developerworks/cn/grid/gr-jvfsftp/index.html#resources]
