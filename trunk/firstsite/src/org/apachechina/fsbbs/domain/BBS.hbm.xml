@@ -4,7 +4,7 @@
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="org.apachechina.fsbbs" table="fsBBS_BBS">    
+    <class name="org.apachechina.fsbbs.domain.BBS" table="fsBBS_BBS">    
         <id name="id" column="BBS_ID">
             <generator class="native"/>
         </id>        
