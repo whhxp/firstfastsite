@@ -1,21 +1,22 @@
 @charset "UTF-8";
 
-== 使用到的Jar==
+== 使用到的Jar,总共  个==
 
-
-= Mysql=
+=数据库驱动=
+== Mysql==
  # mysql-connector-java-5.0.4-bin.java
 
-= HIbernate=
- #antlr-2.7.6.jar
- #asm-attrs.jar
- #asm.jar
- #cglib-2.1.3.jar
- #commons-collections-2.1.1.jar
- #dom4j-1.6.1.jar
- #ehcache-1.2.3.jar
- #hibernate3.jar
- #jta.jar
+= Hibernate3.3.2ga required=
+= required=
+ # antlr-2.7.6.jar
+ # commons-collections-3.1.jar
+ # dom4j-1.6.1.jar
+ # jta-1.1.jar
+ # slf4j-api-1.5.8.jar
+ # javassist-3.9.0.GA.jar
+= Hibernate自身的文件 =
+ # hibernate3.jar  
+
 ==Spring3.0.0.RC3==
  # org.springframework.core-3.0.0.RC3.jar
  # org.springframework.beans-3.0.0.RC3.jar 处理beans 内容
@@ -28,10 +29,21 @@
  # standard.jar 
  
 = Struts2.1.8.1的支持=
- #未添加...
+== Core ==
+ # xwork-core-2.1.6.jar
+ # ognl-2.7.3.jar
+ # freemarker-2.3.15.jar
+ # struts2-core-2.1.8.1.jar
+== 使用最新的替换 == 
+commons-io-1.3.2.jar  1.4替换 ,commons-fileupload-1.2.1.jar  同样版本
+
+== Spring集成 == 
+ # struts2-spring-plugin-2.1.8.1.jar  
  
 = 通用的=
  # commons-logging-1.0.4.jar  日志支持
  # commons-io-1.4.jar io   add in 2009-12-28 
  # commons-fileupload-1.2.1.jar 文件上传   add in 2009-12-28 
+ # log4j-1.2.11.jar   日志  add in 2009-12-28 
+= 其他 =
  
