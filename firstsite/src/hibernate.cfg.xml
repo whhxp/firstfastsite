@@ -35,5 +35,6 @@
 
 		<property name="format_sql">true</property>
 		<mapping resource="org/apachechina/fsbbs/domain/BBS.hbm.xml" />
+		<mapping resource="org/apachechina/fsnote/sqls/WhiteNote.hbm.xml" />
 	</session-factory>
 </hibernate-configuration>
