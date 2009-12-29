@@ -2,7 +2,7 @@
 
 = 必要的依赖 =
  * [vfs]
- * [Struts]
+ * [Struts2]
 
 
 
