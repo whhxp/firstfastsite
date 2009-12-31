@@ -65,8 +65,10 @@ public class BBS {
 	public void setGuankan(int guankan) {
 		this.guankan = guankan;
 	}
+	@Override
 	public String toString() {
-		return "BBS [id=" + id + ", guankan=" + guankan + ", gut=" + gut
-				+ ", liuyan=" + liuyan + ", title=" + title + "]";
+		return "BBS [date=" + date + ", guankan=" + guankan + ", gut=" + gut
+				+ ", id=" + id + ", liuyan=" + liuyan + ", title=" + title
+				+ "]";
 	}
 }
