@@ -1,7 +1,10 @@
 #summary 一个JavaScript库
 
+= 使用=
+ # 
+
 
 
 
 = 参考 =
- * 官网 
+ * 官网  [http://www.prototypejs.org/]
