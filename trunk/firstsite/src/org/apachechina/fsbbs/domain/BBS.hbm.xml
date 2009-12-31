@@ -11,6 +11,7 @@
         <property name="title" type="string"/>
         <property name="gut" type="string"/>
         <property name="liuyan" type="int"/>
-        <property name="guankan" type="int"/>     
+        <property name="guankan" type="int"/>  
+        <property name="date" type="date"/>   
     </class>
 </hibernate-mapping>
