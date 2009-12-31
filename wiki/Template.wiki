@@ -1,0 +1,12 @@
+#summary FastSite中的模板技术
+
+= 需求 =
+ * 兼容XHTML和HTML,使用XHTML中的属性实现.
+ * 只有两个字段. fstype和fsdata
+ * 具有可视化编辑器。
+
+
+= 如何实现(两个方法目前验证中) =
+  * 考虑使用 Jelly实现[http://commons.apache.org/jelly/]
+  * 自己解释HTML,然后变成 Velocity [http://velocity.apache.org/]
+  * 类似Freemarker有一个自动加载的机制.
