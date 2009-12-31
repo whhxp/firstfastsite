@@ -1,26 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.util.*" %>    
-<%@ page import="org.springframework.web.context.support.WebApplicationContextUtils" %>
-<%@ page import="org.springframework.beans.factory.*" %>
-<%@ page import="org.apachechina.fsboard.manager.*" %>
-<%@ page import="org.apachechina.fscore.api.UserManager" %>
-   
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
-<%-- 
-	/*Spring支持*/
-	BeanFactory factory = WebApplicationContextUtils
-	.getRequiredWebApplicationContext(request.getSession()
-			.getServletContext());
-	BoardManager boardManager=(BoardManager)factory.getBean("boardManager");
-	UserManager userManger=(UserManager)factory.getBean("userManager");
-	 
-	//
-	request.setAttribute("currentUser",userManger.getCurrentUser());
-	request.setAttribute("list",boardManager.getAllList());
---%>   
- 
+<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -42,6 +23,5 @@
 		</c:forEach>	
 	</table>
 	<input type="button" value="增加"/>
-
 </body>
 </html>
