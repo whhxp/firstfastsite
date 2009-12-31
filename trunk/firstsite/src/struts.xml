@@ -10,14 +10,22 @@
     <constant name="struts.enable.DynamicMethodInvocation" value="false" />
     <constant name="struts.devMode" value="false" />
 
-    <include file="struts-default.xml"/>
-
-
+ 	<include file="struts-default.xml"/>
+ 	
+ 	<!-- todo: move to /${moduleName}/config/struts.xml文件中  <include file="struts-chatroom.xml"/> -->
+    
 	
 
     <package name="board"  extends="struts-default">
-        <default-action-ref name="index" />
         <action name="index" class="boardList">
+            <result>index.jsp</result>
+        </action>
+    </package>
+    
+    
+    <!-- todo: move to /${moduleName}/config/struts.xml -->
+     <package name="chatroom"  extends="struts-default">
+        <action name="index" class="ChatIndex">
             <result>index.jsp</result>
         </action>
     </package>
