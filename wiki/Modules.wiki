@@ -20,5 +20,5 @@
  # wap ,rss支持 ,抓取数据 
  # URL映射
  # [GAE], [JPA]
- # CMS静态化 模板技术
+ # CMS静态化 模板技术[template]
  # environment(Env) 执行本webapp的环境(包括数据库[derby]、web容器[jetty]) --不作为第一阶段.
