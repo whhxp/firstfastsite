@@ -17,7 +17,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>信息发送页面</title>
+<title>用户邮箱界面</title>
 </head>
 <body>
 <table width="100%"  height="100%" border="1" >
