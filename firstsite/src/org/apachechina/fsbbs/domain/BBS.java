@@ -1,12 +1,15 @@
 package org.apachechina.fsbbs.domain;
 
+import java.util.Date;
+
 public class BBS {
 
 	private Long id;
-	private String title; //文章的标题
+	private String title; //文章的主题
 	private String gut;//文章的内容
 	private int liuyan;//留言条数
 	private int guankan;//观看次数
+	private Date date;//发表时间
 
 	public BBS() {
 	}
@@ -14,6 +17,14 @@ public class BBS {
 	public BBS(String title, String gut) {
 		this.title = title;
 		this.gut = gut;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
 	}
 
 	public Long getId() {
