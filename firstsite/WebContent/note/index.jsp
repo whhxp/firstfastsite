@@ -13,13 +13,43 @@
 <div style=""><c:import url="top.jsp"></c:import></div>
 
 <div class=banner>
-<div class=lanbg01>
-<img height="145" src="images/logo.jpg" width="235" border="0" /><div class=test>留住已经逝去的峥嵘岁月<br/>记住曾绽现的万种风情<br/>在记忆即将淡漠的时候<br/>来把这些重新回味<br/></div>
+<div class=lanbg01><img height="145" src="images/logo.jpg"
+	width="235" border="0" />
+<div class=test>留住已经逝去的峥嵘岁月<br />
+记住曾绽现的万种风情<br />
+在记忆即将淡漠的时候<br />
+来把这些重新回味<br />
+</div>
 </div>
 </div>
 <div><c:import url="head.jsp"></c:import></div>
-
-
-
+<table width="90%" align="center">
+	<tr>
+		<td width="20%" valign="top">
+		<table width="100%">
+			<tr>
+				<td><c:import url="*" /></td>
+			</tr>
+			<tr>
+				<td>
+				<table bgcolor="white" width="100%" border="1" cellspacing="0"
+					cellpadding="0" bgcolor="#0564a4">
+					<tr>
+						<td align="center"><c:import url="*" />
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr>
+				<td><c:import url="*" /></td>
+			</tr>
+		</table>
+		</td>
+		<td width="75%" valign="top"><c:import url="*" />
+		</td>
+	</tr>
+</table>
+<c:import url="foot.jsp" />
 </body>
 </html>
