@@ -26,4 +26,8 @@ public class ChatUserList {
 		chatUsers.add(user);
 		return chatUsers;
 	}
+	public List<User> getList()
+	{
+		return chatUsers;		
+	}
 }
