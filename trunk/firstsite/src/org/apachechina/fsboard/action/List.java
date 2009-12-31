@@ -1,3 +1,4 @@
+//@charset "UTF-8";
 package org.apachechina.fsboard.action;
 
 import javax.servlet.http.HttpServletRequest;
@@ -15,23 +16,54 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class List extends ActionSupport implements Action{
 
+	
+	//DI
+	BoardManager boardManager;
+	UserManager userManager;
+	
 	public String execute() throws Exception {
 		
 		System.out.println("test here");
 		HttpServletRequest request = ServletActionContext.getRequest();
 		
-		/*Spring支持*/
-		BeanFactory factory = (BeanFactory) WebApplicationContextUtils
-		.getRequiredWebApplicationContext(request.getSession()
-				.getServletContext());
-		BoardManager boardManager=(BoardManager)factory.getBean("boardManager");
-		UserManager userManger=(UserManager)factory.getBean("userManager");
-		 
-		//
-		request.setAttribute("currentUser",userManger.getCurrentUser());
+		
+		
+		request.setAttribute("currentUser",userManager.getCurrentUser());
 		request.setAttribute("list",boardManager.getAllList());
 		
 		return SUCCESS;
 	}
+
+	
+	
+	public BoardManager getBoardManager() {
+		return boardManager;
+	}
+
+	public void setBoardManager(BoardManager boardManager) {
+		this.boardManager = boardManager;
+	}
+
+
+
+	public UserManager getUserManager() {
+		return userManager;
+	}
+
+ 
+
+	public void setUserManager(UserManager userManager) {
+		this.userManager = userManager;
+	}
+
+
+
+
+
+	
+	
+	
+	
+	
 
 }

@@ -5,8 +5,8 @@
 	xsi:schemaLocation="
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
 http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
-
-	<!-- 通用的配置 -->
-	<bean id="userManager" class="org.apachechina.fscore.api.UserManager" > </bean>
 	
+	<!--将要被移动到 /${moduleName}/config目录下的applicationContext.xml文件中 -->
+	<bean id="messageManager" class="org.apachechina.fsmessage.manager.MessageManager" > </bean>
+
 </beans>

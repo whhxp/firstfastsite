@@ -12,7 +12,7 @@ public class SpringEnvOtherTest {
 	public static void main(String[] args) {
 		/*Spring支持*/
 		BeanFactory factory=new ClassPathXmlApplicationContext("applicationContext*.xml");
-		MessageManager messageManager=(MessageManager)factory.getBean("messageManager");
-		System.out.println(messageManager.getAllList());
+		System.out.println(factory.getBean("boardList"));
+
 	}
 }

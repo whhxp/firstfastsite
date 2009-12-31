@@ -1,3 +1,4 @@
+//@charset "UTF-8";
 package org.apachechina.fsboard.domain;
 
 public class Board {

@@ -4,9 +4,9 @@
     "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts> 
-     <!-- spring Create 
+     <!-- 集成Spring-->
      <constant name="struts.objectFactory" value="org.apache.struts2.spring.StrutsSpringObjectFactory" />
--->
+
     <constant name="struts.enable.DynamicMethodInvocation" value="false" />
     <constant name="struts.devMode" value="false" />
 
@@ -17,7 +17,7 @@
 
     <package name="board"  extends="struts-default">
         <default-action-ref name="index" />
-        <action name="index" class="org.apachechina.fsboard.action.List">
+        <action name="index" class="boardList">
             <result>index.jsp</result>
         </action>
     </package>
