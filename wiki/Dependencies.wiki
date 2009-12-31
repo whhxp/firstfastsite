@@ -1,9 +1,9 @@
 #summary 所有依赖
 
 = 必要的依赖 =
- * [vfs]
- * [Struts2]
+ * [Struts2],[Hibernate],[Spring]
  * 前台: |[CKEditor] | [Prototype]
+ * [vfs]
 
 
 
