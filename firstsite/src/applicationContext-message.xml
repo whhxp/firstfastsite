@@ -7,6 +7,7 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
 	
 	<!--将要被移动到 /${moduleName}/config目录下的applicationContext.xml文件中 -->
+	<!--  
 	<bean id="messageManager" class="org.apachechina.fsmessage.manager.MessageManager" > </bean>
-
+	-->
 </beans>
