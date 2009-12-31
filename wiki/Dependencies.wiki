@@ -3,7 +3,7 @@
 = 必要的依赖 =
  * [vfs]
  * [Struts2]
- * [CKEditor]
+ * 前台: |[CKEditor] | [Prototype]
 
 
 
