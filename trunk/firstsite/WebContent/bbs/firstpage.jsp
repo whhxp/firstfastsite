@@ -8,7 +8,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <%
 	List list = Hibernatebbs.getbbs();
-
+    
     request.setAttribute("list",list);
 %>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -21,10 +21,35 @@
 <title>论坛首页</title>
 </head>
 <body>
-   <table>
-           <c:forEach items="${list}" var="bbs">
-           
-           </c:forEach>
+   <br/>
+   <br/>
+   <div align="left" style=>
+     <dir>
+        <li><a href="send.jsp">发表新帖</a></li> 
+        <li><a href="#">查看精华帖</a></li> 
+     </dir>
+    </div>
+   <div align="center">
+   <table border="2" align="center">	
+         <thead>
+               <caption> 论坛</caption>
+			
+			<tr height="10" width="50">
+			  <th>标题</th>
+			  <th>内容</th>
+			  <th>留言条数</th>
+			  <th>浏览次数</th>
+			</tr>
+         </thead> 
+         <c:forEach items="${list}" var="bbs">
+         <tr height="4">
+            <td  align="center" width="100"><a href="#">${bbs.title}</a></td>
+            <td  align="center" width="150"><a href="#">${bbs.gut}</a></td>
+            <td  align="center" width="70">${bbs.liuyan}</td>
+            <td  align="center" width="70">${bbs.guankan}</td>
+         </tr>
+         </c:forEach>
    </table>
+   </div>
 </body>
 </html>
