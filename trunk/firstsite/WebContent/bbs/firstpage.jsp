@@ -35,18 +35,20 @@
                <caption> 论坛</caption>
 			
 			<tr height="10" width="50">
-			  <th>标题</th>
-			  <th>内容</th>
+			  <th>主题</th>
+			  <th>作者</th>
 			  <th>留言条数</th>
 			  <th>浏览次数</th>
+			  <th>发表时间</th>
 			</tr>
          </thead> 
          <c:forEach items="${list}" var="bbs">
          <tr height="4">
             <td  align="center" width="100"><a href="#">${bbs.title}</a></td>
-            <td  align="center" width="150"><a href="#">${bbs.gut}</a></td>
+            <td  align="center" width="70"></td>
             <td  align="center" width="70">${bbs.liuyan}</td>
             <td  align="center" width="70">${bbs.guankan}</td>
+            <td  align="center" width="70">${bbs.date}</td>
          </tr>
          </c:forEach>
    </table>
