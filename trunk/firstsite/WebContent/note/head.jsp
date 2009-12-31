@@ -17,10 +17,10 @@
                      <a href="*">日志</a>
                  </th>
                   <th >
-                     <a href="*">留言板</a>
+                     <a href="*">写日记</a>
                  </th>
                  <th>
-                    <a href="*"> 个人档</a>
+                    <a href="*"> 个信息</a>
                  </th>
               </tr>
             </table>
