@@ -1,8 +1,7 @@
 #summary 一个JavaScript库
 
-= 使用=
- # 使用 Prototype 1.6.0.3
-
+= 使用的版本=
+ #  Prototype 1.6.1  2009-12-31日选择
 
 
 
