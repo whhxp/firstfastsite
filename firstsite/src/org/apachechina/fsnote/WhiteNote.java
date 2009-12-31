@@ -1,4 +1,4 @@
-package org.apachechina.fsnote.sqls;
+package org.apachechina.fsnote;
 
 public class WhiteNote
 {
