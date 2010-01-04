@@ -11,7 +11,7 @@
 			com.mysql.jdbc.Driver
 		</property>
 		<property name="connection.url">
-			jdbc:mysql://localhost:3306/firstfastsite?useUnicode=true&amp;characterEncoding=UTF-8
+			jdbc:mysql://127.0.0.1:3306/firstsite?useUnicode=true&amp;characterEncoding=UTF-8
 		</property>
 		<property name="connection.password">root</property>
 		<property name="connection.username">root</property>
@@ -34,8 +34,19 @@
 		<!-- 显示格式化好的sql语句 -->
 
 		<property name="format_sql">true</property>
+		
+		<!-- board todo:  move to bbs-->
+		<mapping resource="org/apachechina/fsbbs/domain/Board.hbm.xml" />
+		
+		
+		<!-- bbs -->
 		<mapping resource="org/apachechina/fsbbs/domain/BBS.hbm.xml" />
+		
+		
+		<!-- message-->
 		<mapping resource="org/apachechina/fsmessage/domain/MESSAGE.hbm.xml" />
+		
+		<!-- note -->
 		<mapping resource="org/apachechina/fsnote/sqls/WhiteNote.hbm.xml" />
 		
 	</session-factory>
