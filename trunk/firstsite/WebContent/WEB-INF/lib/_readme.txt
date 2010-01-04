@@ -16,6 +16,8 @@
  # javassist-3.9.0.GA.jar
 = Hibernate自身的文件 =
  # hibernate3.jar  
+= Hiberante的log=
+ # slf4j-log4j12-1.5.10.jar
 
 ==Spring3.0.0.RC3==
  # org.springframework.core-3.0.0.RC3.jar
