@@ -2,17 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.*" %>    
-<%@ page import="org.springframework.web.context.support.WebApplicationContextUtils" %>
-<%@ page import="org.springframework.beans.factory.*" %>
 
-<%@ page import="org.apachechina.fscore.api.UserManager" %>
-<%@ page import="org.apachechina.fsmessage.domain.*" %>   
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
-<%
-	List list = Hibernatemessage.getmessage();
-    
-    request.setAttribute("list",list);
-%> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
