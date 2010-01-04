@@ -1,9 +1,9 @@
 #summary 需要完成的工作
 
 == 需要完成的例子 ==
- * 增加[Hibernate]支持
- * 增加[Struts2] 支持
- * 增加ANT脚本自动部署
+ * 增加[Hibernate]支持 | quick
+ * 增加[Struts2] 支持 | OK
+ * 增加ANT脚本自动部署 | Next
  
 = 项目组成员更详细的 =
  * [nisen_todo]
