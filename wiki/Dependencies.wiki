@@ -1,7 +1,7 @@
 #summary 所有依赖
 
 = 必要的依赖 =
- * [Struts2],[Hibernate],[Spring],[aspectj],[aopalliance]
+ * [Struts2],[Hibernate],[Spring],[aspectj],[aopalliance],[cglib]
  * 前台: |[CKEditor] | [Prototype]
  * [vfs]
 
