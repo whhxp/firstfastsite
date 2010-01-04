@@ -6,12 +6,14 @@
    *fstype: 字符串,标签名
    *fsdata: 数据,使用JSON方式.
  * 可以自己扩展标签.
+ * 使用EL表达式
 
 = fstype =
 = 代码 =
  {{{
 
-         <div fstype="" fsdata="">
+         <div fstype="for" fsdata="" >
+         </div>
 
  }}}
 
@@ -23,3 +25,4 @@
 = 优点 =
  * 具有可视化编辑器。
  * 不需要程序员技能。
+==
