@@ -49,7 +49,7 @@ commons-io-1.3.2.jar  1.4替换 ,commons-fileupload-1.2.1.jar  同样版本
  # commons-logging-1.0.4.jar  日志支持
  # commons-io-1.4.jar io   add in 2009-12-28 
  # commons-fileupload-1.2.1.jar 文件上传   add in 2009-12-28 
- # log4j-1.2.11.jar   日志  add in 2009-12-28 
+ # log4j-1.2.15.jar   日志  add in 2010-1-4
  # commons-vfs-1.0.jar 文件系统,虚拟文件系统,可以使用统一的API处理文件
  
 = 其他 =
