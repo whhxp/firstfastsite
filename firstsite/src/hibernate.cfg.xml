@@ -23,9 +23,9 @@
 		<property name="show_sql">true</property>
 		<property name="current_session_context_class">thread</property>
 		 
-		<!--  
-		<property name="hbm2ddl.auto">false</property>
-		-->
+		
+		<property name="hbm2ddl.auto">update</property>
+		
 		
 		
 		<!-- 是否自动提交，这样session不用session.beginTransaction() 然后tx.commit(); -->
