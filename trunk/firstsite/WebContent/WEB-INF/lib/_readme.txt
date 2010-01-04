@@ -38,7 +38,10 @@
 commons-io-1.3.2.jar  1.4替换 ,commons-fileupload-1.2.1.jar  同样版本
 
 == Spring集成 == 
- # struts2-spring-plugin-2.1.8.1.jar  
+ # struts2-spring-plugin-2.1.8.1.jar    来自struts
+ # org.springframework.orm-3.0.0.RC3.jar  来自spring3
+ # org.springframework.jdbc-3.0.0.RC3.jar 
+ # org.springframework.transaction-3.0.0.RC3.jar  事务处理
  
 = 通用的=
  # commons-logging-1.0.4.jar  日志支持
