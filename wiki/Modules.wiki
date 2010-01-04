@@ -16,8 +16,8 @@
 = 模块化的目标 =
  * 用户开发的模块目录
     * src/org.apachechina.fs${moduleName}.*
-    * WebContent /${moduleName}
-    * WebContent /WEB-INF/${moduleName}
+    * 'WebContent'/${moduleName}
+    * WebContent/WEB-INF/${moduleName}
     *
  * 加载任意一个模块的时候不影响其他模块
 
