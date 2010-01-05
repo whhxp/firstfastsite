@@ -3,6 +3,7 @@ package org.apachechina.fsboard.manager;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apachechina.fsboard.dao.BoardDao;
 import org.apachechina.fsboard.domain.Board;
 
 /**
@@ -12,14 +13,8 @@ import org.apachechina.fsboard.domain.Board;
 public class BoardManager {
 
 	
-	//单例
-	private static BoardManager instance = null;
 
-	public static synchronized BoardManager getInstance() {
-		if (instance == null)
-			instance = new BoardManager();
-		return instance;
-	}
+	BoardDao boardDao;
 
 	public List<Board> getAllList() {
 
@@ -31,5 +26,20 @@ public class BoardManager {
 		return list;
 
 	}
+	
+	public Board save(Board board) {
+		boardDao.save(board);
+		return board;
+	}
+
+	public BoardDao getBoardDao() {
+		return boardDao;
+	}
+
+	public void setBoardDao(BoardDao boardDao) {
+		this.boardDao = boardDao;
+	}
+	
+	
 
 }
