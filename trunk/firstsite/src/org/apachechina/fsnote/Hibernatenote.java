@@ -16,7 +16,7 @@ public class Hibernatenote {
 
 		try {
 			session.beginTransaction();
-			Query query = session.createQuery("from WhiteNote");
+			Query query = session.createQuery("from Note");
 
 			list = query.list();
 
