@@ -10,27 +10,27 @@
 <title>用户邮箱界面</title>
 <style type="text/css">
 <!--
-.style1 {
-	color: #FFFFFF;
-	font-weight: bold;
+.style4 {
+	color: #6C92AD;
+	font-style: normal;
+	text-decoration: none;
 }
-.style3 {color: #0099FF}
 -->
 </style>
 </head>
 <body>
-<table width="100%"  height="100%" border="1" bordercolor="#0099FF" >
-  <tr >
-    <td height="107"  colspan="3" bordercolor="#0099FF"><table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#333333">
+<table width="100%"  height="100%" border="2" bordercolor="#6C92AD" >
+  <tr bordercolor="#FFFFFF" >
+    <td height="107"  colspan="3"><table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#333333">
         <tr>
-          <td><table width="100%" border="1" cellpadding="4" cellspacing="1" bordercolor="#0099FF" bgcolor="#A4FFFF">
+          <td class="style4"><table width="100%" border="1" cellpadding="4" cellspacing="1" bordercolor="#6C92AD" bgcolor="#DBE8F2">
               <tr>
-                <td width="22%" align="center"><p class="style3"><a href="../index.html" class="style3">主页</a></p>
+                <td width="22%" align="center"><p><a href="/index.html" class="style4">主页</a></p>
                 </td>
-                <td width="18%" align="center"><a href="../chatroom" class="style3">聊天室</a></td>
-                <td width="20%" align="center"><a href="../photo" class="style3">相册</a></td>
-                <td width="20%" align="center"><a href="../bbs" class="style3">论坛</a></td>
-                <td width="20%" align="center"><a href="../note" class="style3">日志</a></td>
+                <td width="18%" align="center"><a href="./chatroom" class="style4">聊天室</a></td>
+                <td width="20%" align="center"><a href="./photo" class="style4">相册</a></td>
+                <td width="20%" align="center"><a href="./bbs" class="style4">论坛</a></td>
+                <td width="20%" align="center"><a href="./note" class="style4">日志</a></td>
               </tr>
           </table></td>
         </tr>
@@ -38,41 +38,41 @@
     </td>
   </tr>
   <tr>
-    <td width="17%" bordercolor="#0099FF"><table width="100%" border="1" cellpadding="4" cellspacing="0" bordercolor="#0099FF" bgcolor="#A4FFFF">
-      <tr bgcolor="#0FCECE">
-        <td colspan="2"><span class="style1">邮件列表</span></td>
+    <td width="17%" bordercolor="#FFFFFF"><table width="100%" border="1" cellpadding="4" cellspacing="0" bordercolor="#6C92AD" bgcolor="#DBE8F2">
+      <tr bgcolor="#FFFFCC">
+        <td colspan="2" class="style4"><strong>邮件列表</strong></td>
       </tr>
       <tr>
-        <td colspan="2" class="style3">发件</td>
+        <td colspan="2" class="style4">发件</td>
       </tr>
       <tr>
-        <td><span class="style3">&#149;</span></td>
-        <td width="100%"><a href="#" class="style3">写新邮件</a></td>
+        <td class="style4">&#149;</td>
+        <td class="style4"><a href="#" class="style4">写新邮件</a></td>
       </tr>
       <tr>
-        <td><span class="style3">&#149;</span></td>
-        <td><a href="#" class="style3">已发邮件</a></td>
+        <td class="style4">&#149;</td>
+        <td class="style4"><a href="#" class="style4">已发邮件</a></td>
       </tr>
       <tr>
-        <td colspan="2" class="style3">收件</td>
+        <td colspan="2" class="style4" >收件</td>
       </tr>
       <tr>
-        <td><span class="style3">&#149;</span></td>
-        <td><a href="#" class="style3">收件箱</a></td>
+        <td class="style4">&#149;</td>
+        <td class="style4"><a href="#" class="style4">收件箱</a></td>
       </tr>
       <tr>
-        <td><span class="style3">&#149;</span></td>
-        <td><a href="#" class="style3">草稿箱</a></td>
+        <td class="style4">&#149;</td>
+        <td class="style4"><a href="#" class="style4">草稿箱</a></td>
       </tr>
       <tr>
-        <td><span class="style3">&#149;</span></td>
-        <td><a href="#" class="style3">垃圾邮件</a></td>
+        <td height="29" class="style4">&#149;</td>
+        <td class="style4"><a href="#" class="style4">垃圾邮件</a></td>
       </tr>
     </table>
-      <p> 
-      <p>&nbsp;</p>
+      <p class="style4"> 
+      <p class="style4">&nbsp;</p>
     </td>
-    <td width="83%">&nbsp;</td>
+    <td width="83%" bordercolor="#6C92AD#6C92AD"><span class="style4"></span></td>
   </tr>
 </table>
 </body>
