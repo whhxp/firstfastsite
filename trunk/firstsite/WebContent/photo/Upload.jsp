@@ -1,13 +1,11 @@
 <%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
-<%@ page  import="org.apachechina.fsphoto.domain.*" %>
+<%@ page  import="org.apachechina.fsphoto.domain.upload.*" %>
 <%@ page  import="java.io.*" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<%!
-	//定义,使用JSP模拟Web.xml,和Web.xml的表现完全一致
+<%!//定义,使用JSP模拟Web.xml,和Web.xml的表现完全一致
 	//上传到C:\\test\\目录,没有的话会创建这个目录
 	String outDir="C:/test/123";
-	UploadAction action=new UploadAction(new File(outDir));
-%>
+	UploadAction action=new UploadAction(new File(outDir));%>
 
 <%action.process(request,response); //后台处理页%>
 

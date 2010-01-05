@@ -5,10 +5,6 @@
 <div id="bottom" align="right"></div>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" type="text/css" href="./css/button.css"></link>
-<script language="JavaScript">
-	function openWindow() {
-		var popwin = window.open("newPhoto.jsp", "_blank", "menubar=no");
-	}
-</script>
+<form action="newPhoto.jsp" name="regForm" id="regForm" method="post" target="_self">
 <a href="text.html">我的相册</a>
-<input type="button" value="创建相册" class="btn1" onclick=openWindow();/>
+<input type="submit" value="创建相册" class="btn1" /></form>
