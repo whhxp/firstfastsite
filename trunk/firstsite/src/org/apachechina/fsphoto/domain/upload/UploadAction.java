@@ -1,4 +1,4 @@
-package org.apachechina.fsphoto.domain;
+package org.apachechina.fsphoto.domain.upload;
 
 
 import java.io.File;
