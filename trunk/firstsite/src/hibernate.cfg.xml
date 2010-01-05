@@ -35,19 +35,21 @@
 
 		<property name="format_sql">true</property>
 		
-		<!-- board todo:  move to bbs-->
-		<mapping resource="org/apachechina/fsbbs/domain/Board.hbm.xml" />
+		<!-- board todo:move to ${module.dir}-->
+		<mapping resource="org/apachechina/fsboard/domain/Board.hbm.xml" />
 		
 		
-		<!-- bbs -->
+		<!-- bbs 
 		<mapping resource="org/apachechina/fsbbs/domain/BBS.hbm.xml" />
+		-->
 		
-		
-		<!-- message-->
+		<!-- message
 		<mapping resource="org/apachechina/fsmessage/domain/MESSAGE.hbm.xml" />
+		-->
 		
-		<!-- note -->
+		
+		<!-- note 
 		<mapping resource="org/apachechina/fsnote/sqls/WhiteNote.hbm.xml" />
-		
+		-->
 	</session-factory>
 </hibernate-configuration>
