@@ -8,35 +8,71 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>用户邮箱界面</title>
+<style type="text/css">
+<!--
+.style1 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.style3 {color: #0099FF}
+-->
+</style>
 </head>
 <body>
-<table width="100%"  height="100%" border="1" >
+<table width="100%"  height="100%" border="1" bordercolor="#0099FF" >
   <tr >
-    <td height="107"  colspan="3">主页连接等广告区域...
-     </td>
+    <td height="107"  colspan="3" bordercolor="#0099FF"><table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#333333">
+        <tr>
+          <td><table width="100%" border="1" cellpadding="4" cellspacing="1" bordercolor="#0099FF" bgcolor="#A4FFFF">
+              <tr>
+                <td width="22%" align="center"><p class="style3"><a href="/index.html" class="style3">主页</a></p>
+                </td>
+                <td width="18%" align="center"><a href="./chatroom" class="style3">聊天室</a></td>
+                <td width="20%" align="center"><a href="./photo" class="style3">相册</a></td>
+                <td width="20%" align="center"><a href="./bbs" class="style3">论坛</a></td>
+                <td width="20%" align="center"><a href="./note" class="style3">日志</a></td>
+              </tr>
+          </table></td>
+        </tr>
+      </table>
+    </td>
   </tr>
   <tr>
-    <td width="20%">当前用户信息条的题目列表...</td>
-    <td width="69%">
-	<form name="sendpage" method="post" action="messageaction.jsp">
-	<p>发件人&nbsp;&nbsp;</p>
-    <p>收件人&nbsp;&nbsp;<input type="text" height="20"  size="60%" name="to"></p>
-    <p>主&nbsp;&nbsp;题&nbsp;&nbsp;<input type="text" height="20"  size="60%" name="theme"></p>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <textarea  name="messagetext" cols="60%"  rows="20"></textarea>
-    </p>
-    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-      <input type="submit" name="Submit" value="发送">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<INPUT TYPE=button ID=btnEmergency VALUE="出现紧急情况时请按此钮!"
-		onClick="alert('铃……铃……!!!!')">
-
-
-    </p>
-    <p>&nbsp;  </p>
-	</form>
-	</td>
-	<td width="11%">以后要自动生成联系人的区域...</td>
-	
+    <td width="17%" bordercolor="#0099FF"><table width="100%" border="1" cellpadding="4" cellspacing="0" bordercolor="#0099FF" bgcolor="#A4FFFF">
+      <tr bgcolor="#0FCECE">
+        <td colspan="2"><span class="style1">邮件列表</span></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="style3">发件</td>
+      </tr>
+      <tr>
+        <td><span class="style3">&#149;</span></td>
+        <td width="100%"><a href="#" class="style3">写新邮件</a></td>
+      </tr>
+      <tr>
+        <td><span class="style3">&#149;</span></td>
+        <td><a href="#" class="style3">已发邮件</a></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="style3">收件</td>
+      </tr>
+      <tr>
+        <td><span class="style3">&#149;</span></td>
+        <td><a href="#" class="style3">收件箱</a></td>
+      </tr>
+      <tr>
+        <td><span class="style3">&#149;</span></td>
+        <td><a href="#" class="style3">草稿箱</a></td>
+      </tr>
+      <tr>
+        <td><span class="style3">&#149;</span></td>
+        <td><a href="#" class="style3">垃圾邮件</a></td>
+      </tr>
+    </table>
+      <p> 
+      <p>&nbsp;</p>
+    </td>
+    <td width="83%">&nbsp;</td>
   </tr>
 </table>
 </body>
