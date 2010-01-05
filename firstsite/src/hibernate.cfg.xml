@@ -39,9 +39,9 @@
 		<mapping resource="org/apachechina/fsboard/domain/Board.hbm.xml" />
 		
 		
-		<!-- bbs 
+		<!-- bbs -->
 		<mapping resource="org/apachechina/fsbbs/domain/BBS.hbm.xml" />
-		-->
+		
 		
 		<!-- message
 		<mapping resource="org/apachechina/fsmessage/domain/MESSAGE.hbm.xml" />
@@ -51,5 +51,10 @@
 		<!-- note 
 		<mapping resource="org/apachechina/fsnote/sqls/WhiteNote.hbm.xml" />
 		-->
+		
+		<!--photo-->
+		<mapping resource="org/apachechina/fsphoto/domain/Photo.hbm.xml" />
+		
+	
 	</session-factory>
 </hibernate-configuration>
