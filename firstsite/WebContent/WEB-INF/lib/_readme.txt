@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-== 使用到的Jar,总共 26 个==
+== 使用到的Jar,总共 xxx个==
 
 =数据库驱动=
 == Mysql==
@@ -17,7 +17,7 @@
 = Hibernate自身的文件 =
  # hibernate3.jar  
 = Hiberante的log=
- # slf4j-log4j12-1.5.10.jar
+ # slf4j-log4j12-1.5.8.jar   使用Hiberante的*.jar内容
 
 ==Spring3.0.0.RC3==
  # org.springframework.core-3.0.0.RC3.jar
@@ -29,6 +29,12 @@
 ==增加JSTL的支持 ==
  # jstl.jar
  # standard.jar 
+= AOP 支持 =
+ # org.springframework.aop-3.0.0.RC3.jar  增加了AOP支持
+ # aspectjweaver.jar   aspectj1.6.7
+ # aspectjrt.jar      aspectj1.6.7
+ # aopalliance.jar   AOP联盟1.0
+ # cglib-nodep-2.2.jar 动态代理
  
 = Struts2.1.8.1的支持=
 == Core ==
