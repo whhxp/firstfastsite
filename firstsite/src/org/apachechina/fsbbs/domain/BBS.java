@@ -5,18 +5,19 @@ import java.util.Date;
 public class BBS {
 
 	private Long id;
-	private String title; //文章的主题
-	private String gut;//文章的内容
-	private int liuyan;//留言条数
-	private int guankan;//观看次数
-	private Date date;//发表时间
+	private String title; // 文章的主题
+	private String gut;// 文章的内容
+	private int liuyan;// 留言条数
+	private int guankan;// 观看次数
+	private Date date;// 发表时间
 
 	public BBS() {
 	}
 
-	public BBS(String title, String gut) {
+	public BBS(String title, String gut, Date date) {
 		this.title = title;
 		this.gut = gut;
+		this.date = date;
 	}
 
 	public Date getDate() {
@@ -42,6 +43,7 @@ public class BBS {
 	public void setTitle(String title) {
 		this.title = title;
 	}
+
 	public String getGut() {
 		return gut;
 	}
@@ -65,6 +67,7 @@ public class BBS {
 	public void setGuankan(int guankan) {
 		this.guankan = guankan;
 	}
+
 	@Override
 	public String toString() {
 		return "BBS [date=" + date + ", guankan=" + guankan + ", gut=" + gut
