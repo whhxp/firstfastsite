@@ -2,12 +2,15 @@
 package org.apachechina.fschatroom.domain;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+
 import org.apachechina.fscore.domain.User;
 
 /**
  * @author gaoxin2000@gmail.com
- *
+ * 
  */
 public class ChatUserList {
 	//单例
@@ -19,14 +22,14 @@ public class ChatUserList {
 		return instance;
 	}
 	
-	List<User> chatUsers=new ArrayList<User>();
+	Set<User> chatUsers=new HashSet<User>();
 	
-	public List<User> add(User user)
+	public Set<User> add(User user)
 	{
 		chatUsers.add(user);
 		return chatUsers;
 	}
-	public List<User> getList()
+	public Set<User> getList()
 	{
 		return chatUsers;		
 	}

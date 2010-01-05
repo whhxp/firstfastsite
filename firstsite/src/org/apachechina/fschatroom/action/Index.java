@@ -21,17 +21,15 @@ public class Index extends ActionSupport implements Action{
 	
 	public String execute(){
 		ChatUserList instance = ChatUserList.getInstance();
-		
-		System.out.println("add User");
+
 		instance.add(userManager.getCurrentUser());		
 		
-		HttpServletRequest request = ServletActionContext.getRequest();		
+		HttpServletRequest request = ServletActionContext.getRequest();	
 		
+	
 		
-		List<User> list = instance.getList();
-		request.setAttribute("list",list);
+		request.setAttribute("list",instance.getList());
 		
-		System.out.println(list);
 		return SUCCESS;
 	}
 
