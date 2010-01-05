@@ -4,6 +4,7 @@
  * 增加[Hibernate]支持 | quick
  * 增加[Struts2] 支持 | OK
  * 增加ANT脚本自动部署 | Next
+ * 修改Issues的标签
  
 = 项目组成员更详细的 =
  * [nisen_todo]
