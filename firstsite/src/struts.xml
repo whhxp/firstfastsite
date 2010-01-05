@@ -8,8 +8,13 @@
      <constant name="struts.objectFactory" value="org.apache.struts2.spring.StrutsSpringObjectFactory" />
 
     <constant name="struts.enable.DynamicMethodInvocation" value="false" />
-    <constant name="struts.devMode" value="false" />
+    <constant name="struts.devMode" value="true" />
+    
+    <!-- 重新加载配置 -->
+     <constant name="struts.class.reloading.reloadConfig" value="true" />
+    
 
+	
  	<include file="struts-default.xml" /> 	
  	<!-- ${moduleName} add-->
  	<include file="/org/apachechina/fsboard/action/struts.xml"/>

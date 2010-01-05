@@ -6,8 +6,11 @@ public class Board {
 	String title;
 	String context;
 	String author;
+
+	public Board(){
+	}
 	
-	
+
 	public Board(Long id,String title, String context, String author) {
 		this(title,context,author);
 		this.id=id;

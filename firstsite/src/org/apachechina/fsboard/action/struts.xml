@@ -7,7 +7,13 @@
    <package name="board" namespace="/board"  extends="fsbase" >
         <action name="index" class="boardList">
             <result>index.jsp</result>
-        </action>        
+        </action>    
+        <action name="add" class="org.apachechina.fsboard.action.Add">
+            <result>Add.jsp</result>
+        </action>  
+        <action name="addBack" class="boardSave" >
+            <result type="redirectAction">index</result> 
+        </action>      
     </package>
-    
+   
 </struts>
