@@ -19,7 +19,7 @@
 </style>
 </head>
 <body>
-<table width="100%"  height="100%" border="1" bordercolor="#6C92AD" >
+<table width="100%"  height="100%" border="0" bordercolor="#6C92AD" >
   <tr bordercolor="#FFFFFF" >
     <td height="107"  colspan="3"><table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#333333">
         <tr>
@@ -37,8 +37,8 @@
       </table>
     </td>
   </tr>
-  <tr>
-    <td width="17%" bordercolor="#FFFFFF"><table width="100%" border="1" cellpadding="4" cellspacing="0" bordercolor="#6C92AD" bgcolor="#DBE8F2">
+  <tr> 
+    <td width="17%" bordercolor="#6C92AD"><table width="100%" height="100%" border="1" cellpadding="4" cellspacing="0" bordercolor="#6C92AD" bgcolor="#DBE8F2">
       <tr bgcolor="#FFFFFF">
         <td colspan="2" class="style4"><strong>邮件列表</strong></td>
       </tr>
@@ -47,32 +47,34 @@
       </tr>
       <tr>
         <td class="style4">&#149;</td>
-        <td class="style4"><a href="#" class="style4">写新邮件</a></td>
+        <td class="style4"><a href="./sent.jsp" class="style4" target="mainFrame">写新邮件</a></td>
       </tr>
       <tr>
         <td class="style4">&#149;</td>
-        <td class="style4"><a href="#" class="style4">已发邮件</a></td>
+        <td class="style4"><a href="#" class="style4" target="mainFrame">已发邮件</a></td>
       </tr>
       <tr>
         <td colspan="2" class="style4" >收件</td>
       </tr>
       <tr>
         <td class="style4">&#149;</td>
-        <td class="style4"><a href="#" class="style4">收件箱</a></td>
+        <td class="style4"><a href="#" class="style4" target="mainFrame">收件箱</a></td>
       </tr>
       <tr>
         <td class="style4">&#149;</td>
-        <td class="style4"><a href="#" class="style4">草稿箱</a></td>
+        <td class="style4"><a href="#" class="style4" target="mainFrame">草稿箱</a></td>
       </tr>
       <tr>
         <td height="29" class="style4">&#149;</td>
-        <td class="style4"><a href="#" class="style4">垃圾邮件</a></td>
+        <td class="style4"><a href="#" class="style4" target="mainFrame">垃圾邮件</a></td>
       </tr>
+      
     </table>
       <p class="style4"> 
       <p class="style4">&nbsp;</p>
     </td>
-    <td width="83%" bordercolor="#6C92AD#6C92AD"><span class="style4"></span></td>
+    <td width="83%" bordercolor="#FFFFFF"><span class="style4"><iframe src="sent.jsp" name="mainFrame" width="100%" height="100%" scrolling="no"></span>
+    </td>
   </tr>
 </table>
 </body>
