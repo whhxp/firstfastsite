@@ -2,23 +2,26 @@
 package org.apachechina.fsboard.domain;
 
 public class Board {
-	String id;
+	Long id;
 	String title;
 	String context;
 	String author;
 	
 	
+	public Board(Long id,String title, String context, String author) {
+		this(title,context,author);
+		this.id=id;
+	}
 	
-	public Board(String id, String title, String context, String author) {
-		this.id = id;
+	public Board(String title, String context, String author) {
 		this.title = title;
 		this.context = context;
 		this.author = author;
 	}
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getTitle() {
@@ -47,6 +50,14 @@ public class Board {
 	} 
 
 	
+	/**
+	 * 返回例子
+	 * @return
+	 */
+	static public Board getExample(){
+		Board board=new Board("网站不错", "非常的支持", "sensen");
+		return board;	
+	}
 	
 	
 }

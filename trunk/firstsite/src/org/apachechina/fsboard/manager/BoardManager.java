@@ -25,8 +25,8 @@ public class BoardManager {
 
 		List<Board> list = new ArrayList<Board>();
 
-		list.add(new Board("1", "澳门回归,举国欢庆", "距报道", "nisen"));
-		list.add(new Board("2", "澳门回归,举国欢庆", "距报道", "nisen"));
+		list.add(new Board("澳门回归,举国欢庆", "距报道", "nisen"));
+		list.add(new Board("澳门回归,举国欢庆", "距报道", "nisen"));
 
 		return list;
 
