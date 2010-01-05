@@ -6,8 +6,17 @@
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
 http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
 
+	<!-- 数据库相关 -->
+	<bean id="boardDao" class="org.apachechina.fsboard.dao.BoardDao" > 
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+
+
 	<!--将要被移动到 /${moduleName}/config目录下的applicationContext.xml文件中 -->
-	<bean id="boardManager" class="org.apachechina.fsboard.manager.BoardManager" > </bean>
+	<bean id="boardManager" class="org.apachechina.fsboard.manager.BoardManager" > 
+		<property name="boardDao" ref="boardDao"/>
+	</bean>
 		
 		
 	<!-- Action ,可以考虑放在 /${moduleName}/config/applicationContext-actions.xml中 所有id名称为类名 -->	
