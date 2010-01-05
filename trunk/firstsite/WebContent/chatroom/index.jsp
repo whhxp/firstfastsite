@@ -42,7 +42,7 @@ body {
   <tr>
     <td width="558" height="138" valign="top">
     
-    
+    <textarea  cols="90" id="chatroomadmin" name="chatroomadmin" rows="12"></textarea>
     </td>
     <td width="126" rowspan="3" valign="top">		
 
@@ -57,8 +57,8 @@ body {
 	</td>
   </tr>
   <tr>
-    <td height="206" valign="top" id="messages"  >
- 
+    <td height="206" valign="top" >
+ 	<textarea  cols="90" id="messages" name="messages" rows="17"></textarea>
 	</td>
   </tr>
   <tr>
