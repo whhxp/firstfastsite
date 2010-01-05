@@ -1,5 +1,15 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<style type="text/css">
+      <!--背景-->
+      <!--
+       body {
+	        background-image: url(images/back.jpg);
+	        background-repeat:inherit;
+      }
+      -->
+      </style>
 <script type="text/javascript">
            function chkLogout()
            {
@@ -16,7 +26,7 @@
 		<table width="100%">
 			<tr>
 				<td align="right"><c:if test="${user==null}">
-					<a href="*">登录</a>
+					<a href="">登录</a>
 					<a href="*">注册</a>
 				</c:if> 
 				<c:if test="${user!=null}">
