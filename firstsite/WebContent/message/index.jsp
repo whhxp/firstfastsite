@@ -19,18 +19,18 @@
 </style>
 </head>
 <body>
-<table width="100%"  height="100%" border="2" bordercolor="#6C92AD" >
+<table width="100%"  height="100%" border="1" bordercolor="#6C92AD" >
   <tr bordercolor="#FFFFFF" >
     <td height="107"  colspan="3"><table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#333333">
         <tr>
           <td class="style4"><table width="100%" border="1" cellpadding="4" cellspacing="1" bordercolor="#6C92AD" bgcolor="#DBE8F2">
               <tr>
-                <td width="22%" align="center"><p><a href="/index.html" class="style4">主页</a></p>
+                <td width="22%" align="center"><p><a href="../index.html" class="style4">主页</a></p>
                 </td>
-                <td width="18%" align="center"><a href="./chatroom" class="style4">聊天室</a></td>
-                <td width="20%" align="center"><a href="./photo" class="style4">相册</a></td>
-                <td width="20%" align="center"><a href="./bbs" class="style4">论坛</a></td>
-                <td width="20%" align="center"><a href="./note" class="style4">日志</a></td>
+                <td width="18%" align="center"><a href="../chatroom" class="style4">聊天室</a></td>
+                <td width="20%" align="center"><a href="../photo" class="style4">相册</a></td>
+                <td width="20%" align="center"><a href="../bbs" class="style4">论坛</a></td>
+                <td width="20%" align="center"><a href="../note" class="style4">日志</a></td>
               </tr>
           </table></td>
         </tr>
@@ -39,7 +39,7 @@
   </tr>
   <tr>
     <td width="17%" bordercolor="#FFFFFF"><table width="100%" border="1" cellpadding="4" cellspacing="0" bordercolor="#6C92AD" bgcolor="#DBE8F2">
-      <tr bgcolor="#FFFFCC">
+      <tr bgcolor="#FFFFFF">
         <td colspan="2" class="style4"><strong>邮件列表</strong></td>
       </tr>
       <tr>
