@@ -25,12 +25,12 @@
         <tr>
           <td><table width="100%" border="1" cellpadding="4" cellspacing="1" bordercolor="#0099FF" bgcolor="#A4FFFF">
               <tr>
-                <td width="22%" align="center"><p class="style3"><a href="/index.html" class="style3">主页</a></p>
+                <td width="22%" align="center"><p class="style3"><a href="../index.html" class="style3">主页</a></p>
                 </td>
-                <td width="18%" align="center"><a href="./chatroom" class="style3">聊天室</a></td>
-                <td width="20%" align="center"><a href="./photo" class="style3">相册</a></td>
-                <td width="20%" align="center"><a href="./bbs" class="style3">论坛</a></td>
-                <td width="20%" align="center"><a href="./note" class="style3">日志</a></td>
+                <td width="18%" align="center"><a href="../chatroom" class="style3">聊天室</a></td>
+                <td width="20%" align="center"><a href="../photo" class="style3">相册</a></td>
+                <td width="20%" align="center"><a href="../bbs" class="style3">论坛</a></td>
+                <td width="20%" align="center"><a href="../note" class="style3">日志</a></td>
               </tr>
           </table></td>
         </tr>
