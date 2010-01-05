@@ -30,10 +30,12 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
     	</tx:attributes>
     </tx:advice>
     
-	<!-- 配置那些类的方法进行事务管理 -->
+	<!-- 配置那些类的方法进行事务管理 ${moduleName}下的manager包和action包是事务支持的 -->
     <aop:config>
-    	<aop:pointcut id="allManagerMethod" expression="execution (* org.apachechina.*.manager.*.*(..))"/>
+    	<aop:pointcut id="allManagerMethod" expression="execution (* org.apachechina.*.manager.*.*(..))"/> 
+    	<aop:pointcut id="allActionMethod" expression="execution (* org.apachechina.*.action.*.*(..))"/> 
     	<aop:advisor advice-ref="txAdvice" pointcut-ref="allManagerMethod"/>
+    	<aop:advisor advice-ref="txAdvice" pointcut-ref="allActionMethod"/>
     </aop:config>
 	
 	
