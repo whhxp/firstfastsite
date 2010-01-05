@@ -22,6 +22,6 @@
 		<tr>
 		</c:forEach>	
 	</table>
-	<input type="button" value="增加"/>
+	<a href="add.action">增加</a>
 </body>
 </html>

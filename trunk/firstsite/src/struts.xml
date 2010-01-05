@@ -10,26 +10,16 @@
     <constant name="struts.enable.DynamicMethodInvocation" value="false" />
     <constant name="struts.devMode" value="false" />
 
- 	<include file="struts-default.xml"/>
- 	
- 	<!-- todo: move to /${moduleName}/config/struts.xml文件中  <include file="struts-chatroom.xml"/> -->
+ 	<include file="struts-default.xml" /> 	
+ 	<!-- ${moduleName} add-->
+ 	<include file="/org/apachechina/fsboard/action/struts.xml"/>
     
-	
+    <!-- chatroom add-->
+ 	<include file="/org/apachechina/fschatroom/action/struts.xml"/>
 
-    <package name="board"  extends="struts-default">
-        <action name="index" class="boardList">
-            <result>index.jsp</result>
-        </action>
+    <!-- 所有package的内容都从 fsbase包中继承 -->
+	<package name="fsbase" extends="struts-default">
     </package>
-    
-    
-    <!-- todo: move to /${moduleName}/config/struts.xml -->
-     <package name="chatroom"  extends="struts-default">
-        <action name="index" class="ChatIndex">
-            <result>index.jsp</result>
-        </action>
-    </package>
-
-    <!-- Add packages here -->
+ 
 
 </struts>

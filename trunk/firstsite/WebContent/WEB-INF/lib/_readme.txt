@@ -44,6 +44,8 @@
  # struts2-core-2.1.8.1.jar
 == 使用最新的替换 == 
 commons-io-1.3.2.jar  1.4替换 ,commons-fileupload-1.2.1.jar  同样版本
+= 插件=
+ # struts2-config-browser-plugin-2.1.8.1.jar  struts2配置
 
 == Spring集成 == 
  # struts2-spring-plugin-2.1.8.1.jar    来自struts
