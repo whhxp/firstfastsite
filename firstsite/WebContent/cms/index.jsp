@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form name="form1" method="post" action="DengLuMi.jsp">
+<form name="form1" method="post" action="index2.jsp">
 <table width="490" height="309" border="0" cellpadding="2" cellspacing="2" align="center">
   <tr>
     <td height="87"><div align="center" class="style1">JEECMS后台管理系统</div></td>
