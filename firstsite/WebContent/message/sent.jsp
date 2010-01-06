@@ -17,6 +17,6 @@ body {
 
 <body>
  <p>本页面正在建设中，点击下面连接可到邮件显示页面</p>
- <p><a href="./message.jsp">信息显示页面</a> <a href="./index.jsp">返回首页</a></p>
+ <p><a href="./message.jsp">信息显示页面</a> <a href="./new.jsp">返回首页</a></p>
 </body>
 </html>
