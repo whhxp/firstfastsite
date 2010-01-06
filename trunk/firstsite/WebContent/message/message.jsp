@@ -18,6 +18,10 @@ body {
 </style></head>
 <body>
 <table width="100%"  border="1" cellspacing="0">
+		<tr>
+        <td width="10%">日期：</td>
+        <td width="90%">&nbsp;</td>
+      </tr>
       <tr>
         <td width="10%">收件人：</td>
         <td width="90%">&nbsp;</td>
