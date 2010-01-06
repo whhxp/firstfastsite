@@ -15,9 +15,9 @@
 <body>
 <div  align='center'>
 <br/><br/><br/>
-您的消息已经发送成功!
+功能正在制作中...
 <br/>
-<a href="index.jsp">返回主页</a>
+<a href="./new.jsp">返回主页</a>
 </div>
 </body>
 </html>
