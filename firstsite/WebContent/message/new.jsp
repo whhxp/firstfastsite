@@ -35,7 +35,7 @@ body {
     <tr>
       <td>&nbsp;</td>
       <td><input type="submit" name="Submit" value="提交">
-      <input name="savecg" type="button" id="savecg" value="保存草稿">
+      <input name="save" type="button" id="save" value="保存草稿">
       <input name="back" type="button" id="back" value="返回"></td>
     </tr>
   </table>
