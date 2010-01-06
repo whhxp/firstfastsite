@@ -27,6 +27,15 @@
 <title>内容发布系统</title>
 
 
+<table width="965" height="550" border="1" cellpadding="2" cellspacing="2">
+  <tr>
+    <td height="103" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="179">&nbsp;</td>
+    <td width="535">&nbsp;</td>
+  </tr>
+</table>
 
 	<frameset rows="140,*" cols="*" frameborder="1"  framespacing="1" scrolling="yes" border="0">
 	           <!-- 水平分割                                 是否显示框架边框            框架宽度                 -->
@@ -37,6 +46,8 @@
 			  <frame src="info.jsp" name="mainFrame1" scrolling="yes" />
 		</frameset>
 	</frameset>
+	
+	
 	
 	<noframes>
 	<body>
