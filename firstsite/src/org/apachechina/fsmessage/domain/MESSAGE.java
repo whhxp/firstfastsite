@@ -13,11 +13,12 @@ public class MESSAGE {
 	private String style;//类型
 	private String title;//标题
 	private String associate;//关联的人
+	private String date;//日期
 
 	public MESSAGE() {
 
 	}
-	public MESSAGE(String message,String style,String title,String associate) 
+	public MESSAGE(String message,String style,String title,String associate,String date) 
 	{
 		this.message=message;
 		this.style=style;
@@ -93,6 +94,12 @@ public class MESSAGE {
 
 	public String toString() {
 		return "BBS [id=" + id + ", message=" +message + ", style=" + style
-				+ ", title=" + title+ ", associate=" + associate + "]";
+				+ ", title=" + title+ ", associate=" + associate +",date="+date+ "]";
+	}
+	public String getDate() {
+		return date;
+	}
+	public void setDate(String date) {
+		this.date = date;
 	}
 }

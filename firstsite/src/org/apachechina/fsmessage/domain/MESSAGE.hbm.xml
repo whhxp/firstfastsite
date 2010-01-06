@@ -12,5 +12,6 @@
         <property name="style" type="string"/>
         <property name="title" type="string"/>   
         <property name="associate" type="string"/>  
+        <property name="date" type="string"/> 
     </class>
 </hibernate-mapping>
