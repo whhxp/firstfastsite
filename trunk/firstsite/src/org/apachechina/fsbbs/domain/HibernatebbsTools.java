@@ -9,6 +9,7 @@ import org.hibernate.classic.Session;
 
 public class HibernatebbsTools {
 
+	// 查询出所有的内容
 	public static List getbbs() {
 		List list = new Vector();
 
@@ -33,6 +34,7 @@ public class HibernatebbsTools {
 		return list;
 	}
 
+	// 在数据库插入一个BBS
 	public static void addbbs(BBS bbs) {
 		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
 		try {
@@ -49,5 +51,26 @@ public class HibernatebbsTools {
 				session.close();
 			}
 		}
+	}
+
+	// 得到数据库一条内容
+	public static BBS getOne(long id) {
+		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+		BBS bbs = null;
+		try {
+			session.beginTransaction();
+			bbs = (BBS) session.get(BBS.class, id);
+
+			session.getTransaction().commit();
+		} catch (Throwable e) {
+			e.printStackTrace();
+			session.getTransaction().rollback();
+
+		} finally {
+			if (session.isOpen()) {
+				session.close();
+			}
+		}
+		return bbs;
 	}
 }
