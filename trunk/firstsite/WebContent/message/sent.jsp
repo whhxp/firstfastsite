@@ -2,13 +2,11 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.*" %>    
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>无标题文档</title>
+<title>已发送的邮件信息</title>
 <style type="text/css">
 <!--
 body {
@@ -18,29 +16,7 @@ body {
 </style></head>
 
 <body>
-<form name="form1" method="post" action="">
-  <table width="100%"  border="0">
-    <tr>
-      <td width="10%">收件人:</td>
-      <td width="90%"><input name="textfield" type="text" size="60%"></td>
-    </tr>
-    <tr>
-      <td>主题：</td>
-      <td><input name="textfield" type="text" size="60%"></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><textarea name="textarea" cols="60%" rows="10"></textarea></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><input type="submit" name="Submit" value="提交">
-      <input name="savecg" type="button" id="savecg" value="保存草稿">
-      <input name="back" type="button" id="back" value="返回"></td>
-    </tr>
-  </table>
-</form>
-<p>&nbsp;</p>
-<p>&nbsp; </p>
+ <p>本页面正在建设中，点击下面连接可到邮件显示页面</p>
+ <p><a href="./message.jsp">信息显示页面</a> <a href="./index.jsp">返回首页</a></p>
 </body>
 </html>
