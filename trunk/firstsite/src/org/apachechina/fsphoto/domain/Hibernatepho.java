@@ -15,7 +15,7 @@ public class Hibernatepho {
 
 		try {
 			session.beginTransaction();
-			Query query = session.createQuery("from Pho_sql");
+			Query query = session.createQuery("from Pho");
 
 			list = query.list();
 
