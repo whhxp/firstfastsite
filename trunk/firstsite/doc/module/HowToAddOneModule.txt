@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+#summary 如何添加一个模块
+
+= 步骤 =
+ # 
+ 
+ 
+= 结果 =
+ # src/org/apachechina/fs${moduleName}/
+   # domain 领域对象
+   	 # Main类
+   # dao 操作数据库
+   # manager 放管理
+   # action 放页面
+     # struts.xml
+     # add to  	
+     {{{ 
+       <!-- ${moduleName} add-->
+ 		<include file="/org/apachechina/fs${moduleName}/action/struts.xml"/>
+ 	 }}}
+ # Spring 配置  applicationContext-${moduleName}.xml 
+ # Hibernate    add to hibernate.cfg.xml
+ 	{{{
+ 	<!-- ${modulename}	--> 
+	<mapping resource="org/apachechina/fs${modulename}/domain/Mapping.hbm.xml" />
+
+ 	}}}
+ # WebContent/cms/  放页面
+ # WebContent/WEB-INF/cms/ 放一些配置和数据
