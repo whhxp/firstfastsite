@@ -4,9 +4,13 @@
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="org.apachechina.fs${moduleName}.domain.*" table="fs${moduleName}_X">    
+	
+    <class name="org.apachechina.fsboard.domain.Board" table="fsBoard_Board">    
         <id name="id" column="id" type="long" >
             <generator class="native" />
         </id>        
-     </class>
+        <property name="title" type="string" length="90" />
+        <property name="context" type="string" length="3000" />
+        <property name="author" type="string" length="200" />   
+    </class>
 </hibernate-mapping>

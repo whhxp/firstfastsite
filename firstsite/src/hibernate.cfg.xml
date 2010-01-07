@@ -35,7 +35,7 @@
 		
 		
 		<!-- board -->
-		<mapping resource="org/apachechina/fsboard/domain/Board.hbm.xml" />
+		<mapping resource="org/apachechina/fsboard/config/Mapping.hbm.xml" />
 		
 		
 		<!-- bbs

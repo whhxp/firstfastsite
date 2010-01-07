@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts> 
+ 	<!-- todo: move to /${moduleName}/config/struts.xml文件中 -->
+   <package name="board" namespace="/board"  extends="fsbase" >
+        <action name="index" class="boardList">
+            <result>index.jsp</result>
+        </action>    
+        <action name="add" class="org.apachechina.fsboard.action.Add">
+            <result>Add.jsp</result>
+        </action>  
+        <action name="addBack" class="boardSave" >
+            <result type="redirectAction">index</result> 
+        </action>      
+    </package>
+   
+</struts>

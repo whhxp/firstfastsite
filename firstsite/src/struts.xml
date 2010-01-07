@@ -21,19 +21,11 @@
  	<include file="struts-default.xml" /> 
  	
  		
- 	<!-- board-->
- 	<include file="/org/apachechina/fsboard/action/struts.xml"/>
-    
-    <!-- chatroom -->
- 	<include file="/org/apachechina/fschatroom/action/struts.xml"/>
- 	
- 	<!-- cms -->
- 	<include file="/org/apachechina/fscms/action/struts.xml"/>
 	
- 	
- 	<!-- ${moduleName} 
- 	<include file="/org/apachechina/fs${moduleName}/action/struts.xml"/>
-	-->
+ 	<include file="/org/apachechina/fsboard/action/struts.xml"/>
+ 	<include file="/org/apachechina/fschatroom/action/struts.xml"/>
+ 	<include file="/org/apachechina/fscms/action/struts.xml"/>
+
  
 
 </struts>
