@@ -4,7 +4,7 @@
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="org.apachechina.fsmessge.domain.MESSAGE" table="fsMESSAGE_MESSAGE">    
+    <class name="org.apachechina.fsmessage.domain.Message" table="fsMESSAGE_MESSAGE">    
         <id name="id" column="MESSAGE_ID">
             <generator class="native"/>
         </id>        
@@ -14,7 +14,8 @@
         <property name="associate" type="string"/>  
         <property name="date" type="string"/> 
     </class>
-    <class name="org.apachechina.fsmessge.domain.MESSAGE" table="fsMESSAGE_USERMESSAGE">    
+
+    <class name="org.apachechina.fsmessage.domain.UserMessage" table="fsMESSAGE_USERMESSAGE">    
         <id name="id" column="USERMESSAGE_ID">
             <generator class="native"/>
         </id>        
@@ -23,4 +24,5 @@
         <property name="sumnum" type="int"/>   
         <property name="savenum" type="int"/>  
     </class>
+ 
 </hibernate-mapping>
