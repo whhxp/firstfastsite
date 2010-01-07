@@ -43,9 +43,9 @@
 		<mapping resource="org/apachechina/fsbbs/domain/BBS.hbm.xml" />
 		
 		
-		<!-- message
+		<!-- message-->
 		<mapping resource="org/apachechina/fsmessage/domain/MESSAGE.hbm.xml" />
-		-->
+		
 		
 		
 		<!-- note 
