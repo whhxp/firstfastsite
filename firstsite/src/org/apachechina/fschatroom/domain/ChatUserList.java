@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.Vector;
 
 import org.apachechina.fscore.domain.User;
 
@@ -23,7 +24,7 @@ public class ChatUserList {
 	}
 	
 	Set<User> chatUsers=new HashSet<User>();
-	
+
 	public Set<User> add(User user)
 	{
 		chatUsers.add(user);
