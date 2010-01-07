@@ -9,14 +9,15 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 	<!--todo: 将要被移动到 /${moduleName}/ 中 -->
 	
 	<!-- dao -->
-
-	
-
-	<!-- manager -->
-
+	<bean id="articleDao" class="org.apachechina.fscms.dao.ArticleDao" > 
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
 		
 		
 	<!-- action-->	
+	<bean id="ArticleList" class="org.apachechina.fscms.action.ArticleList" scope="prototype" >
+		<property name="articleDao" ref="articleDao" />
+	</bean>
 
 
 

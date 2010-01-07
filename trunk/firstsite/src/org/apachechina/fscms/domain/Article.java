@@ -5,6 +5,7 @@ public class Article {
 	long id;
 	String title;
 	
+	public Article(){}
 	
 	public Article(String title) {
 		super();

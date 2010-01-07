@@ -5,7 +5,9 @@
 <struts> 
  	<!-- todo: move to /${moduleName}/config/struts.xml文件中 -->
    <package name="cms" namespace="/cms"  extends="fsbase" >
-   		
+   		 <action name="index" class="ArticleList">
+            <result>index.jsp</result>
+        </action>     		
    </package>
    
 </struts>
