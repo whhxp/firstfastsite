@@ -1,16 +1,16 @@
 package org.apachechina.fsmessage.domain;
 
-public class USERMESSAGE {
+public class UserMessage {
 	private Long id;
 	private int newnum;//新信息总数
 	private int oldnum;//旧信息总数
 	private int sumnum;//所有信息总数
 	private int savenum;//草稿箱信息总数
-	public USERMESSAGE()
+	public UserMessage()
 	{
 		
 	}
-	public USERMESSAGE(int newnum,int oldnum,int sumnum,int savenum)
+	public UserMessage(int newnum,int oldnum,int sumnum,int savenum)
 	{
 		this.newnum=newnum;
 		this.oldnum=oldnum;
@@ -19,7 +19,7 @@ public class USERMESSAGE {
 	}
 	public String toString()
 	{
-		return "USERMESSAGE [id=" + id + ", newnum=" +newnum + ", oldnum=" + oldnum
+		return "UserMessage [id=" + id + ", newnum=" +newnum + ", oldnum=" + oldnum
 		+", sumnum="+sumnum+", savenum="+savenum+"]";
 	}
 	public Long getId() {
