@@ -22,9 +22,9 @@
  	
  		
 	
- 	<include file="/org/apachechina/fsboard/action/struts.xml"/>
- 	<include file="/org/apachechina/fschatroom/action/struts.xml"/>
- 	<include file="/org/apachechina/fscms/action/struts.xml"/>
+ 	<include file="/org/apachechina/fsboard/config/struts.xml"/>
+ 	<include file="/org/apachechina/fschatroom/config/struts.xml"/>
+ 	<include file="/org/apachechina/fscms/config/struts.xml"/>
 
  
 
