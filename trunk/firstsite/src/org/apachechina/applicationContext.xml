@@ -8,7 +8,11 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
 http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
 
-
+	<import resource="org/apachechina/fsbbs/config/applicationContext.xml" />
+	<import resource="org/apachechina/fsboard/config/applicationContext.xml" />
+	<import resource="org/apachechina/fschatroom/config/applicationContext.xml" />
+	<import resource="org/apachechina/fscms/config/applicationContext.xml" />
+	
 	<!-- 配置sessionFactory -->
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
 		<property name="configLocation">
