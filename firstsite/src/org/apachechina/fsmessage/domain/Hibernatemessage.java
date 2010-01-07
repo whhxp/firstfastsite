@@ -4,7 +4,8 @@ import java.util.List;
 import java.util.Vector;
 import org.hibernate.Query;
 import org.apache.log4j.spi.ThrowableInformation;
-import org.apachechina.fsbbs.domain.htool.HibernateUtil;
+import org.apachechina.fscore.api.HibernateUtil;
+
 import org.hibernate.classic.Session;
 
 public class Hibernatemessage {
