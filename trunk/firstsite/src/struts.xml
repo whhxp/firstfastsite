@@ -14,17 +14,26 @@
      <constant name="struts.class.reloading.reloadConfig" value="true" />
     
 
-	
- 	<include file="struts-default.xml" /> 	
- 	<!-- ${moduleName} add-->
- 	<include file="/org/apachechina/fsboard/action/struts.xml"/>
-    
-    <!-- chatroom add-->
- 	<include file="/org/apachechina/fschatroom/action/struts.xml"/>
-
     <!-- 所有package的内容都从 fsbase包中继承 -->
 	<package name="fsbase" extends="struts-default">
     </package>
+	
+ 	<include file="struts-default.xml" /> 
+ 	
+ 		
+ 	<!-- board-->
+ 	<include file="/org/apachechina/fsboard/action/struts.xml"/>
+    
+    <!-- chatroom -->
+ 	<include file="/org/apachechina/fschatroom/action/struts.xml"/>
+ 	
+ 	<!-- cms -->
+ 	<include file="/org/apachechina/fscms/action/struts.xml"/>
+	
+ 	
+ 	<!-- ${moduleName} 
+ 	<include file="/org/apachechina/fs${moduleName}/action/struts.xml"/>
+	-->
  
 
 </struts>
