@@ -5,7 +5,7 @@
 
 <hibernate-configuration>
 	<session-factory>
-	
+	 
 		<!--  数据库连接-->
 		<property name="connection.driver_class">
 			com.mysql.jdbc.Driver
@@ -23,37 +23,44 @@
 		<property name="show_sql">true</property>
 		<property name="current_session_context_class">thread</property>
 		 
-		
-		<property name="hbm2ddl.auto">update</property>
-		
+		<!-- 使用自动建表方式 -->
+		<property name="hbm2ddl.auto">update</property>		
 		
 		
 		<!-- 是否自动提交，这样session不用session.beginTransaction() 然后tx.commit(); -->
 		<property name="connection.autocommit">false</property>
 		
 		<!-- 显示格式化好的sql语句 -->
-
 		<property name="format_sql">true</property>
 		
-		<!-- board todo:move to ${module.dir}-->
+		
+		<!-- board -->
 		<mapping resource="org/apachechina/fsboard/domain/Board.hbm.xml" />
 		
 		
-		<!-- bbs -->
+		<!-- bbs
 		<mapping resource="org/apachechina/fsbbs/domain/BBS.hbm.xml" />
+		 -->
 		
-		
-		<!-- message-->
+		<!-- message
 		<mapping resource="org/apachechina/fsmessage/domain/MESSAGE.hbm.xml" />
-		
+		-->
 		
 		
 		<!-- note 
 		<mapping resource="org/apachechina/fsnote/sqls/WhiteNote.hbm.xml" />
 		-->
 		
-		<!--photo-->
+		<!--photo
 		<mapping resource="org/apachechina/fsphoto/domain/Photo.hbm.xml" />
+		-->
+		<!-- cms -->
+		<mapping resource="org/apachechina/fscms/domain/Article.hbm.xml" />
+
+		
+		<!-- ${modulename}
+		<mapping resource="org/apachechina/fs${modulename}/domain/Mapping.hbm.xml" />
+		-->
 		
 	
 	</session-factory>
