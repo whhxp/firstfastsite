@@ -32,4 +32,27 @@ public class Hibernatemessage {
 		}
 		return list;
 	}
+	public static List getusermessage() {
+		List list = new Vector();
+
+		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+
+		try {
+			session.beginTransaction();
+			Query query = session.createQuery("from USERMESSAGE");
+
+			list = query.list();
+
+			session.getTransaction().commit();
+		} catch (Throwable e) {
+			e.printStackTrace();
+			session.getTransaction().rollback();
+
+		} finally {
+			if (session.isOpen()) {
+				session.close();
+			}
+		}
+		return list;
+	}
 }
