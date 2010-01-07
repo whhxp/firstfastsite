@@ -16,8 +16,22 @@
 <title>${bbs.title}</title>
 </head>
 <body>
-   <table>
-      
-   </table>
+<dir>
+	<li><a href="send.jsp">发表新帖</a></li>
+	<li><a href="#">查看精华帖</a></li>
+</dir>
+<table width="766" border="1">
+	<caption align="left">&nbsp;</caption>
+	<tr>
+		<td height="39" colspan="2">${bbs.title}</td>
+	</tr>
+	<tr>
+		<td width="92" rowspan="2">&nbsp;</td>
+		<td width="658" height="57">楼主： ${bbs.date}</td>
+	</tr>
+	<tr>
+		<td height="154">${bbs.gut}</td>
+	</tr>
+</table>
 </body>
 </html>
