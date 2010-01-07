@@ -93,7 +93,7 @@ public class MESSAGE {
 
 
 	public String toString() {
-		return "BBS [id=" + id + ", message=" +message + ", style=" + style
+		return "MESSAGE [id=" + id + ", message=" +message + ", style=" + style
 				+ ", title=" + title+ ", associate=" + associate +",date="+date+ "]";
 	}
 	public String getDate() {

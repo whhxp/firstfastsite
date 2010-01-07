@@ -14,4 +14,13 @@
         <property name="associate" type="string"/>  
         <property name="date" type="string"/> 
     </class>
+    <class name="org.apachechina.fsmessge.domain.MESSAGE" table="fsMESSAGE_USERMESSAGE">    
+        <id name="id" column="USERMESSAGE_ID">
+            <generator class="native"/>
+        </id>        
+        <property name="newnum" type="int"/>
+        <property name="oldnum" type="int"/>
+        <property name="sumnum" type="int"/>   
+        <property name="savenum" type="int"/>  
+    </class>
 </hibernate-mapping>
