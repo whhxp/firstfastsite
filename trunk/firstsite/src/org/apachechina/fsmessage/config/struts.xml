@@ -5,15 +5,9 @@
 <struts> 
  	<!-- todo: move to /${moduleName}/config/struts.xml文件中 -->
    <package name="message" namespace="/message"  extends="fsmessage" >
-        <action name="index" class="org.apachechina.fsmessage.action.List">
-            <result>index.jsp</result>
-        </action>    
-        <action name="add" class="org.apachechina.fsmessage.action.Add">
-            <result>Add.jsp</result>
-        </action>  
-        <action name="addBack" class="org.apachechina.fsmessage.action.Save" >
-            <result type="redirectAction">index</result> 
-        </action>      
+            
+       <default-action-ref name="index.jsp"></default-action-ref> 
+          
     </package>
    
 </struts>
