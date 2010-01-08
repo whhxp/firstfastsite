@@ -33,34 +33,13 @@
 		<!-- 显示格式化好的sql语句 -->
 		<property name="format_sql">true</property>
 		
-		
-		<!-- board -->
-		<mapping resource="org/apachechina/fsboard/config/Mapping.hbm.xml" />
-		
-		
-		<!-- bbs
-		<mapping resource="org/apachechina/fsbbs/domain/BBS.hbm.xml" />
-		 -->
-		
-		<!-- message
-		<mapping resource="org/apachechina/fsmessage/domain/MESSAGE.hbm.xml" />
-		-->
+	
+	
+		<mapping resource="org/apachechina/fsmessage/config/MESSAGE.hbm.xml" />
+	
 		
 		
-		<!-- note 
-		<mapping resource="org/apachechina/fsnote/sqls/WhiteNote.hbm.xml" />
-		-->
 		
-		<!--photo
-		<mapping resource="org/apachechina/fsphoto/domain/Photo.hbm.xml" />
-		-->
-		<!-- cms -->
-		<mapping resource="org/apachechina/fscms/domain/Article.hbm.xml" />
-
-		
-		<!-- ${modulename}
-		<mapping resource="org/apachechina/fs${modulename}/domain/Mapping.hbm.xml" />
-		-->
 		
 	
 	</session-factory>
