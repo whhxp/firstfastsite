@@ -3,6 +3,9 @@ package org.apachechina.fsbbs.domain.htool;
 import org.hibernate.*;
 import org.hibernate.cfg.*;
 
+/**
+ * @deprecated 
+ */
 public class HibernateUtil {
 
     private static final SessionFactory sessionFactory;

@@ -4,11 +4,22 @@
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<!--
-    <class name="org.apachechina.fs${moduleName}.domain.*" table="fs${moduleName}_X">    
-        <id name="id" column="id" type="long" >
-            <generator class="native" />
-        </id>        
-     </class>
-       -->
+	<class name="org.apachechina.fsbbs.domain.BBS" table="fsBBS_BBS">
+		<id name="id" column="BBS_ID">
+			<generator class="native" />
+		</id>
+		<property name="title" type="string" />
+		<property name="gut" type="string" />
+		<property name="liuyan" type="int" />
+		<property name="guankan" type="int" />
+		<property name="date" type="date" />
+	</class>
+	<class name="org.apachechina.fsbbs.domain.Word" table="fsWord_Word">
+		<id name="id" column="Word_ID">
+			<generator class="native" />
+		</id>
+		<property name="zuozhe" type="string" />
+		<property name="gut" type="string" />
+		<property name="liuyanid" type="int" />
+	</class>
 </hibernate-mapping>

@@ -3,9 +3,12 @@
     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
     "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts> 
-   <!--  
-   <package name="${moduleName}" namespace="/${moduleName}"  extends="fsbase" >
-   		
+ 
+   <package name="bbs" namespace="/bbs"  extends="fsbase" >
+   		<default-action-ref name="index"></default-action-ref>
+   		<action name="index" class="bbsfirstpage">
+   			<result>firstpage.jsp</result>
+   		 </action>
    </package> 
-   -->  
+
 </struts>
