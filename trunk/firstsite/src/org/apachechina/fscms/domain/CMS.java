@@ -11,7 +11,8 @@ public class CMS {
 	private Date date;// 发表时间
 	private String picture; //图片
 	
-	
+	public CMS(){}
+
 	public Long getId() {
 		return id;
 	}
