@@ -8,10 +8,19 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 
 	<!-- action-->
 	
+		<!-- Action ,可以考虑放在 /${moduleName}/config/applicationContext-actions.xml中 所有id名称为类名 -->	
+	<bean id="bbsfirstpage" class="org.apachechina.fsbbs.action.BBSIndex" scope="prototype" >
+		<property name="bbsDao" ref="bbsDao"></property>	
+	</bean>
+	
+	
 	<!-- manager -->
 	
 		
 	<!-- dao -->
+	<bean id="bbsDao" class="org.apachechina.fsbbs.dao.BBSDao">
+		<property name="sessionFactory" ref="sessionFactory"/>	
+	</bean>
 
 
 </beans>

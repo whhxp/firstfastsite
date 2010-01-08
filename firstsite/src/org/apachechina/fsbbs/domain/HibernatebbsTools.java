@@ -7,9 +7,12 @@ import org.apache.log4j.spi.ThrowableInformation;
 import org.apachechina.fsbbs.domain.htool.HibernateUtil;
 import org.hibernate.classic.Session;
 
+/**
+ * @deprecated 
+ */
 public class HibernatebbsTools {
 
-	// 查询出所有的内容
+	// 查询出bbs所有的内容
 	public static List getbbs() {
 		List list = new Vector();
 
@@ -72,5 +75,29 @@ public class HibernatebbsTools {
 			}
 		}
 		return bbs;
+	}
+	// 查询出留言表所有的内容
+	public static List getword() {
+		List list = new Vector();
+
+		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+
+		try {
+			session.beginTransaction();
+			Query query = session.createQuery("from Word");
+
+			list = query.list();
+
+			session.getTransaction().commit();
+		} catch (Throwable e) {
+			e.printStackTrace();
+			session.getTransaction().rollback();
+
+		} finally {
+			if (session.isOpen()) {
+				session.close();
+			}
+		}
+		return list;
 	}
 }
