@@ -8,6 +8,9 @@
        <action name="index" class="MsgList">
             <result>index.jsp</result>
         </action> 
+        <action name="msgSave" class="MsgSave">
+            <result type="redirectAction">index</result>
+        </action> 
     </package>
    
 </struts>
