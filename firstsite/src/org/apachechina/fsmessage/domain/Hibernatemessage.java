@@ -17,7 +17,7 @@ public class Hibernatemessage {
 
 		try {
 			session.beginTransaction();
-			Query query = session.createQuery("from MESSAGE");
+			Query query = session.createQuery("from Message");
 
 			list = query.list();
 
@@ -40,7 +40,7 @@ public class Hibernatemessage {
 
 		try {
 			session.beginTransaction();
-			Query query = session.createQuery("from USERMESSAGE");
+			Query query = session.createQuery("from UserMessage");
 
 			list = query.list();
 
