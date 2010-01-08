@@ -26,8 +26,7 @@
 		<table width="100%">
 			<tr>
 				<td align="right"><c:if test="${user==null}">
-					<a href="">登录</a>
-					<a href="*">注册</a>
+					<a href="DengLu.jsp">登录</a>
 				</c:if> 
 				<c:if test="${user!=null}">
 					<c:out value="${user.nickname}" />--<a onclick="chkLogout()"

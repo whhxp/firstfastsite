@@ -14,7 +14,9 @@
     request.setAttribute("list",list);
 %>
 
-<%@page import="org.hibernate.cfg.HbmBinder"%><html xmlns="http://www.w3.org/1999/xhtml">
+<%@page import="org.hibernate.cfg.HbmBinder"%>
+<%@page import="org.hibernate.Hibernate"%>
+<%@page import="org.apachechina.fsnote.htool.HibernateUtil"%><html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>日志管理</title>
