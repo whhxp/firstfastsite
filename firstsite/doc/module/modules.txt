@@ -1,5 +1,8 @@
 @charset "UTF-8"
 
+core
+board
+
 按顺序排行
 bbs
 chatroom
