@@ -5,7 +5,7 @@
 
 <hibernate-mapping>
 
-    <class name="org.apachechina.fsbbs.domain.CMS" table="fscms_CMS">    
+    <class name="org.apachechina.fscms.domain.CMS" table="fscms_CMS">    
         <id name="id" column="CMS_ID">
             <generator class="native"/>
         </id>        
@@ -16,3 +16,4 @@
         <property name="picture" type="string"/>  
     </class>
 </hibernate-mapping>
+
