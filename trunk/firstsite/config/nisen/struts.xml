@@ -21,10 +21,7 @@
  	<include file="struts-default.xml" /> 
  	
  		
-	
- 	<include file="/org/apachechina/fsboard/action/struts.xml"/>
- 	<include file="/org/apachechina/fschatroom/action/struts.xml"/>
- 	<include file="/org/apachechina/fscms/action/struts.xml"/>
+ 	<include file="/org/apachechina/fsmessage/action/struts.xml"/>
 
  
 
