@@ -34,9 +34,9 @@
 		<property name="format_sql">true</property>
 		
 		
-		<!-- board -->
+		<!-- board 
 		<mapping resource="org/apachechina/fsboard/config/Mapping.hbm.xml" />
-		
+		-->
 		
 		<!-- bbs
 		<mapping resource="org/apachechina/fsbbs/domain/BBS.hbm.xml" />
