@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="org.apachechina.fsbbs.domain.CMS" table="fscms_CMS">    
+        <id name="id" column="CMS_ID">
+            <generator class="native"/>
+        </id>        
+        <property name="title" type="string"/>
+        <property name="title_jian" type="string"/>
+        <property name="gut" type="string"/>
+        <property name="date" type="date"/>  
+        <property name="picture" type="string"/>  
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>test div</title>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	background: #333333;
+	line-height: 1.7;
+	font-family: Verdana, "宋体";
+	overflow: hidden
+}
+
+#info {
+	width: 600px;
+	background: #666666;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border: 1px solid #FFFFFF;
+	height: 450px;
+	margin-top: 20px;
+}
+
+h3 {
+	margin: 30px 0 0 0;
+	color: #CC0000;
+	font-size: 12px;
+	color: #FFF
+}
+
+span {
+	visibility: hidden;
+	position: absolute;
+	overflow: hidden;
+}
+
+ul,li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a:active,a:hover {
+	cursor: pointer
+}
+
+a:hover span,a:active span {
+	position: absolute;
+	top: 90px;
+	z-index: 20px;
+	visibility: visible;
+	margin-left: -500px;
+}
+
+#info img {
+	width: 400px;
+	height: 280px;
+	border: 7px solid #FFFFFF
+}
+
+#zs {
+	height: 340px;
+	overflow: auto;
+	width: 140px;
+	float: right;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.z {
+	width: 80px;
+	height: 56px;
+	display: block;
+	border: 1px solid #FFFFFF;
+	margin: 4px 0 4px 25px;
+	color: #FFF
+}
+
+.b1 {
+	background: url(./image/1.gif)
+}
+
+.b2 {
+	background: url(./image/2.gif)
+}
+
+.b3 {
+	background: url(./image/3.gif)
+}
+
+.b4 {
+	background: url(./image/4.gif)
+}
+
+.b5 {
+	background: url(/UploadPic/2007-7/200777205431906.jpg)
+}
+
+.b6 {
+	background: url(/UploadPic/2007-7/200777205430312.jpg)
+}
+</style>
+</head>
+<body>
+<div id="info">
+<h3>CSS相册</h3>
+<div id="zs">
+<ul>
+	<li><a href="" class="b1 z" target="_blank"
+		title="照片1"><span><img
+		src="./image/1.gif" alt="照片1" /><br />
+	这是照片1<br />
+	webjx.com</span></a></li>
+	<li><a href="" class="b2 z" target="_blank"
+		title="照片2"><span><img
+		src="./image/2.gif" alt="照片2" /><br />
+	这是照片2<br />
+	webjx.com</span></a></li>
+	<li><a href="" class="b3 z" target="_blank"
+		title="照片3"><span><img
+		src="./image/3.gif" alt="照片3" /><br />
+	这是照片3<br />
+	webjx.com</span></a></li>
+	<li><a href="" class="b4 z" target="_blank"
+		title="照片4"><span><img
+		src="./image/4.gif" alt="照片4" /><br />
+	这是照片4<br />
+	webjx.com</span></a></li>
+</ul>
+</div>
+</div>
+</body>
+</html>
