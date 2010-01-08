@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts> 
+     <!-- 集成Spring-->
+     <constant name="struts.objectFactory" value="org.apache.struts2.spring.StrutsSpringObjectFactory" />
+
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="true" />
+    
+    <!-- 重新加载配置 -->
+     <constant name="struts.class.reloading.reloadConfig" value="true" />
+    
+
+    <!-- 所有package的内容都从 fsbase包中继承 -->
+	<package name="fsbase" extends="struts-default">
+    </package>
+	
+ 	<include file="struts-default.xml" /> 
+
+ 	<include file="/org/apachechina/fsmessage/config/struts.xml"/>
+	<include file="/org/apachechina/fsboard/config/struts.xml"/>
+ 
+
+</struts>
