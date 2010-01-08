@@ -5,6 +5,8 @@
     
 <struts> 
  	<package name="chatroom" namespace="/chatroom"  extends="fsbase">
+ 		<!-- 主页 -->
+ 		<default-action-ref name="index" ></default-action-ref>
         <action name="index" class="ChatIndex">
             <result>index.jsp</result>
         </action>
