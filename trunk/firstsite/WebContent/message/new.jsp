@@ -22,15 +22,15 @@ body {
   <table width="100%"  border="0">
     <tr>
       <td width="10%">收件人:</td>
-      <td width="90%"><input name="textfield" type="text" size="60%"></td>
+      <td width="90%"><input name="addressee" type="text" size="60%"></td>
     </tr>
     <tr>
       <td>主题：</td>
-      <td><input name="textfield" type="text" size="60%"></td>
+      <td><input name="title" type="text" size="60%"></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td><textarea name="textarea" cols="60%" rows="10"></textarea></td>
+      <td><textarea name="context" cols="60%" rows="10"></textarea></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
