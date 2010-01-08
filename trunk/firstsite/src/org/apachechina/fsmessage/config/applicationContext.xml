@@ -6,6 +6,14 @@
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
 http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
 
+
+	<!-- action -->
+	<bean id="MsgList" class="org.apachechina.fsmessage.action.List" scope="prototype" > 
+		<property name="messageManager" ref="messageManager"></property>
+		<property name="userManager" ref="userManager"></property>
+	</bean>
+	
+	
 	<bean id="messageManager" class="org.apachechina.fsmessage.manager.MessageManager" > </bean>
 	
 	
