@@ -7,9 +7,7 @@
 <%@ page import="java.util.*"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <%
-	List list = HibernatebbsTools.getbbs();
-    
-    request.setAttribute("list",list);
+
 %>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -44,7 +42,7 @@
          </thead> 
          <c:forEach items="${list}" var="bbs">
          <tr height="4">
-            <td  align="center" width="100"><a href="#">${bbs.title}</a></td>
+            <td  align="center" width="100"><a href="Card.jsp?id=${bbs.id}">${bbs.title}</a></td>
             <td  align="center" width="70"></td>
             <td  align="center" width="70">${bbs.liuyan}</td>
             <td  align="center" width="70">${bbs.guankan}</td>

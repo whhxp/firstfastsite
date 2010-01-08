@@ -33,5 +33,9 @@
 		<td height="154">${bbs.gut}</td>
 	</tr>
 </table>
+	<form name="form3" method="post" action="">
+      <textarea name="textarea" cols="50" rows="20"></textarea>
+       <input type="submit" name="Submit" value="提交">
+    </form>
 </body>
 </html>
