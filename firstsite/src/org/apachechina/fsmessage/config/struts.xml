@@ -4,10 +4,10 @@
     "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts> 
  	<!-- todo: move to /${moduleName}/config/struts.xml文件中 -->
-   <package name="message" namespace="/message"  extends="fsmessage" >
-            
-       <default-action-ref name="index.jsp"></default-action-ref> 
-          
+   <package name="message" namespace="/message"  extends="fsbase" >
+       <action name="index" class="MsgList">
+            <result>index.jsp</result>
+        </action> 
     </package>
    
 </struts>
