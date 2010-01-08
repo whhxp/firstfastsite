@@ -23,7 +23,7 @@ public class Save extends ActionSupport implements Action{
 	
 	String title;
 	String context;
-	String addressee;
+	String addressee; 
 	String sent;
 	public String execute(){
 		
