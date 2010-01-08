@@ -17,7 +17,7 @@
                      <a href="*">日志</a>
                  </th>
                   <th >
-                     <a href="*">写日记</a>
+                     <a href="whiteNote.jsp">写日记</a>
                  </th>
                  <th>
                     <a href="*"> 个信息</a>
