@@ -55,7 +55,7 @@
 		<mapping resource="org/apachechina/fsphoto/domain/Photo.hbm.xml" />
 		-->
 		<!-- cms -->
-		<mapping resource="org/apachechina/fscms/domain/Article.hbm.xml" />
+		<mapping resource="org/apachechina/fscms/domain/CMS.hbm.xml" />
 
 		
 		<!-- ${modulename}
