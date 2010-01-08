@@ -1,6 +1,6 @@
 package org.apachechina.fscms.domain;
 
-import java.util.Date;
+
 
 public class CMS {
 
@@ -8,10 +8,17 @@ public class CMS {
 	private String title; // 文章标题
 	private String title_jian; // 文章简要标题
 	private String gut;// 文章的内容
-	private Date date;// 发表时间
+	private String date;// 发表时间
 	private String picture; //图片
 	
 	public CMS(){}
+	public CMS(String title,String title_jian,String gut,String date,String picture){
+		this.title=title;
+		this.title_jian=title_jian;
+		this.gut=gut;
+		this.date=date;
+		this.picture=picture;
+	}
 
 	public Long getId() {
 		return id;
@@ -37,10 +44,10 @@ public class CMS {
 	public void setGut(String gut) {
 		this.gut = gut;
 	}
-	public Date getDate() {
+	public String getDate() {
 		return date;
 	}
-	public void setDate(Date date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 	public String getPicture() {
