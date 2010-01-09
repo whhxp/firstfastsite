@@ -1,63 +1,47 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-   
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>内容发布系统</title>
-
- <%-- 
-	String userName=request.getParameter("user");//通过标签名了得到v值
-	String pwd=request.getParameter("pwd");
-	if(userName==null)
-		userName="";
-	if(pwd==null)
-		pwd="";
-	
-	if(!(userName.equals("admin") && pwd.equals("123")))
-	{
-		//request.getRequestDispatcher("./error.jsp").forward(request, response);
-		request.getRequestDispatcher("./index.jsp").forward(request, response);
-	 return;
-	}
-	
-
-
-<table width="965" height="550" border="1" cellpadding="2" cellspacing="2">
-  <tr>
-    <td height="103" colspan="2">&nbsp;</td>
-  </tr>
-  <tr>
-    <td width="179">&nbsp;</td>
-    <td width="535">&nbsp;</td>
-  </tr>
-</table>
---%>
-
-	<frameset rows="140,*" cols="*" frameborder="1"  framespacing="1" scrolling="yes" border="0">
-	           <!-- 水平分割                                 是否显示框架边框            框架宽度                 -->
-			  <frame src="top.jsp" name="topFrame" noresize  />
-	    <frameset cols="230,*">
-			  <frame src="zuo.jsp" name="mainFrame2"  />
-			  
-			  <frame src="info.jsp" name="mainFrame1" scrolling="yes" />
-		</frameset>
-	</frameset>
-	
-	
-	
-	<noframes>
-	<body>
-		你的浏览器不支持框架
-    </body>	  
-	</noframes>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
 </head>
 <body>
-   <div>栏目1 </div>
+
+<table width="690" border="1" cellspacing="20" cellpadding="2">
+  <tr>
+    <td width="304" height="203"><div align="center">图</div></td>
+    <td width="366"><table width="357" height="201" border="1" cellpadding="2" cellspacing="2">
+        <tr>
+          <td width="360" height="10"><img src="C:\Documents and Settings\Administrator\桌面\新建文件夹 (2)/ico_2.gif"/> 最新资讯 </td>
+        </tr>
+        <tr>
+          <td height="151"><div>
+            <p><a href="#">第一篇文章题目 </a><span>12-4</span> </p>
+            <p><a href="#">第二篇文章题目 </a><span>12-4</span> </p>
+            <p><a href="#">第三篇文章题目 </a><span>12-4</span> </p>
+            <p><a href="#">第四篇文章题目 </a><span>12-4</span> </p>
+          </div></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td height="109" colspan="2"><table width="678" border="1" cellspacing="2" cellpadding="2">
+      <tr>
+        <td width="154" height="91">&nbsp;</td>
+        <td width="154">&nbsp;</td>
+        <td width="154">&nbsp;</td>
+        <td width="180">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="126" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="133" colspan="2">&nbsp;</td>
+  </tr>
+</table>
 
 </body>
 </html>
