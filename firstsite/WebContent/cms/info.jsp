@@ -28,10 +28,8 @@
   <tr>
     <td height="151"> 
       <div align="left">内容： 
-            
         <textarea name="NeiRong" cols="60" rows="10" wrap="VIRTUAL">
                   </textarea>
-  
     </div>
       </div></td>
   </tr>
