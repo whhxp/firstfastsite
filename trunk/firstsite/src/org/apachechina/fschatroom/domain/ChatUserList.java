@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.Vector;
 
+import org.apachechina.fscore.api.UserManager;
 import org.apachechina.fscore.domain.User;
 
 /**
@@ -27,7 +28,17 @@ public class ChatUserList {
 
 	public Set<User> add(User user)
 	{
-		chatUsers.add(user);
+		User username=UserManager.getInstance().getCurrentUser();
+		String name=username.getName();
+		if(user.equals(name))
+		{
+			return chatUsers;
+		}
+		else
+		{
+			chatUsers.add(user);
+		}
+		
 		return chatUsers;
 	}
 	public Set<User> getList()
