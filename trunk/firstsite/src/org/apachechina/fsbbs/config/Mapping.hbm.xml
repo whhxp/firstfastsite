@@ -4,7 +4,7 @@
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<class name="org.apachechina.fsbbs.domain.BBS" table="fsBBS_BBS">
+	<class name="org.apachechina.fsbbs.domain.BBS" table="fsbbs_BBS">
 		<id name="id" column="BBS_ID">
 			<generator class="native" />
 		</id>
@@ -14,7 +14,7 @@
 		<property name="guankan" type="int" />
 		<property name="date" type="date" />
 	</class>
-	<class name="org.apachechina.fsbbs.domain.Word" table="fsWord_Word">
+	<class name="org.apachechina.fsbbs.domain.Word" table="fsbbs_Word">
 		<id name="id" column="Word_ID">
 			<generator class="native" />
 		</id>
