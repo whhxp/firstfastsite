@@ -25,7 +25,7 @@
  	<include file="/org/apachechina/fsboard/config/struts.xml"/>
  	<include file="/org/apachechina/fschatroom/config/struts.xml"/>
  	<include file="/org/apachechina/fscms/config/struts.xml"/>
-
+   <include file="/org/apachechina/fsnote/config/struts.xml"/>
  
 
 </struts>
