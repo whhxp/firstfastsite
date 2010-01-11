@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.apache.struts2.ServletActionContext;
 import org.apachechina.fschatroom.domain.ChatUserList;
+import org.apachechina.fschatroom.domain.Message;
+import org.apachechina.fschatroom.domain.Messages;
 import org.apachechina.fscore.api.UserManager;
 import org.apachechina.fscore.domain.User;
 
@@ -26,7 +28,13 @@ public class Index extends ActionSupport implements Action{
 		
 		HttpServletRequest request = ServletActionContext.getRequest();	
 		
-	
+		User username=userManager.getCurrentUser();
+		String author = username.getName();
+		String context = request.getParameter("editor1");
+		Message message = new Message(author, context);
+		Messages.add(message);
+		List messages = Messages.messages();
+		request.setAttribute("messages", messages);
 		
 		request.setAttribute("list",instance.getList());
 		
