@@ -5,6 +5,14 @@ public class Pho {
 	String album;// 相册
 	String description;// 描述
 
+	public Pho() {
+	}
+
+	public Pho(String album, String description) {
+		this.album = album;
+		this.description = description;
+	}
+
 	public Long getId() {
 		return id;
 	}
@@ -29,7 +37,10 @@ public class Pho {
 		this.album = album;
 	}
 
-	
+	static public Pho example() {
+		return new Pho("测试", "标题");
+	}
+
 	public String toString() {
 		return "Pho[album " + album + ", description=" + description + "]";
 	}
