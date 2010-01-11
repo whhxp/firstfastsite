@@ -48,7 +48,7 @@
 		
 		
 		<!-- note 
-		<mapping resource="org/apachechina/fsnote/sqls/WhiteNote.hbm.xml" />
+		<mapping resource="org/apachechina/fsnote/domain/NoteList.hbm.xml" />
 		-->
 		
 		<!--photo
