@@ -12,6 +12,7 @@ public class User {
 	String fullName;//名称
 	
 	
+	
 	public User() {
 	}
 	
