@@ -3,7 +3,7 @@ package org.apachechina.fsnote.dao;
 
 import java.util.List;
 
-import org.apachechina.fsnote.domain.Article;
+import org.apachechina.fsnote.domain.NoteList;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
 /**
@@ -11,7 +11,7 @@ import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
  * 
  */
 public class ArticleDao extends HibernateDaoSupport {
-	public List<Article> getList() {
+	public List<NoteList> getList() {
 		return getHibernateTemplate().find("from Article");
 
 	}

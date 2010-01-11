@@ -2,17 +2,17 @@ package org.apachechina.fsnote.domain;
 
 import java.util.Date;
 
-public class Article {
+public class NoteList {
 
 	private Long id;
 	private String title; // 文章的主题
 	private String gut;// 文章的内容
 	private Date date;// 发表时间
 
-	public Article() {
+	public NoteList() {
 	}
 
-	public Article(String title, String gut, Date date) {
+	public NoteList(String title, String gut, Date date) {
 		this.title = title;
 		this.gut = gut;
 		this.date = date;
