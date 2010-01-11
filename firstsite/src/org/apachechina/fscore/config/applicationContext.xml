@@ -9,6 +9,8 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 	<!-- action-->
 	
 	<!-- manager -->
+	<bean name="userManager" class="org.apachechina.fscore.api.UserManager" >
+	</bean>
 	
 		
 	<!-- dao -->
