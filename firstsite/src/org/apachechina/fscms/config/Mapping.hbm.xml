@@ -4,11 +4,10 @@
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<!--
-    <class name="org.apachechina.fs${moduleName}.domain.*" table="fs${moduleName}_X">    
+	 <class name="org.apachechina.fscms.domain.Article" table="fscms_Article">    
         <id name="id" column="id" type="long" >
             <generator class="native" />
         </id>        
+        <property name="title" type="string" length="200" />
      </class>
-       -->
 </hibernate-mapping>
