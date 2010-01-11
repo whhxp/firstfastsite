@@ -24,7 +24,7 @@ public class Message {
 		this.style=style;
 		this.title=title;
 		this.associate=associate;
-	
+		this.date=date;
 	
 	}
 
