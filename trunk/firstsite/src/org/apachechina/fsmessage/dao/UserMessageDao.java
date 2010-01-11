@@ -28,9 +28,6 @@ public class UserMessageDao extends HibernateDaoSupport{
 	{
 		return getHibernateTemplate().find("from UserMessage where name='"+name+"'").isEmpty();
 	}
-	public static void main(String[] args) {
-		UserMessageDao a=new UserMessageDao();
-		System.out.println(a.select("123"));
-	}
+	
 
 }
