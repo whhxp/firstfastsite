@@ -10,7 +10,7 @@ import org.apache.struts2.ServletActionContext;
 import org.apachechina.fsnote.dao.ArticleDao;
 
 import com.opensymphony.xwork2.ActionSupport;
-import org.apachechina.fsnote.domain.Article;
+import org.apachechina.fsnote.domain.NoteList;
 import com.opensymphony.xwork2.Action;
 /**
  * @author Administrator
@@ -23,7 +23,7 @@ public class ArticleList extends ActionSupport implements Action
 		System.out.println("test here");
 		HttpServletRequest request = ServletActionContext.getRequest();
 		
-		List<Article> arrayList=articledao.getList();
+		List<NoteList> arrayList=articledao.getList();
 		request.setAttribute("list",arrayList);
 		
 		return SUCCESS;	
