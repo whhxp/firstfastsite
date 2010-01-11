@@ -12,7 +12,7 @@
         <property name="style" type="string"/>
         <property name="title" type="string"/>   
         <property name="associate" type="string"/>  
-        <property name="date" type="string"/> 
+        <property name="date" type="date"/> 
     </class>
 
     <class name="org.apachechina.fsmessage.domain.UserMessage" table="fsMESSAGE_USERMESSAGE">    

@@ -1,5 +1,7 @@
 package org.apachechina.fsmessage.domain;
 
+import java.util.Date;
+
 
 
 
@@ -13,12 +15,18 @@ public class Message {
 	private String style;//类型
 	private String title;//标题
 	private String associate;//关联的人
-	private String date;//日期
+	private Date date;//日期
 
+	public Date getDate() {
+		return date;
+	}
+	public void setDate(Date date) {
+		this.date = date;
+	}
 	public Message() {
 
 	}
-	public Message(String message,String style,String title,String associate,String date) 
+	public Message(String message,String style,String title,String associate,Date date) 
 	{
 		this.message=message;
 		this.style=style;
@@ -94,12 +102,7 @@ public class Message {
 
 	public String toString() {
 		return "MESSAGE [id=" + id + ", message=" +message + ", style=" + style
-				+ ", title=" + title+ ", associate=" + associate +",date="+date+ "]";
+				+ ", title=" + title+ ", associate=" + associate +",date="+(""+date)+ "]";
 	}
-	public String getDate() {
-		return date;
-	}
-	public void setDate(String date) {
-		this.date = date;
-	}
+
 }
