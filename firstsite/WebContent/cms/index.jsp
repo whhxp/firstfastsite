@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>     
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -15,12 +16,11 @@
         <tr>
           <td width="360" height="10"><img src="C:\Documents and Settings\Administrator\桌面\新建文件夹 (2)/ico_2.gif"/> 最新资讯 </td>
         </tr>
-        <tr>
-          <td height="151"><div>
-            <p><a href="#">第一篇文章题目 </a><span>12-4</span> </p>
-            <p><a href="#">第二篇文章题目 </a><span>12-4</span> </p>
-            <p><a href="#">第三篇文章题目 </a><span>12-4</span> </p>
-            <p><a href="#">第四篇文章题目 </a><span>12-4</span> </p>
+        <tr>      
+          <td height="151"><div>          
+	        <c:forEach items="${list}" var="item" varStatus="myIndex">
+			  <p><a href="#">${item.title} </a><span>item.date</span> </p>
+			</c:forEach>
           </div></td>
         </tr>
       </table></td>
