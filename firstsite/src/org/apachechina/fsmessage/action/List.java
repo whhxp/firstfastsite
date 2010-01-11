@@ -42,6 +42,7 @@ public class List extends ActionSupport implements Action{
 		
 		request.setAttribute("currentUser",userManager.getCurrentUser());
 		request.setAttribute("list",messageManager.getMESSAGEList());
+		request.setAttribute("list2",messageManager.getMESSAGEUSERList());
 		
 		return SUCCESS;
 	}

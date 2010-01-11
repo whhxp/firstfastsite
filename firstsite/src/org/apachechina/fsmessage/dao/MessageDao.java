@@ -22,6 +22,7 @@ public class MessageDao extends HibernateDaoSupport{
 	public  void save(Message item)
 	{	
 		getHibernateTemplate().saveOrUpdate(item);
-		System.out.println("-------BoardDAO.save()+ "+item+"---------------");
+		System.out.println("-------MessageDao.save()+ "+item+"---------------");
 	}
+
 }

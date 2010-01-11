@@ -18,7 +18,8 @@
     <class name="org.apachechina.fsmessage.domain.UserMessage" table="fsMESSAGE_USERMESSAGE">    
         <id name="id" column="USERMESSAGE_ID">
             <generator class="native"/>
-        </id>        
+        </id> 
+        <property name="name" type="string"/>      
         <property name="newnum" type="int"/>
         <property name="oldnum" type="int"/>
         <property name="sumnum" type="int"/>   
