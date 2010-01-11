@@ -3,7 +3,7 @@ package org.apachechina.fsnote.dao;
 
 import java.util.List;
 
-import org.apachechina.fscms.domain.Article;
+import org.apachechina.fsnote.domain.Article;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
 /**

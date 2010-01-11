@@ -6,10 +6,11 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.struts2.ServletActionContext;
-import org.apachechina.fscms.domain.Article;
+
 import org.apachechina.fsnote.dao.ArticleDao;
 
 import com.opensymphony.xwork2.ActionSupport;
+import org.apachechina.fsnote.domain.Article;
 import com.opensymphony.xwork2.Action;
 /**
  * @author Administrator
