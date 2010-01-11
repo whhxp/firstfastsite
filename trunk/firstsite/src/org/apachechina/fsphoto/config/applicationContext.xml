@@ -7,9 +7,18 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 	<bean id="phoDao" class="org.apachechina.fsphoto.dao.PhoDao">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
-
 	<bean id="PhoList" class="org.apachechina.fsphoto.action.PhoList"
 		scope="prototype">
 		<property name="phoDao" ref="phoDao" />
 	</bean>
+
+
+	<bean id="PicDao" class="org.apachechina.fsphoto.dao.PicDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="PicList" class="org.apachechina.fsphoto.action.PicList"
+		scope="prototype">
+		<property name="picDao" ref="picDao" />
+	</bean>
+
 </beans>

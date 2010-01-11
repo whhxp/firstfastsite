@@ -2,8 +2,9 @@ package org.apachechina.fsphoto.domain;
 
 public class Pho {
 	Long id;
-	String album;// 相册
-	String description;// 描述
+	String album;// 相册名称
+	String description;// 相册描述
+	int count;//照片数量
 
 	public Pho() {
 	}
@@ -37,12 +38,17 @@ public class Pho {
 		this.album = album;
 	}
 
-	static public Pho example() {
-		return new Pho("测试", "标题");
+	public int getCount() {
+		return count;
+	}
+
+	public void setCount(int count) {
+		this.count = count;
 	}
 
 	public String toString() {
-		return "Pho[album " + album + ", description=" + description + "]";
+		return "Pho[album " + album + ", description=" + description
+				+ ",count=" + count + "]";
 	}
 
 }
