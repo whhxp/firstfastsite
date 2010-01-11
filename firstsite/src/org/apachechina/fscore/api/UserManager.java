@@ -4,8 +4,13 @@ import java.util.List;
 import java.util.Random;
 import java.util.Vector;
 
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.components.Radio;
 import org.apachechina.fscore.domain.User;
+
+import com.util.SessionUtils;
 
 
 
@@ -31,9 +36,18 @@ public class UserManager {
 	 */
 	public User getCurrentUser(){
 		//todo : 目前为随机得到用户
-		List<User> examples=getExample();		
-		int index = new Random().nextInt(examples.size());		
-		return examples.get(index);	
+//		List<User> examples=getExample();		
+//		int index = new Random().nextInt(examples.size());		
+//		return examples.get(index);	
+		
+		HttpServletRequest request = ServletActionContext.getRequest();	
+		com.bean.User  user = SessionUtils.getUser(request);
+		
+		User currentUser = new User();
+		currentUser.setName(user.getUserName());
+		currentUser.setFullName(user.getNickname());
+		
+		return currentUser;
 //		
 //		Object obj=request.getSession().getAttribute(USER_NAME);
 //		User user=(User)obj;
