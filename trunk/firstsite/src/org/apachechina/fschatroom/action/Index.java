@@ -11,9 +11,7 @@ import org.apachechina.fschatroom.domain.Message;
 import org.apachechina.fschatroom.domain.Messages;
 import org.apachechina.fscore.api.UserManager;
 import org.apachechina.fscore.domain.User;
-
 import com.opensymphony.xwork2.Action;
-import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class Index extends ActionSupport implements Action{
