@@ -18,13 +18,9 @@ public class ArticleList extends ActionSupport implements Action{
 	
 	public String execute() throws Exception {
 		System.out.println("test here");
-		HttpServletRequest request = ServletActionContext.getRequest();
+		HttpServletRequest request = ServletActionContext.getRequest();		
 		
-		
-//		ArrayList arrayList = new ArrayList();
-//		arrayList.add(new Article("tata"));
-//		arrayList.add(new Article("tata22"));
-//		arrayList.add(new Article("tata"));
+
 		
 		List<Article> arrayList=articleDao.getList();
 		request.setAttribute("list",arrayList);
