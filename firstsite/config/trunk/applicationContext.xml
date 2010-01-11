@@ -12,6 +12,7 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
 	<import resource="org/apachechina/fsboard/config/applicationContext.xml" />
 	<import resource="org/apachechina/fschatroom/config/applicationContext.xml" />
 	<import resource="org/apachechina/fscms/config/applicationContext.xml" />
+	<import resource="org/apachechina/fsnote/config/applicationContext.xml"/>
 	
 	<!-- 配置sessionFactory -->
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">

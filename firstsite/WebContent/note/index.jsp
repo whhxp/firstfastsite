@@ -4,19 +4,15 @@
 <%@ page import="java.util.*"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<%@ page import="org.apachechina.fsnote.htool.*"%>
+<%@ page import="org.apachechina.fsnote.domain.*"%>
 <%@ page import="org.apachechina.fsnote.*"%>
 <%@ page import="java.util.*"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<%
-	List list = Hibernatenote.getnote();
-    
-    request.setAttribute("list",list);
-%>
+
 
 <%@page import="org.hibernate.cfg.HbmBinder"%>
 <%@page import="org.hibernate.Hibernate"%>
-<%@page import="org.apachechina.fsnote.htool.HibernateUtil"%><html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>日志管理</title>
