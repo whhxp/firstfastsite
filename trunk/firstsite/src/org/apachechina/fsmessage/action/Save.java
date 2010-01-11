@@ -38,21 +38,20 @@ public class Save extends ActionSupport implements Action{
 		
 		HttpServletRequest request = ServletActionContext.getRequest();
 		
-		sent = (String)request.getParameter("sent");
 		addressee = (String)request.getParameter("addressee");
 		title = (String)request.getParameter("title");
 		context = (String)request.getParameter("context");
 		User u=userManager.getCurrentUser();
-		if(!userMessageDao.select(u.getName()))
+		if(userMessageDao.select(u.getName()))
 		{
 			System.out.println(userMessageDao.select(u.getName()));
 			UserMessage um=new UserMessage(u.getName());
 			userMessageDao.save(um);
 		}
 		Date time=new Date();
-		Message message=new Message(context,"to",title,addressee,time.toString());
-		Message message2=new Message(context,"form",title,sent,time.toString());
-		System.out.println(message);
+		
+		Message message=new Message(context,"to",title,addressee,time);
+		Message message2=new Message(context,"form",title,u.getName(),time);
 		messageDao.save(message);
 		messageDao.save(message2);
 		return SUCCESS;
