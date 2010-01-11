@@ -9,8 +9,13 @@ import javax.servlet.http.HttpServletRequest;
 
 
 import org.apache.struts2.ServletActionContext;
+import org.apachechina.fscore.api.UserManager;
+import org.apachechina.fscore.domain.User;
 import org.apachechina.fsmessage.dao.MessageDao;
+import org.apachechina.fsmessage.dao.UserMessageDao; 
 import org.apachechina.fsmessage.domain.Message;
+import org.apachechina.fsmessage.domain.UserMessage;
+
 
 import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionSupport;
@@ -25,6 +30,10 @@ public class Save extends ActionSupport implements Action{
 	String context;
 	String addressee; 
 	String sent;
+	UserMessageDao userMessageDao;
+	UserManager userManager;
+
+
 	public String execute(){
 		
 		HttpServletRequest request = ServletActionContext.getRequest();
@@ -33,7 +42,13 @@ public class Save extends ActionSupport implements Action{
 		addressee = (String)request.getParameter("addressee");
 		title = (String)request.getParameter("title");
 		context = (String)request.getParameter("context");
-		
+		User u=userManager.getCurrentUser();
+		if(!userMessageDao.select(u.getName()))
+		{
+			System.out.println(userMessageDao.select(u.getName()));
+			UserMessage um=new UserMessage(u.getName());
+			userMessageDao.save(um);
+		}
 		Date time=new Date();
 		Message message=new Message(context,"to",title,addressee,time.toString());
 		Message message2=new Message(context,"form",title,sent,time.toString());
@@ -89,6 +104,29 @@ public class Save extends ActionSupport implements Action{
 	public void setContext(String context) {
 		this.context = context;
 	}
+
+
+	public UserMessageDao getUserMessageDao() {
+		return userMessageDao;
+	}
+
+
+	public void setUserMessageDao(UserMessageDao userMessageDao) {
+		this.userMessageDao = userMessageDao;
+	}
+
+
+	public UserManager getUserManager() {
+		return userManager;
+	}
+
+
+	public void setUserManager(UserManager userManager) {
+		this.userManager = userManager;
+	}
+
+
+
 
 
 	

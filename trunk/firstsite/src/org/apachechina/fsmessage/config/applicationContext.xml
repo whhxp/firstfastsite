@@ -14,14 +14,19 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 	</bean>
 	<bean id="MsgSave" class="org.apachechina.fsmessage.action.Save" scope="prototype" > 
 		<property name="messageDao" ref="messageDao"></property>
+		<property name="userMessageDao" ref="userMessageDao"></property>
+		<property name="userManager" ref="userManager"></property>
 	</bean>
 	
-	<bean id="messageDao" class="org.apachechina.fsmessage.dao.MessageDao" scope="prototype" > 
+	<bean id="messageDao" class="org.apachechina.fsmessage.dao.MessageDao" > 
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="userMessageDao" class="org.apachechina.fsmessage.dao.UserMessageDao" > 
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
 	
-	
 	<bean id="messageManager" class="org.apachechina.fsmessage.manager.MessageManager" > </bean>
+
 	
 	
 </beans>
