@@ -34,6 +34,10 @@ public class UserManager {
 		List<User> examples=getExample();		
 		int index = new Random().nextInt(examples.size());		
 		return examples.get(index);	
+//		
+//		Object obj=request.getSession().getAttribute(USER_NAME);
+//		User user=(User)obj;
+//		return user;
 	}
 	
 	public List<User> getExample(){
