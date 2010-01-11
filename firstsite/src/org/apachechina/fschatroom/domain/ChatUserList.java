@@ -3,11 +3,12 @@ package org.apachechina.fschatroom.domain;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.Vector;
 
-import org.apachechina.fscore.api.UserManager;
+
 import org.apachechina.fscore.domain.User;
 
 /**
@@ -24,24 +25,29 @@ public class ChatUserList {
 		return instance;
 	}
 	
-	Set<User> chatUsers=new HashSet<User>();
+	List<User> chatUsers=new Vector<User>();
 
-	public Set<User> add(User user)
+	public List<User> add(User user)
 	{
-		User username=UserManager.getInstance().getCurrentUser();
-		String name=username.getName();
-		if(user.equals(name))
-		{
-			return chatUsers;
+	
+	
+		int size = chatUsers.size();
+		for (int i = 0; i < size; i++) {
+			User names=chatUsers.get(i);
+			String name1=names.getName();
+			
+			String name=user.getName();
+			
+			if(name1.equals(name))
+			{
+				return chatUsers;
+			}
+				
 		}
-		else
-		{
-			chatUsers.add(user);
-		}
-		
+		chatUsers.add(user);
 		return chatUsers;
 	}
-	public Set<User> getList()
+	public List<User> getList()
 	{
 		return chatUsers;		
 	}
