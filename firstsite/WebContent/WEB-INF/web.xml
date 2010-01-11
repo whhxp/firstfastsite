@@ -18,6 +18,27 @@
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 	
+
+	<!-- 进行用户验证 -->
+	<filter>
+		<filter-name>UserFilter</filter-name>
+		<filter-class>com.filter.UserFilter</filter-class>
+		<!-- Issues:把这部分内容放到core/config配置目录下,并且使用可视化界面配置 ,决定那个可以访问,那个不可以访问-->
+		<init-param>
+			<param-name>nofilter</param-name>
+			<param-value>/core/login.jsp,/core/loginBack.jsp,/core/error.jsp,/core/reg.jsp,/core/regBack.jsp,/core/logout.jsp,/core/index.jsp,/core/top.jsp,/index.html</param-value>
+		</init-param>
+		<init-param>
+			<param-name>sendRedirect</param-name>
+			<param-value>../core/login.jsp</param-value>
+		</init-param>		
+	</filter>
+	<filter-mapping>
+		<filter-name>UserFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	
 	<!-- Struts2支持  -->
 	<filter>
         <filter-name>struts2</filter-name>
@@ -29,6 +50,7 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
     
+    <!-- 类修改以后重新启动  -->
     <context-param>
        <param-name>contextClass</param-name>
        <param-value>org.apache.struts2.spring.ClassReloadingXMLWebApplicationContext</param-value>
