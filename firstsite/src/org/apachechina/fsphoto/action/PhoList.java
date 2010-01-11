@@ -11,13 +11,6 @@ import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class PhoList extends ActionSupport implements Action {
-	public Phodao getPhodao() {
-		return phodao;
-	}
-
-	public void setPhodao(Phodao phodao) {
-		this.phodao = phodao;
-	}
 
 	Phodao phodao;
 
@@ -30,5 +23,13 @@ public class PhoList extends ActionSupport implements Action {
 
 		return SUCCESS;
 
+	}
+
+	public Phodao getPhodao() {
+		return phodao;
+	}
+
+	public void setPhodao(Phodao phodao) {
+		this.phodao = phodao;
 	}
 }
