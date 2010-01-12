@@ -14,25 +14,30 @@ import org.apachechina.fscore.domain.User;
 import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionSupport;
 
-public class Index extends ActionSupport implements Action{
+public class AddChat extends ActionSupport implements Action{
 
 	//DI
 	UserManager userManager;
 	
 	public String execute(){
+		ChatUserList instance = ChatUserList.getInstance();
+	
+		
 		HttpServletRequest request = ServletActionContext.getRequest();	
 		
-		ChatUserList instance = ChatUserList.getInstance();
-		instance.add(userManager.getCurrentUser());
-		
-
-		
-		List messages = Messages.messages();
 		User username=userManager.getCurrentUser();
+		
+		String author = username.getName();
+		String context = request.getParameter("editor1");
+
+		Message message = new Message(author, context);
+		Messages.add(message);
+		List messages = Messages.messages();
 		
 		request.setAttribute("messages", messages);		
 		request.setAttribute("list",instance.getList());
 		
+		System.out.println(messages);
 		return SUCCESS;
 	}
 

@@ -13,5 +13,9 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 	<bean id="ChatIndex" class="org.apachechina.fschatroom.action.Index" scope="prototype" >
 		<property name="userManager" ref="userManager" />
 	</bean>
+	
+	<bean id="AddChat" class="org.apachechina.fschatroom.action.AddChat" scope="prototype" >
+		<property name="userManager" ref="userManager" />
+	</bean>
 
 </beans>
