@@ -3,7 +3,7 @@
 
 <%@ page import="org.hibernate.Session.*"%>
 <%@ page import="org.hibernate.Transaction"%>
-<%@ page import="org.apachechina.fscms.domain.CMS"%>
+<%@ page import="org.apachechina.fscms.domain.Article"%>
 <%@ page import="org.apachechina.fscore.api.*"%>
 <%@ page import="org.hibernate.classic.Session"%>
 
@@ -33,11 +33,11 @@
 	private String picture; //图片*/
     Session session1=HibernateUtil.getSessionFactory().openSession();
 	    
-    CMS event=new CMS(BiaoTi,jianBiaoTi,NeiRong,Tu,ShiJian);
+   //Article event=new Article(BiaoTi,jianBiaoTi,NeiRong,Tu,ShiJian);
 	    
 	    Transaction tx= session1.beginTransaction();
 	    
-	    session1.save(event);
+	    //session1.save(event);
 	    
 	    tx.commit();
 	    
