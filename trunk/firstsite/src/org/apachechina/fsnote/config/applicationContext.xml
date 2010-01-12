@@ -7,11 +7,17 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
 
 	<!-- action-->
+	<bean id="NoteList" class="org.apachechina.fsnote.action.NoteList" scope="prototype" >
+		<property name="noteDao" ref="noteDao" />
+	</bean>
 	
 	<!-- manager -->
 	
 		
 	<!-- dao -->
+	<bean id="NoteDao" class="org.apachechina.fsnote.dao.NoteDao" > 
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
 
 
 </beans>
