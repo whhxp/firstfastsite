@@ -6,6 +6,7 @@ package org.apachechina.fsmessage.action;
 import java.util.Date;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 
 import org.apache.struts2.ServletActionContext;
@@ -42,6 +43,10 @@ public class Save extends ActionSupport implements Action{
 		title = (String)request.getParameter("title");
 		context = (String)request.getParameter("context");
 		User u=userManager.getCurrentUser();
+		if(addressee.endsWith(u.getName()))
+		{
+			//加入转入错误的程式
+		}
 		if(userMessageDao.select(u.getName()))
 		{
 			System.out.println(userMessageDao.select(u.getName()));
@@ -49,11 +54,22 @@ public class Save extends ActionSupport implements Action{
 			userMessageDao.save(um);
 		}
 		Date time=new Date();
-		
+		//保存信息
 		Message message=new Message(context,"to",title,addressee,time);
 		Message message2=new Message(context,"form",title,u.getName(),time);
 		messageDao.save(message);
 		messageDao.save(message2);
+		
+		
+		//新旧信息统计
+		UserMessage umForm=userMessageDao.selectUM(u.getName());
+		UserMessage umTo=userMessageDao.selectUM(addressee);
+		umForm.setNewnum(umForm.getNewnum()+1);
+		umForm.setSumnum(umForm.getSumnum()+1);
+		umTo.setOldnum(umTo.getOldnum()+1);
+		umTo.setSumnum(umTo.getSumnum()+1);
+		userMessageDao.update(umForm);
+		userMessageDao.update(umTo);
 		return SUCCESS;
 	}
 
