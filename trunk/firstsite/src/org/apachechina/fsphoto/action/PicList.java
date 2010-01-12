@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import org.apache.struts2.ServletActionContext;
+import org.apachechina.fsphoto.config.Config;
 import org.apachechina.fsphoto.dao.PicDao;
 import org.apachechina.fsphoto.domain.Pic;
 
@@ -20,7 +21,7 @@ public class PicList extends ActionSupport implements Action {
 
 		List<Pic> arrayList = PicDao.getList();
 		request.setAttribute("list", arrayList);
-
+		System.out.println(Config.FILE_DIR);
 		return SUCCESS;
 
 	}
