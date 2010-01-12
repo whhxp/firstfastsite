@@ -1,5 +1,8 @@
 package org.apachechina.fscore.domain;
 
+import java.util.List;
+import java.util.Vector;
+
 
 /**
  * 表示系统中的当前用户
@@ -60,6 +63,22 @@ public class User {
 	}
 
 	
+	
+	/* (non-Javadoc)
+	 * @see org.apachechina.fscore.api.IUserManager#getExample()
+	 */
+	static public List<User> examles(){
+		List<User> examples=new  Vector<User>();
+		examples.add(new User("111"));
+		examples.add(new User("nisen"));
+		examples.add(new User("jinlei"));
+		examples.add(new User("fanle"));
+		examples.add(new User("tomcat"));
+		examples.add(new User("Lily"));
+		examples.add(new User("tat"));
+		return examples;
+		
+	}
 	
 	
 	
