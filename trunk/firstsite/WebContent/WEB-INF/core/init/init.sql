@@ -1,7 +1,4 @@
-drop database if exists bbs;
-create database bbs;
-use bbs;
-
+/*@charset "UTF-8";*/
 create table user
 (
 	id			int auto_increment,
