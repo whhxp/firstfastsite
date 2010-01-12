@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
-<%@ page  import="org.apachechina.fsphoto.domain.upload.*" %>
+<%@ page  import="org.apachechina.fsphoto.upload.*" %>
 <%@ page  import="java.io.*" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%!//定义,使用JSP模拟Web.xml,和Web.xml的表现完全一致
