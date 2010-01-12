@@ -19,14 +19,24 @@ public class UserMessageDao extends HibernateDaoSupport{
 		
 	}
 	
-	public  void save(UserMessage item)
+	public  void save(UserMessage item)//保存对象到数据库
 	{	
 		getHibernateTemplate().saveOrUpdate(item);
 		System.out.println("-------UserMessage()+ "+item+"---------------");
 	}
-	public boolean select(String name)
+	public boolean select(String name)//通过主表用户名查找message表对应的数据,查看该数据是否存在
 	{
 		return getHibernateTemplate().find("from UserMessage where name='"+name+"'").isEmpty();
+	}
+	public UserMessage selectUM(String name)
+	{
+		List list=getHibernateTemplate().find("from UserMessage where name='"+name+"'");
+		UserMessage um=(UserMessage)list.get(0);
+		return um;
+	}
+	public void update(UserMessage item)
+	{
+		getHibernateTemplate().update(item);
 	}
 	
 
