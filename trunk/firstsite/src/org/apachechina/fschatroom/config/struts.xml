@@ -10,5 +10,8 @@
         <action name="index" class="ChatIndex">
             <result>index.jsp</result>
         </action>
+        <action name="addChat" class="AddChat">
+            <result>index.jsp</result>
+        </action>
     </package>
 </struts>
