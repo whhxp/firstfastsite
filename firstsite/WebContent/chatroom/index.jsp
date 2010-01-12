@@ -23,13 +23,18 @@ body {
 </head>
 
 <body>
-	<form name="fschatroomForm" id="fschatroomForm" method="post" action="index.action">
+	<form name="addChat" id="addChat" method="post" action="addChat.action">
 
 <table width="871" height="609" border="1" align="center">
 	<tr>
-		<td width="558" height="138" valign="top"><textarea cols="88"
-			id="chatroomadmin" name="chatroomadmin" rows="12"></textarea></td>
-		<td width="126" rowspan="3" valign="top">
+		<td width="558" valign="top"><textarea cols="88" id="messages"
+			name="messages" rows="35">
+ 		<c:forEach items="${messages}" var="message" varStatus="myIndex">
+		   ${message.author}: ${message.context}
+		</c:forEach>	
+		
+	      </textarea></td>
+		<td width="126" rowspan="2" valign="top">
 
 		<table>
 			<tr>
@@ -41,15 +46,6 @@ body {
 					</c:forEach>
 		</table>
 		</td>
-	</tr>
-	<tr>
-		<td height="206" valign="top"><textarea cols="88" id="messages"
-			name="messages" rows="17">
- 		<c:forEach items="${messages}" var="message" varStatus="myIndex">
-		   ${message.author}: ${message.context}
-		</c:forEach>	
-		
-	</textarea></td>
 	</tr>
 	<tr>
 
