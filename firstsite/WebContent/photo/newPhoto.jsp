@@ -15,8 +15,8 @@
 	<tr>
 		<td>
 		<ul>
-			<li class="txt_1">相册名称： <input type="text" id="Phid"
-				name="Phname" maxlength="20" size="15" /> <br />
+			<li class="txt_1">相册名称： <input type="text" id="id"
+				name="album" maxlength="20" size="15" /> <br />
 			<br />
 			</li>
 			<li class="txt_1">相册描述: <br />
