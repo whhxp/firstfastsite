@@ -43,7 +43,7 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
 
 	<import resource="org/apachechina/fscore/config/applicationContext.xml" />
 	<import resource="org/apachechina/fsboard/config/applicationContext.xml" />
-
+   <import resource="core.xml" />
 
 </beans>
 
