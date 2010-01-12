@@ -1,4 +1,5 @@
 /*@charset "UTF-8";*/
+use firstsite;
 create table user
 (
 	id			int auto_increment,
