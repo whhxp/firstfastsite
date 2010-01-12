@@ -7,19 +7,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-<title>相册</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>显示图片</title>
 </head>
 <body>
-<%@include file="head.jsp"%>
 <div align="left">
 <table border="1">
-	<c:forEach items="${list}" var="pho">
+	<c:forEach items="${list}" var="pic">
 		<tr>
-			<td><a href="pic.jsp">${pho.album}</a></td>
+			<td><img src="${pic.route}" height="120" width="100" /></td>
 		</tr>
 		<tr>
-			<td>${pho.count}</td>
+			<td>${pic.title}</td>
+		</tr>
+		<tr>
+			<td>${pic.Picdescrip}</td>
 		</tr>
 	</c:forEach>
 </table>
