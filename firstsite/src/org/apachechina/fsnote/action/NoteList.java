@@ -18,8 +18,8 @@ import com.opensymphony.xwork2.Action;
  */
 public class NoteList extends ActionSupport implements Action
 {
-
-	public String execute() throws Exception {
+	
+ public String execute() throws Exception {
 		System.out.println("test here");
 		HttpServletRequest request = ServletActionContext.getRequest();		
 		return SUCCESS;	

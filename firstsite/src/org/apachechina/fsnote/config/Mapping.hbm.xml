@@ -13,5 +13,11 @@
         <property name="gut" type="string"/> 
         <property name="date" type="date"/>   
     </class>
+    <class name="org.apachechina.fsnote.domain.Groups" table="fsnote_groups">
+    	<id name="id" column="Group_ID">
+    	<generator class="native"/>
+    	</id>
+    	<property name="name"></property>
+    </class>
       
 </hibernate-mapping>
