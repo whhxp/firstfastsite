@@ -7,5 +7,13 @@
 		<action name="index" class="PhoList">
 			<result>index.jsp</result>
 		</action>
+		
+		<action name="nph" class="nph">
+			<result>nph.jsp</result>
+		</action>
+		
+		<action name="send" class="Send">
+			<result>newPhoto.jsp</result>
+		</action>
 	</package>
 </struts>

@@ -13,25 +13,26 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class PicList extends ActionSupport implements Action {
 
-	PicDao PicDao;
+	PicDao picDao;
 
 	public String execute() throws Exception {
 		System.out.println("test pic here");
 		HttpServletRequest request = ServletActionContext.getRequest();
 
-		List<Pic> arrayList = PicDao.getList();
+		List<Pic> arrayList = picDao.getpic();
 		request.setAttribute("list", arrayList);
-		System.out.println(Config.FILE_DIR);
 		return SUCCESS;
 
 	}
 
 	public PicDao getPicDao() {
-		return PicDao;
+		return picDao;
 	}
 
 	public void setPicDao(PicDao picDao) {
-		PicDao = picDao;
+		this.picDao = picDao;
 	}
+
+	
 
 }
