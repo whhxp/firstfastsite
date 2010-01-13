@@ -24,6 +24,7 @@ public class Save extends ActionSupport implements Action{
 	String context;
 	String addressee; 
 	String sent;
+	String ck;
 	UserMessageDao userMessageDao;
 	UserManager userManager;
 
@@ -35,13 +36,8 @@ public class Save extends ActionSupport implements Action{
 		addressee = (String)request.getParameter("addressee");
 		title = (String)request.getParameter("title");
 		context = (String)request.getParameter("context");
+		ck=(String)request.getParameter("checkbox");
 		User u=userManager.getCurrentUser();
-		if(userMessageDao.select(u.getName()))
-		{
-			System.out.println(userMessageDao.select(u.getName()));
-			UserMessage um=new UserMessage(u.getName());
-			userMessageDao.save(um);
-		}
 		if(addressee.endsWith(u.getName()))
 		{
 			return "error";
@@ -52,20 +48,22 @@ public class Save extends ActionSupport implements Action{
 		}
 		Date time=new Date();
 		//保存信息
+		if(ck!=null)
+		{
+			if("yes".endsWith(ck))
+			{
+				Message message2=new Message(context,"form",title,u.getName(),addressee,time);
+				messageDao.save(message2);
+			}
+		}
 		Message message=new Message(context,"to",title,u.getName(),addressee,time);
-		Message message2=new Message(context,"form",title,u.getName(),addressee,time);
 		messageDao.save(message);
-		messageDao.save(message2);
-		
 		
 		//新旧信息统计
-		UserMessage umForm=userMessageDao.selectUM(u.getName());
 		UserMessage umTo=userMessageDao.selectUM(addressee);
-		umForm.setNewnum(umForm.getNewnum()+1);
-		umForm.setSumnum(umForm.getSumnum()+1);
-		umTo.setOldnum(umTo.getOldnum()+1);
-		umTo.setSumnum(umTo.getSumnum()+1);
-		userMessageDao.update(umForm);
+		umTo.setNewnum(umTo.getNewnum()+1);
+	
+	
 		userMessageDao.update(umTo);
 		return SUCCESS;
 	}

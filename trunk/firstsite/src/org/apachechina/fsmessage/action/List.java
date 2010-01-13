@@ -5,6 +5,8 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.apache.struts2.ServletActionContext;
 import org.apachechina.fscore.api.UserManager;
+import org.apachechina.fsmessage.dao.UserMessageDao;
+import org.apachechina.fsmessage.domain.UserMessage;
 import org.apachechina.fsmessage.manager.MessageManager;
 
 import sun.security.krb5.internal.crypto.u;
@@ -17,6 +19,27 @@ public class List extends ActionSupport implements Action{
 	
 	//DI
 	MessageManager messageManager;
+	UserMessageDao userMessageDao;
+	public UserMessageDao getUserMessageDao() {
+		return userMessageDao;
+	}
+
+
+
+
+
+
+
+	public void setUserMessageDao(UserMessageDao userMessageDao) {
+		this.userMessageDao = userMessageDao;
+	}
+
+
+
+
+
+
+
 	public MessageManager getMessageManager() {
 		return messageManager;
 	}
@@ -39,7 +62,11 @@ public class List extends ActionSupport implements Action{
 		
 		System.out.println("test here");
 		HttpServletRequest request = ServletActionContext.getRequest();
-		
+		if(userMessageDao.select(userManager.getCurrentUser().getName()))
+		{
+			UserMessage um=new UserMessage(userManager.getCurrentUser().getName());
+			userMessageDao.save(um);
+		}
 		
 		
 		request.setAttribute("currentUser",userManager.getCurrentUser());

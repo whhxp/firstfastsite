@@ -11,9 +11,12 @@
         <action name="newRead" class="MsgList">
             <result>newread.jsp</result>
         </action> 
-        <action name="msgSave" class="MsgSave">
+        <action name="msgSave" class="MsgSave" >
             <result>messageaction.jsp</result>
             <result name="error">messageaError.jsp</result>
+        </action> 
+        <action name="msgDelete" class="MsgDelete">
+            <result>messageadelete.jsp</result>
         </action> 
     </package>
    

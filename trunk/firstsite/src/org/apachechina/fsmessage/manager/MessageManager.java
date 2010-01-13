@@ -63,6 +63,14 @@ public class MessageManager {
 	public void setMessageDao(MessageDao messageDao) {
 		this.messageDao = messageDao;
 	}
+	public void deleteMessage(String str) {
+		messageDao.deleteMessage(str);
+		
+	}
+	public void upUserMessage(UserMessage um) {
+		userMessageDao.update(um);
+		
+	}
 
 	
 	
