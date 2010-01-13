@@ -12,17 +12,19 @@
 </head>
 <body>
 <%@include file="head.jsp"%>
-<div align="left">
-<table border="1">
-	<c:forEach items="${list}" var="pho">
-		<tr>
-			<td><a href="pic.jsp">${pho.album}</a></td>
-		</tr>
-		<tr>
-			<td>${pho.count}</td>
-		</tr>
-	</c:forEach>
+
+<table>
+	<tr>
+		<c:forEach items="${list}" var="pho">
+			<td><a href="pic.action">${pho.album}</a></td>
+		</c:forEach>
+	</tr>
+	<tr>
+		<c:forEach items="${list}" var="pho">
+			<td>${pho.description}</td>
+		</c:forEach>
+	</tr>
 </table>
-</div>
+
 </body>
 </html>
