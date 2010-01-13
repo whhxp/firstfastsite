@@ -10,7 +10,7 @@
         </action> 
         <action name="msgSave" class="MsgSave">
             <result>messageaction.jsp</result>
-            <result name="error">new.jsp</result>
+            <result name="error">messageaError.jsp</result>
         </action> 
     </package>
    
