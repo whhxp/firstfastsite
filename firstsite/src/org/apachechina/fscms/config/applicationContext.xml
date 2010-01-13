@@ -14,11 +14,16 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 	</bean>
 		
 		
+		
+		
 	<!-- action-->	
 	<bean id="ArticleList" class="org.apachechina.fscms.action.ArticleList" scope="prototype" >
 		<property name="articleDao" ref="articleDao" />
 	</bean>
-
+	
+	<bean id="ArticleRead" class="org.apachechina.fscms.action.ArticleRead" scope="prototype" >
+		<property name="articleDao" ref="articleDao" /> 
+	</bean>
 
 
 </beans>
