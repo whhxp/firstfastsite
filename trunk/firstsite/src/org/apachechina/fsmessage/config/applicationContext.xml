@@ -27,6 +27,7 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 	
 	<bean id="messageManager" class="org.apachechina.fsmessage.manager.MessageManager" >
 	<property name="userMessageDao" ref="userMessageDao"></property>
+	<property name="messageDao" ref="messageDao"></property>
 	 </bean>
 
 	
