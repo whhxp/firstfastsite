@@ -26,14 +26,15 @@ body {
       <td><input name="title" type="text" size="60%"></td>
     </tr>
     <tr>
-      <td>&nbsp;</td>
+      <td>内容：</td>
       <td><textarea name="context" cols="60%" rows="10"></textarea></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
       <td><input type="submit" name="Submit" value="提交">
       <input name="save" type="button" id="save" value="保存草稿">
-      <input name="back" type="button" id="back" value="返回"></td>
+      <input type="checkbox" name="checkbox" value="yes">
+保存 至发件箱     </td>
     </tr>
   </table>
 </form>

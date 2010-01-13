@@ -51,11 +51,11 @@
       </tr>
       <tr>
         <td height="15" class="messageIndex"><div align="center"><a href="./newRead.action" class="messageIndex" target="mainFrame">未读信息</a></div></td>
-        <td class="messageIndex"><div align="center"><span class="style6">&nbsp&nbsp(&nbsp${from.oldnum}&nbsp) </span></div></td>
+        <td class="messageIndex"><div align="center"><span class="style6">&nbsp&nbsp(&nbsp${from.newnum}&nbsp) </span></div></td>
       </tr>
       <tr>
-        <td height="15" class="messageIndex"><div align="center"><a href="./sent.jsp" class="messageIndex" target="mainFrame">全部信息</a></div></td>
-        <td height="15" class="messageIndex"><div align="center"><span class="style6">&nbsp&nbsp(&nbsp${from.sumnum}&nbsp) </span></div></td>
+        <td height="15" class="messageIndex"><div align="center"><a href="./sent.jsp" class="messageIndex" target="mainFrame">已读信息</a></div></td>
+        <td height="15" class="messageIndex"><div align="center"><span class="style6">&nbsp&nbsp(&nbsp${from.oldnum}&nbsp) </span></div></td>
       </tr>
       <tr>
         <td height="15" class="messageIndex"><div align="center"><a href="./sent.jsp" class="messageIndex" target="mainFrame">草稿箱</a></div></td>

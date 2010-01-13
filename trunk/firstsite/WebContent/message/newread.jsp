@@ -17,12 +17,12 @@ body {
 </style>
 </head>
 <body>
-<form action="Delete" name="msgDelete" method="post" >
+<form action="msgDelete" name="msgDelete" method="get" >
  	<table width="100%" border="1" cellpadding="4" cellspacing="0">
 		<c:forEach items="${listnew}" var="item" varStatus="myIndex">
 		<tr >
 	      <td width="6%">
-		      <input type="checkbox" name="${item.id}" value="checkbox" />
+		      <input type="checkbox" name="checkbox" value="${item.id}" />
 	       	</td>
 			<a href="./sent.jsp?id=${item.id}">
 			<td width="16%">${item.thefrom}</td>
@@ -30,13 +30,13 @@ body {
 			<td width="19%">${item.date}</td>
 			</a>
 		</tr>
+		 </c:forEach>	
 		<tr >
 		  <td>&nbsp;</td>
 		  <td><input type="submit" name="Submit" value="删除选中项" /></td>
 		  <td>&nbsp;</td>
 		  <td>&nbsp;</td>
 	    </tr>
-	  </c:forEach>	
   </table>
 </form>
 </body>
