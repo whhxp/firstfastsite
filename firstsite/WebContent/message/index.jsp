@@ -50,7 +50,7 @@
         <td height="15" class="messageIndex"><div align="center"></div></td>
       </tr>
       <tr>
-        <td height="15" class="messageIndex"><div align="center"><a href="./sent.jsp" class="messageIndex" target="mainFrame">未读信息</a></div></td>
+        <td height="15" class="messageIndex"><div align="center"><a href="./newRead.action" class="messageIndex" target="mainFrame">未读信息</a></div></td>
         <td class="messageIndex"><div align="center"><span class="style6">&nbsp&nbsp(&nbsp${from.oldnum}&nbsp) </span></div></td>
       </tr>
       <tr>

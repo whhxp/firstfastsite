@@ -6,6 +6,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>接受页面</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #F6F9FC;
+}
+-->
+</style>
 </head>
 <body>
 <div  align='center'>
