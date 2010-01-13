@@ -14,7 +14,10 @@
 	color: #6C92AD;
 	font-style: normal;
 	text-decoration: none;
+	font-size: x-small;
 }
+.style1 {color: #6C92AD; font-style: normal; text-decoration: none; font-size: x-small; }
+.style6 {color: #6C92AD; font-weight: bold; }
 -->
 </style>
 </head>
@@ -40,34 +43,35 @@
   <tr> 
     <td width="17%" bordercolor="#6C92AD"><table width="100%" height="100%" border="1" cellpadding="4" cellspacing="0" bordercolor="#6C92AD" bgcolor="#DBE8F2">
       <tr bgcolor="#FFFFFF">
-        <td colspan="2" class="messageIndex"><strong>邮件列表</strong></td>
+        <td height="40" colspan="2" class="messageIndex"><div align="center"><strong>邮件列表</strong></div></td>
       </tr>
       <tr>
-        <td colspan="2" class="messageIndex">发件</td>
+        <td height="15" class="messageIndex"><div align="center"><a href="./new.jsp" target="mainFrame" class="style1">发信息</a></div></td>
+        <td height="15" class="messageIndex"><div align="center"></div></td>
       </tr>
       <tr>
-        <td class="messageIndex">&#149;</td>
-        <td class="messageIndex"><a href="./new.jsp" class="messageIndex" target="mainFrame">写新邮件</a></td>
+        <td height="15" class="messageIndex"><div align="center"><a href="./sent.jsp" class="messageIndex" target="mainFrame">未读信息</a></div></td>
+        <td class="messageIndex"><div align="center"><span class="style6">&nbsp&nbsp(&nbsp${from.oldnum}&nbsp) </span></div></td>
       </tr>
       <tr>
-        <td class="messageIndex">&#149;</td>
-        <td class="messageIndex"><a href="./sent.jsp" class="messageIndex" target="mainFrame">已发邮件</a></td>
+        <td height="15" class="messageIndex"><div align="center"><a href="./sent.jsp" class="messageIndex" target="mainFrame">全部信息</a></div></td>
+        <td height="15" class="messageIndex"><div align="center"><span class="style6">&nbsp&nbsp(&nbsp${from.sumnum}&nbsp) </span></div></td>
       </tr>
       <tr>
-        <td colspan="2" class="messageIndex" >收件</td>
+        <td height="15" class="messageIndex"><div align="center"><a href="./sent.jsp" class="messageIndex" target="mainFrame">草稿箱</a></div></td>
+        <td height="15" class="messageIndex"><div align="center"><span class="style6">&nbsp&nbsp(&nbsp${from.savenum}&nbsp) </span></div></td>
       </tr>
       <tr>
-        <td class="messageIndex">&#149;</td>
-        <td class="messageIndex"><a href="./sent.jsp" class="messageIndex" target="mainFrame">收件箱</a></td>
+        <td height="15" class="messageIndex"><div align="center"><a href="./sent.jsp" class="messageIndex" target="mainFrame">收件箱</a></div></td>
+        <td height="15" class="messageIndex"><div align="center"></div></td>
       </tr>
       <tr>
-        <td class="messageIndex">&#149;</td>
-        <td class="messageIndex"><a href="./sent.jsp" class="messageIndex" target="mainFrame">草稿箱</a></td>
+        <td height="15" class="messageIndex"><div align="center"><a href="./sent.jsp" class="messageIndex" target="mainFrame">发件箱</a></div></td>
+        <td height="15" class="messageIndex"><div align="center"></div></td>
       </tr>
       <tr>
-        <td height="29" class="messageIndex">&#149;</td>
-        <td class="messageIndex"><a href="./sent.jsp" class="messageIndex" target="mainFrame">垃圾邮件</a></td>
-      </tr>
+        <td colspan="2" bgcolor="#FFFFFF" class="messageIndex"><div align="left"></div></td>
+        </tr>
       
     </table>
       <p class="messageIndex"> 
