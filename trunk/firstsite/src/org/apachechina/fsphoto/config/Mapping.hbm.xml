@@ -3,22 +3,21 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
-<hibernate-mapping>	
-    <class name="org.apachechina.fsphoto.domain.Pho" table="fsPho_Pho">    
-        <id name="id" column="PHO_id" type="long" >
-            <generator class="native" />
-        </id>        
-        <property name="album" type="string" length="90"/>
-        <property name="count" type="int"/>
-		<property name="description" type="string" length="200"/>  
-    </class>
-    
-    <class name="org.apachechina.fsphoto.domain.Pic" table="fsPic_Pic">    
-        <id name="id" column="PIC_id" type="long">
-            <generator class="native" />
-        </id>  
-         <property name="route" type="string"/>
-         <property name="title" type="string"/>
-         <property name="Picdescrip" type="string" length="200"/>
-    </class>
+<hibernate-mapping>
+	<class name="org.apachechina.fsphoto.domain.Pho" table="fsPho_Pho">
+		<id name="id" column="PHO_id" type="long">
+			<generator class="native" />
+		</id>
+		<property name="album" type="string" length="30" />
+		<property name="description" type="string" length="200" />
+	</class>
+
+	<class name="org.apachechina.fsphoto.domain.Pic" table="fsPic_Pic">
+		<id name="id" column="PIC_id" type="long">
+			<generator class="native" />
+		</id>
+		<property name="route" type="string" />
+		<property name="title" type="string" />
+		<property name="Picdescrip" type="string" length="200" />
+	</class>
 </hibernate-mapping>

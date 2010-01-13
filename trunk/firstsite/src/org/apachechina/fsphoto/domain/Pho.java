@@ -4,7 +4,6 @@ public class Pho {
 	Long id;
 	String album;// 相册名称
 	String description;// 相册描述
-	int count;//照片数量
 
 	public Pho() {
 	}
@@ -38,17 +37,8 @@ public class Pho {
 		this.album = album;
 	}
 
-	public int getCount() {
-		return count;
-	}
-
-	public void setCount(int count) {
-		this.count = count;
-	}
-
 	public String toString() {
-		return "Pho[album " + album + ", description=" + description
-				+ ",count=" + count + "]";
+		return "Pho[album " + album + ", description=" + description + "]";
 	}
 
 }

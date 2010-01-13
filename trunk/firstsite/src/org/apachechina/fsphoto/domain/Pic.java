@@ -5,6 +5,7 @@ public class Pic {
 	String route;// 照片路径
 	String title;// 照片名字
 	String Picdescrip;// 照片描述
+	int count;// 照片数量
 
 	public Pic() {
 	}
@@ -12,7 +13,6 @@ public class Pic {
 	public Pic(String title, String Picdescrip) {
 		this.title = title;
 		this.Picdescrip = Picdescrip;
-
 	}
 
 	public Long getId() {
@@ -47,9 +47,17 @@ public class Pic {
 		Picdescrip = picdescrip;
 	}
 
+	public int getCount() {
+		return count;
+	}
+
+	public void setCount(int count) {
+		this.count = count;
+	}
+
 	public String toString() {
 		return "Pic [route=" + route + ",title=" + title + ",Picdescrip="
-				+ Picdescrip + "]";
+				+ Picdescrip + ",count=" + count + "]";
 	}
 
 }
