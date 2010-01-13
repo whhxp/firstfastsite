@@ -24,5 +24,9 @@ public class MessageDao extends HibernateDaoSupport{
 		getHibernateTemplate().saveOrUpdate(item);
 		System.out.println("-------MessageDao.save()+ "+item+"---------------");
 	}
+	public  List<Message> select(String name)
+	{
+		return getHibernateTemplate().find("from Message where theto='"+name+"' and style='to'");
+	}
 
 }
