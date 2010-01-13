@@ -7,6 +7,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>接受页面</title>
 </head>
+<style type="text/css">
+<!--
+body {
+	background-color: #F6F9FC;
+}
+-->
+</style>
 <body>
 <div  align='center'>
 <br/><br/><br/>
