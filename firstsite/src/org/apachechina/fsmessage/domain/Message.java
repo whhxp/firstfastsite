@@ -14,7 +14,16 @@ public class Message {
 	private String message;//信息内容
 	private String style;//类型
 	private String title;//标题
-	private String associate;//关联的人
+	private String thefrom;//信息来自
+	private String theto;//信息发到
+
+
+
+
+
+
+
+
 	private Date date;//日期
 
 	public Date getDate() {
@@ -26,18 +35,31 @@ public class Message {
 	public Message() {
 
 	}
-	public Message(String message,String style,String title,String associate,Date date) 
+	public Message(String message,String style,String title,String thefrom,String theto,Date date) 
 	{
 		this.message=message;
 		this.style=style;
 		this.title=title;
-		this.associate=associate;
+		this.thefrom=thefrom;
+		this.theto=theto;
 		this.date=date;
 	
 	}
 
 
 
+	public String getThefrom() {
+		return thefrom;
+	}
+	public void setThefrom(String thefrom) {
+		this.thefrom = thefrom;
+	}
+	public String getTheto() {
+		return theto;
+	}
+	public void setTheto(String theto) {
+		this.theto = theto;
+	}
 	public String getMessage() {
 		return message;
 	}
@@ -74,16 +96,10 @@ public class Message {
 
 
 
-	public String getAssociate() {
-		return associate;
-	}
+	
 
 
-
-	public void setAssociate(String associate) {
-		this.associate = associate;
-	}
-
+	
 
 
 	public Long getId() {
@@ -102,7 +118,7 @@ public class Message {
 
 	public String toString() {
 		return "MESSAGE [id=" + id + ", message=" +message + ", style=" + style
-				+ ", title=" + title+ ", associate=" + associate +",date="+(""+date)+ "]";
+				+ ", title=" + title+ ", form=" + thefrom +",date="+(""+date)+ "]";
 	}
 
 }
