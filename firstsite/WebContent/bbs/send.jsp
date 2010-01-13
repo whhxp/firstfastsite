@@ -2,9 +2,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ page import="org.apachechina.fsbbs.domain.*"%>
-<%@ page import="org.apachechina.fsbbs.domain.htool.*"%>
-<%@ page import="java.util.*"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <%%>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -18,7 +15,7 @@
 </head>
 <body>
 <div align="center">
-<form style="width: 100px; height: 100px" action="OK.jsp">
+<form style="width: 100px; height: 100px" action="OK.action" method="post">
 <table>
 	<caption></caption>
 	<tr>
