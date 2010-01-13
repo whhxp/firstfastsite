@@ -28,5 +28,12 @@ public class MessageDao extends HibernateDaoSupport{
 	{
 		return getHibernateTemplate().find("from Message where theto='"+name+"' and style='to'");
 	}
+	public void deleteMessage(String str)
+	{
+		long id = Long.parseLong(str);
+		Message m=(Message)getHibernateTemplate().find("from Message where id='"+id+"'").get(0);
+		getHibernateTemplate().delete(m);
+		
+	}
 
 }

@@ -11,11 +11,16 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 	<bean id="MsgList" class="org.apachechina.fsmessage.action.List" scope="prototype" > 
 		<property name="messageManager" ref="messageManager"></property>
 		<property name="userManager" ref="userManager"></property>
+		<property name="userMessageDao" ref="userMessageDao"></property>
 	</bean>
 	<bean id="MsgSave" class="org.apachechina.fsmessage.action.Save" scope="prototype" > 
 		<property name="messageDao" ref="messageDao"></property>
 		<property name="userMessageDao" ref="userMessageDao"></property>
 		<property name="userManager" ref="userManager"></property>
+	</bean>
+	<bean id="MsgDelete" class="org.apachechina.fsmessage.action.Delete" scope="prototype" > 
+		<property name="userManager" ref="userManager"></property>
+		<property name="messageManager" ref="messageManager"></property>
 	</bean>
 	
 	<bean id="messageDao" class="org.apachechina.fsmessage.dao.MessageDao" > 

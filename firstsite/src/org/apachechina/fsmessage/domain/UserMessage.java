@@ -3,9 +3,8 @@ package org.apachechina.fsmessage.domain;
 public class UserMessage {
 	private Long id;
 	private String name;
-	private int newnum;//新信息总数
-	private int oldnum;//旧信息总数
-	private int sumnum;//所有信息总数
+	private int newnum;//未读信息总数
+	private int oldnum;//已读信息总数
 	private int savenum;//草稿箱信息总数
 	public UserMessage()
 	{
@@ -18,7 +17,7 @@ public class UserMessage {
 	public String toString()
 	{
 		return "UserMessage [id=" + id + ", newnum=" +newnum + ", oldnum=" + oldnum
-		+", sumnum="+sumnum+", savenum="+savenum+"]";
+		+", savenum="+savenum+"]";
 	}
 	public Long getId() {
 		return id;
@@ -38,12 +37,7 @@ public class UserMessage {
 	public void setOldnum(int oldnum) {
 		this.oldnum = oldnum;
 	}
-	public int getSumnum() {
-		return sumnum;
-	}
-	public void setSumnum(int sumnum) {
-		this.sumnum = sumnum;
-	}
+
 	public int getSavenum() {
 		return savenum;
 	}

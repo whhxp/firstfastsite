@@ -22,8 +22,7 @@
         </id> 
         <property name="name" type="string"/>      
         <property name="newnum" type="int"/>
-        <property name="oldnum" type="int"/>
-        <property name="sumnum" type="int"/>   
+        <property name="oldnum" type="int"/> 
         <property name="savenum" type="int"/>  
     </class>
  
