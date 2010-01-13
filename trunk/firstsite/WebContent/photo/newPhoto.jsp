@@ -9,14 +9,13 @@
 <title>相册</title>
 </head>
 <body>
-<form action="index.jsp" name="regForm" id="regForm" method="get"
-	target="_self" />
+<form action="nph.action" method="post" />
 <table align="center">
 	<tr>
 		<td>
 		<ul>
-			<li class="txt_1">相册名称： <input type="text" id="id"
-				name="album" maxlength="20" size="15" /> <br />
+			<li class="txt_1">相册名称： <input type="text" name="album"
+				maxlength="20" size="15" /> <br />
 			<br />
 			</li>
 			<li class="txt_1">相册描述: <br />
@@ -28,7 +27,7 @@
 		<td align="right"><br />
 		<br />
 		<input type="submit" class="btn1" value="确定" /> &nbsp;&nbsp; <input
-			type="submit" class="btn1" value="取消" /></td>
+			type="button" class="btn1" value="取消" /></td>
 	</tr>
 </table>
 </body>
