@@ -38,7 +38,7 @@
   <li><a target="mainFrame" href="../message/index.action">发送信息页面 </a> </li> 
   <li><a target="mainFrame" href="../note/index.action">日志</a></li>
   <li><a target="mainFrame" href="../photo/index.action">相册</a></li>
-  <li><a target="mainFrame" href="../bbs/index.action">论坛</a></li>
+  <li><a target="mainFrame" href="../bbs/index.jsp">论坛</a></li>
   <li><a target="mainFrame" href="../chatroom/index.action">聊天室</a></li>
  </ul> 
  
