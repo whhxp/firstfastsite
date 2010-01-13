@@ -2,6 +2,7 @@ package org.apachechina.fsmessage.manager;
 
 import java.util.List;
 
+import org.apachechina.fsmessage.dao.UserMessageDao;
 import org.apachechina.fsmessage.domain.Hibernatemessage;
 import org.apachechina.fsmessage.domain.Message;
 
@@ -18,7 +19,14 @@ public class MessageManager {
 	
 
 	Hibernatemessage hm;
+	UserMessageDao userMessageDao;
 
+	public UserMessageDao getUserMessageDao() {
+		return userMessageDao;
+	}
+	public void setUserMessageDao(UserMessageDao userMessageDao) {
+		this.userMessageDao = userMessageDao;
+	}
 	public List<Message> getMESSAGEList() {
 
 
@@ -38,6 +46,10 @@ public class MessageManager {
 	}
 	public void setHm(Hibernatemessage hm) {
 		this.hm = hm;
+	}
+	public UserMessage getFormmessage(String name) 
+	{
+		return userMessageDao.selectUM(name);
 	}
 	
 

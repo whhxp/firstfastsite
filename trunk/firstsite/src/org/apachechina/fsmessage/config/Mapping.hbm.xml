@@ -11,7 +11,8 @@
         <property name="message" type="string"/>
         <property name="style" type="string"/>
         <property name="title" type="string"/>   
-        <property name="associate" type="string"/>  
+        <property name="thefrom" type="string"/>  
+        <property name="theto" type="string"/>  
         <property name="date" type="date"/> 
     </class>
 

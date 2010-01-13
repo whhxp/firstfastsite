@@ -4,11 +4,7 @@ package org.apachechina.fsmessage.action;
 
 
 import java.util.Date;
-
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-
 import org.apache.struts2.ServletActionContext;
 import org.apachechina.fscore.api.UserManager;
 import org.apachechina.fscore.domain.User;
@@ -16,11 +12,8 @@ import org.apachechina.fsmessage.dao.MessageDao;
 import org.apachechina.fsmessage.dao.UserMessageDao; 
 import org.apachechina.fsmessage.domain.Message;
 import org.apachechina.fsmessage.domain.UserMessage;
-
-
 import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionSupport;
-
 public class Save extends ActionSupport implements Action{
 
 	
@@ -43,20 +36,24 @@ public class Save extends ActionSupport implements Action{
 		title = (String)request.getParameter("title");
 		context = (String)request.getParameter("context");
 		User u=userManager.getCurrentUser();
-		if(addressee.endsWith(u.getName()))
-		{
-			//加入转入错误的程式
-		}
 		if(userMessageDao.select(u.getName()))
 		{
 			System.out.println(userMessageDao.select(u.getName()));
 			UserMessage um=new UserMessage(u.getName());
 			userMessageDao.save(um);
 		}
+		if(addressee.endsWith(u.getName()))
+		{
+			return "error";
+		}
+		if(userMessageDao.select(addressee))
+		{
+			return "error";
+		}
 		Date time=new Date();
 		//保存信息
-		Message message=new Message(context,"to",title,addressee,time);
-		Message message2=new Message(context,"form",title,u.getName(),time);
+		Message message=new Message(context,"to",title,u.getName(),addressee,time);
+		Message message2=new Message(context,"form",title,u.getName(),addressee,time);
 		messageDao.save(message);
 		messageDao.save(message2);
 		
