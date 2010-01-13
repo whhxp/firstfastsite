@@ -8,11 +8,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>已发送的邮件信息</title>
 <style type="text/css">
-<!--
+
 body {
 	background-color: #F6F9FC;
 }
--->
+
 </style></head>
 
 <body>

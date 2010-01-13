@@ -7,11 +7,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>新建邮件</title>
 <style type="text/css">
-<!--
+
 body {
 	background-color: #F6F9FC;
 }
--->
+
 </style></head>
 
 <body>

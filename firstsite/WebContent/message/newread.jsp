@@ -8,16 +8,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>未读信息列表</title>
 <style type="text/css">
-<!--
+
 body {
 	background-color: #F6F9FC;
 	text-decoration: none;
 }
--->
+
 </style>
 </head>
 <body>
-<form action="" name="msgDelete" method="post" >
+<form action="Delete" name="msgDelete" method="post" >
  	<table width="100%" border="1" cellpadding="4" cellspacing="0">
 		<c:forEach items="${listnew}" var="item" varStatus="myIndex">
 		<tr >
@@ -30,6 +30,12 @@ body {
 			<td width="19%">${item.date}</td>
 			</a>
 		</tr>
+		<tr >
+		  <td>&nbsp;</td>
+		  <td><input type="submit" name="Submit" value="删除选中项" /></td>
+		  <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+	    </tr>
 	  </c:forEach>	
   </table>
 </form>

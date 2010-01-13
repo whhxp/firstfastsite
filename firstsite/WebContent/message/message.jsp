@@ -10,11 +10,11 @@
 <title>邮件信息显示页面</title>
 
 <style type="text/css">
-<!--
+
 body {
 	background-color: #F6F9FC;
 }
--->
+
 </style></head>
 <body>
 <table width="100%"  border="1" cellspacing="0">
