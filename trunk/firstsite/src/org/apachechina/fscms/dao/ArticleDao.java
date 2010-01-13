@@ -12,5 +12,12 @@ public class ArticleDao extends HibernateDaoSupport{
 		return getHibernateTemplate().find("from Article");		
 		
 	}
+	
+	
+
+	
+	public Article get(Long id){		
+		return getHibernateTemplate().get(Article.class, id);
+	}
 
 }

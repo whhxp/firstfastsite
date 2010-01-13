@@ -7,7 +7,12 @@
 	 <class name="org.apachechina.fscms.domain.Article" table="fscms_Article">    
         <id name="id" column="id" type="long" >
             <generator class="native" />
-        </id>        
+        </id>  
+          
         <property name="title" type="string" length="200" />
+         <property name="subTitle" type="string" column="title_jian" length="200" />
+          <property name="gut" type="string" length="600" />
+           <property name="date" type="string" length="10" />
+            <property name="picture" type="string" length="50" />
      </class>
 </hibernate-mapping>

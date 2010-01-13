@@ -6,7 +6,11 @@ import java.util.Vector;
 
 public class Article {
 	long id;
-	String title;
+	String title;// 文章标题
+	private String subTitle; // 文章简要标题
+	private String gut;// 文章的内容
+	private String date;// 发表时间
+	private String picture; //图片地址
 
 	public Article() {
 	}
@@ -33,6 +37,38 @@ public class Article {
 	}
 
 	// *系统内置数据*//
+
+	public String getSubTitle() {
+		return subTitle;
+	}
+
+	public void setSubTitle(String titleJian) {
+		subTitle = titleJian;
+	}
+
+	public String getGut() {
+		return gut;
+	}
+
+	public void setGut(String gut) {
+		this.gut = gut;
+	}
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+	public String getPicture() {
+		return picture;
+	}
+
+	public void setPicture(String picture) {
+		this.picture = picture;
+	}
 
 	/**
 	 * @return 一条数据

@@ -7,7 +7,12 @@
    <package name="cms" namespace="/cms"  extends="fsbase" >
    		 <action name="index" class="ArticleList">
             <result>index.jsp</result>
-        </action>     		
+        </action>  
+        <action name="neirong_qian" class="ArticleRead">
+            <result>neirong_qian.jsp</result>
+        </action> 
+        
+          		
    </package>
    
 </struts>
