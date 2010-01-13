@@ -5,8 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>错误页面</title>
-</head>
+<title>删除页面</title>
 <style type="text/css">
 
 body {
@@ -14,12 +13,13 @@ body {
 }
 
 </style>
+</head>
 <body>
 <div  align='center'>
 <br/><br/><br/>
-该用户不存在，请从新输入!
+删除成功！
 <br/>
-<a href="./new.jsp">返回</a>
+<a href="./newRead.action">返回</a>
 </div>
 </body>
 </html>
