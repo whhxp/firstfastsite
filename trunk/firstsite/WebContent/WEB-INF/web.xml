@@ -33,10 +33,7 @@
 			<param-value>../core/login.jsp</param-value>
 		</init-param>		
 	</filter>
-	<filter-mapping>
-		<filter-name>UserFilter</filter-name>
-		<url-pattern>/*</url-pattern>
-	</filter-mapping>
+
 	
 	
 	<!-- Struts2支持  -->
