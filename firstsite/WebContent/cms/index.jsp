@@ -19,7 +19,7 @@
         <tr>      
           <td height="151"><div>          
 	        <c:forEach items="${list}" var="item" varStatus="myIndex">
-			  <p><a href="#">${item.title} </a><span>item.date</span> </p>
+			  <p><a href="neirong_qian.action?id=${item.id}">${item.title} </a><span>${item.date}</span> </p>
 			</c:forEach>
           </div></td>
         </tr>

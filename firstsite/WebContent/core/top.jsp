@@ -21,19 +21,16 @@
 	<%=_niit_user.getUserName() %> 
 <%} %>
 </span><div id="bottom" align="right" > 
-	<%if(_niit_user==null){ %>
-	    <a target="mainFrame" href="info.jsp">主页</a> 
-	    <a target="mainFrame" href="login.jsp">登录</a>   
-	    <a target="mainFrame" href="reg.jsp">注册</a>  
-	<%}else if(_niit_user.getPurviewId()==2){%> 
 		<a target="mainFrame" href="info.jsp">主页</a>  
 	    <a target="mainFrame" href="login.jsp">登录</a> 
 	     <a target="mainFrame" href="reg.jsp">注册</a>  
 	     <a target="mainFrame" href="edit.jsp"> 修改信息</a> 
 	     <a target="mainFrame" href="userlist.jsp"> 用户列表</a> 
 	     <a target="mainFrame" href="changePwd.jsp">修改密码 </a>
-	      <a target="mainFrame" href="logout.jsp">退出 </a>   
-	       <ul>   <li><a target="mainFrame" href="../board/index.action">留言板 </a> </li> 
+	      <a target="mainFrame" href="logout.jsp">退出 </a>  <br />
+	       
+<ul>
+  <li><a target="mainFrame" href="../board/index.action">留言板 </a> </li> 
   <li><a target="mainFrame" href="../cms/index.action">信息管理系统</a> </li> 
   <li><a target="mainFrame" href="../message/index.action">发送信息页面 </a> </li> 
   <li><a target="mainFrame" href="../note/index.action">日志</a></li>
@@ -45,16 +42,9 @@
  <div> 管理</div>
    <ul>
      <li><a target="mainFrame" href="../config-browser/index.action"> Strus.xml管理 </a> </li> 
-
+     <li><a target="mainFrame" href="../core/changeUser.action?name=admin"> admin</a> </li>
+     <li><a target="mainFrame" href="../core/changeUser.action?name=test"> test</a> </li>
    </ul> 
-	<%}else {%> 
-	   <a target="mainFrame" href="info.jsp">主页</a> 
-	    <a target="mainFrame" href="login.jsp">登录</a> 
-	     <a target="mainFrame" href="reg.jsp">注册</a>  
-	     <a target="mainFrame" href="edit.jsp"> 修改信息</a> 
-	     <a target="mainFrame" href="changePwd.jsp">修改密码 </a>
-	      <a target="mainFrame" href="logout.jsp">退出 </a>    
-	<%}%> 
 	</div>
 </body>	  
 </html> 
