@@ -5,7 +5,7 @@
  # core  核心模块,包含权限管理、用户、用户组的管理.所有的内容都依赖本模块.
  # commons 通用模块  开发过程中可以通用的模块部分。
 
- # message  站内信息模块（FSMSG）靳磊做！
+ # [message]  站内信息模块（FSMSG）靳磊做！
  # bbs  论坛        （FSBBS）范乐做！
  # [cms]   信息发布   （FSCMS）吴科学做!
  # note  日记   （FSBLOG）任卓卫做！
