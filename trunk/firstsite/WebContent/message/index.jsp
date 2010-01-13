@@ -9,7 +9,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>用户邮箱界面</title>
 <style type="text/css">
-<!--
+
 .messageIndex {
 	color: #6C92AD;
 	font-style: normal;
@@ -18,7 +18,7 @@
 }
 .style1 {color: #6C92AD; font-style: normal; text-decoration: none; font-size: x-small; }
 .style6 {color: #6C92AD; font-weight: bold; }
--->
+
 </style>
 </head>
 <body>
