@@ -14,9 +14,13 @@
 		<action name="OK" class="okIndex">
 			<result>OK.jsp</result>
 		</action>
-		
+
 		<action name="Card" class="SendIndex">
 			<result>Card.jsp</result>
+		</action>
+
+		<action name="Pinglun" class="PinglunIndex">
+			<result>Pinglunok.jsp</result>
 		</action>
 	</package>
 

@@ -18,8 +18,8 @@
 		<id name="id" column="Word_ID">
 			<generator class="native" />
 		</id>
-		<property name="zuozhe" type="string" />
 		<property name="gut" type="string" />
 		<property name="liuyanid" type="int" />
+		<property name="date" type="date" />
 	</class>
 </hibernate-mapping>

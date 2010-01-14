@@ -24,9 +24,7 @@ public class okIndex extends ActionSupport implements Action {
 
 		HttpServletRequest request = ServletActionContext.getRequest();
 		String title = request.getParameter("title");
-		System.out.println(title);
 		String gut = request.getParameter("gut");
-		System.out.println(gut);
 		Date date = new Date();
 		BBS bbs = new BBS(title, gut, date);
 		bbsDao.addbbs(bbs);
