@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="main" basedir=".">
+
+
+ <target name="main" >
+ 	<echo message="上传文件使用upload"/>	
+ 	<taskdef classname="net.bluecow.googlecode.ant.GoogleCodeUploadTask" classpath="./devlopLib/ant-googlecode-0.0.2.jar" name="gcupload"/> 
+ 	<gcupload   		
+ 	        username="nisen"  
+ 	        password="http://code.google.com/hosting/settings  中的密码"  
+ 	        projectname="firstfastsite"  
+ 	        filename="需要的文件"  
+ 	        targetfilename="目标文件" 
+ 	        summary="概要" 
+ 	        labels="Featured, Type-Package, OpSys-All" />
+ 	
+  </target>
+  
+</project>
