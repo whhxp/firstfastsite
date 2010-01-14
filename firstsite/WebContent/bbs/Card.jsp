@@ -26,14 +26,12 @@
 		<td height="154">${bbs.gut}</td>
 	</tr>
 </table>
-<br/>
-<br/>
-<br/>
-<form name="form3" method="post" action="firstpage.action" >
-   <textarea
-	name="textarea" cols="50" rows="20" ></textarea> <input type="submit"
-	name="Submit" value="提交">
-</form>
+<br />
+<br />
+<br />
+<form name="form3" method="post" action="Pinglunok.action"><textarea
+	name="pinglun" cols="50" rows="20"></textarea> <input type="submit"
+	name="Submit" value="提交"></form>
 
 </body>
 </html>
