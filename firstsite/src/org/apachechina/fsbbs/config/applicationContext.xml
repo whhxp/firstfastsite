@@ -21,6 +21,10 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 		scope="prototype">
 		<property name="bbsDao" ref="bbsDao"></property>
 	</bean>
+	<bean id="PinglunIndex" class="org.apachechina.fsbbs.action.Pinglun"
+		scope="prototype">
+		<property name="bbsDao" ref="bbsDao"></property>
+	</bean>
 
 
 	<!-- manager -->

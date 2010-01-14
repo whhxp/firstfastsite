@@ -27,8 +27,14 @@ public class BBSDao extends HibernateDaoSupport {
 		return bbs;
 	}
 
+	
+	
 	// 查询出留言表所有的内容
-	public List<Word> getword() {
-		return getHibernateTemplate().find("from Word");
+	public List<Word> getword(int id) {
+		return getHibernateTemplate().find("from Word where liuyanid="+id);
+	}
+	// 在数据库插入一个留言
+	public void addword(Word word) {
+		getHibernateTemplate().save(word);
 	}
 }

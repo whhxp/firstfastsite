@@ -1,18 +1,29 @@
 package org.apachechina.fsbbs.domain;
 
+import java.util.Date;
+
 public class Word {
 	Long id;
 	String zuozhe;
 	String gut;
 	int liuyanid;
+	Date date;
 
 	public Word() {
 	}
 
-	public Word(String zuozhe, String gut, int liuyanid) {
-		this.zuozhe = zuozhe;
+	public Word(String gut, int liuyanid, Date date) {
 		this.gut = gut;
 		this.liuyanid = liuyanid;
+		this.date = date;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
 	}
 
 	public String getZuozhe() {
@@ -49,8 +60,8 @@ public class Word {
 
 	@Override
 	public String toString() {
-		return "Word [gut=" + gut + ", liuyan=" + liuyanid + ", zuozhe="
-				+ zuozhe + "]";
+		return "Word [date=" + date + ", gut=" + gut + ", id=" + id
+				+ ", liuyanid=" + liuyanid + ", zuozhe=" + zuozhe + "]";
 	}
 
 }
