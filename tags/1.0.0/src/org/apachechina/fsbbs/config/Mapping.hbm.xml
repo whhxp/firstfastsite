@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.apachechina.fsbbs.domain.BBS" table="fsbbs_BBS">
+		<id name="id" column="BBS_ID">
+			<generator class="native" />
+		</id>
+		<property name="title" type="string" />
+		<property name="gut" type="string" />
+		<property name="liuyan" type="int" />
+		<property name="guankan" type="int" />
+		<property name="date" type="date" />
+	</class>
+	<class name="org.apachechina.fsbbs.domain.Word" table="fsbbs_Word">
+		<id name="id" column="Word_ID">
+			<generator class="native" />
+		</id>
+		<property name="gut" type="string" />
+		<property name="liuyanid" type="int" />
+		<property name="date" type="date" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	 <class name="org.apachechina.fscms.domain.Article" table="fscms_Article">    
+        <id name="id" column="id" type="long" >
+            <generator class="native" />
+        </id>  
+          
+        <property name="title" type="string" length="200" />
+         <property name="subTitle" type="string" column="title_jian" length="200" />
+          <property name="gut" type="string" length="600" />
+           <property name="date" type="string" length="10" />
+            <property name="picture" type="string" length="50" />
+     </class>
+</hibernate-mapping>

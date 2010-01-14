@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+	
+		
+		<!--  数据库连接-->
+		<property name="connection.driver_class">
+			com.mysql.jdbc.Driver
+		</property>
+		<property name="connection.url">
+			jdbc:mysql://127.0.0.1:3306/firstsite?useUnicode=true&amp;characterEncoding=UTF-8
+		</property>
+		<property name="connection.password">root</property>
+		<property name="connection.username">root</property>
+
+		<property name="dialect">
+			org.hibernate.dialect.MySQLDialect
+		</property>
+
+		<property name="show_sql">true</property>
+		<property name="current_session_context_class">thread</property>
+
+		<!-- 使用自动建表方式 -->
+		<property name="hbm2ddl.auto">update</property>
+
+
+		<!-- 是否自动提交，这样session不用session.beginTransaction() 然后tx.commit(); -->
+		<property name="connection.autocommit">false</property>
+
+		<!-- 显示格式化好的sql语句 -->
+		<property name="format_sql">true</property>
+
+		<mapping resource="org/apachechina/fscore/config/Mapping.hbm.xml" />
+		<mapping resource="org/apachechina/fsboard/config/Mapping.hbm.xml" />
+		
+		<!-- -->
+		<mapping resource="org/apachechina/fsbbs/config/Mapping.hbm.xml" />
+		<mapping resource="org/apachechina/fschatroom/config/Mapping.hbm.xml" />		
+		<mapping resource="org/apachechina/fscms/config/Mapping.hbm.xml" />
+		<mapping resource="org/apachechina/fsmessage/config/Mapping.hbm.xml" />		
+		<mapping resource="org/apachechina/fsnote/config/Mapping.hbm.xml" />
+		<mapping resource="org/apachechina/fsphoto/config/Mapping.hbm.xml" />
+
+		 
+	</session-factory>
+</hibernate-configuration>

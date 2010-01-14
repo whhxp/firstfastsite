@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>firstsite</display-name>
+	<welcome-file-list>
+		<welcome-file>index.action</welcome-file>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+
+	<!-- Spring支持-->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/*/applicationContext.xml,/WEB-INF/*/applicationContext.xml,classpath*:applicationContext*.xml</param-value>
+	</context-param>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	
+
+	<!-- 进行用户验证 -->
+	<filter>
+		<filter-name>UserFilter</filter-name>
+		<filter-class>com.filter.UserFilter</filter-class>
+		<!-- Issues:把这部分内容放到core/config配置目录下,并且使用可视化界面配置 ,决定那个可以访问,那个不可以访问-->
+		<init-param>
+			<param-name>nofilter</param-name>
+			<param-value>/core/login.jsp,/core/loginBack.jsp,/core/error.jsp,/core/reg.jsp,/core/regBack.jsp,/core/logout.jsp,/core/index.jsp,/core/top.jsp,/index.html</param-value>
+		</init-param>
+		<init-param>
+			<param-name>sendRedirect</param-name>
+			<param-value>../core/login.jsp</param-value>
+		</init-param>		
+	</filter>
+
+	
+	
+	<!-- Struts2支持  -->
+	<filter>
+        <filter-name>struts2</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.FilterDispatcher</filter-class>
+    </filter>
+    
+    <filter-mapping>
+        <filter-name>struts2</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    
+    <!-- 类修改以后重新启动  -->
+    <context-param>
+       <param-name>contextClass</param-name>
+       <param-value>org.apache.struts2.spring.ClassReloadingXMLWebApplicationContext</param-value>
+   </context-param> 
+    
+ 	
+</web-app>

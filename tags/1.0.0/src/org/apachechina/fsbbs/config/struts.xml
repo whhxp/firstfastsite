@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="bbs" namespace="/bbs" extends="fsbase">
+		<default-action-ref name="firstpage"></default-action-ref>
+
+		<action name="firstpage" class="bbsfirstpage">
+			<result>firstpage.jsp</result>
+		</action>
+
+		<action name="OK" class="okIndex">
+			<result>OK.jsp</result>
+		</action>
+
+		<action name="Card" class="SendIndex">
+			<result>Card.jsp</result>
+		</action>
+
+		<action name="Pinglun" class="PinglunIndex">
+			<result>Pinglunok.jsp</result>
+		</action>
+	</package>
+
+</struts>

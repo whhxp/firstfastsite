@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><templates><template autoinsert="true" context="java" deleted="false" description="定义一个日志" enabled="true" name="logd">static Log log=LogFactory.getLog(${primary_type_name}.class);</template><template autoinsert="true" context="java" deleted="false" description="导入一个日志" enabled="true" name="logi">import org.apache.commons.logging.Log;&#13;
+import org.apache.commons.logging.LogFactory;&#13;
+</template><template autoinsert="true" context="java" deleted="false" description="建立单例模型" enabled="true" name="singleton">    //单例&#13;
+	private static ${primary_type_name} instance = null;&#13;
+&#13;
+    public static synchronized ${primary_type_name} getInstance() &#13;
+    {&#13;
+	    if (instance==null)&#13;
+	         instance=new ${primary_type_name}();&#13;
+		return instance;	   &#13;
+    } &#13;
+	</template></templates>

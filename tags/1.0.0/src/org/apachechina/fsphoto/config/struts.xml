@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="photo" namespace="/photo" extends="fsbase">
+		<action name="index" class="PhoList">
+			<result>index.jsp</result>
+		</action>
+		
+		<action name="nph" class="nph">
+			<result>nph.jsp</result>
+		</action>
+		
+		<action name="send" class="Send">
+			<result>newPhoto.jsp</result>
+		</action>
+	</package>
+</struts>

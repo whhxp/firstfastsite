@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts> 
+ 	<!-- todo: move to /${moduleName}/config/struts.xml文件中 -->
+   <package name="cms" namespace="/cms"  extends="fsbase" >
+   		 <action name="index" class="ArticleList">
+            <result>index.jsp</result>
+        </action>  
+        <action name="neirong_qian" class="ArticleRead">
+            <result>neirong_qian.jsp</result>
+        </action> 
+        
+          		
+   </package>
+   
+</struts>
