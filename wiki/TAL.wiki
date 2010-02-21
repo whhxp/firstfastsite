@@ -5,4 +5,5 @@
 
 
 = 参考 =
- * [http://docs.zope.org/zope2/zope2book/AppendixC.html#tal-overview]
+ * zope2的tal说明 [http://docs.zope.org/zope2/zope2book/AppendixC.html#tal-overview]
+ * Tal的说明 [http://wiki.zope.org/ZPT/TAL]
