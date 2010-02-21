@@ -1,7 +1,7 @@
 #summary 一种模板语言
 = Introduction =
 
-
+ 非常适合美工使用的模板语言,对html或者xml一点都不污染。
 
 
 = 参考 =
